@@ -1,0 +1,4124 @@
+######################################## --> Dataset: cifar100
+- class first task: 10
+- number of tasks: 10
+
+
+######################################## --> RUNNING APPROACH
+- approach: dpr
+- backbone: resnet18
+- batch size : 64
+- epochs first task: 100
+- epochs next task: 100
+
+DPR: lambda_s=0.5, lambda_c=0.01
+Affine transport ridge: 0.001
+Affine fitting views: 4 (ridge scaled by sample count)
+Task-end feature cache: enabled
+Save checkpoints: True
+Classifier calibration: batch size 256, epochs 50, lr 0.001
+######################################## --> TRAINING HEAD 0
+Optimizing Self Rotation
+Using Adam Optimizer For The First Task: 
+                        LR: 0.001, Step Decay 0.1 with Milestones [45, 90], Weight Decay 0.0002 
+Approach total epochs 100
+Epoch 0/100
+Task 0, Epoch 0/100, N_batch 79, Elapsed Time 3.1908819675445557s
+ - classification loss: 1.53265771484375
+Epoch 1/100
+Task 0, Epoch 1/100, N_batch 79, Elapsed Time 2.941883087158203s
+ - classification loss: 1.5328914794921875
+Epoch 2/100
+Task 0, Epoch 2/100, N_batch 79, Elapsed Time 2.9558889865875244s
+ - classification loss: 1.594377197265625
+Epoch 3/100
+Task 0, Epoch 3/100, N_batch 79, Elapsed Time 2.964632034301758s
+ - classification loss: 1.2796251220703125
+Epoch 4/100
+Task 0, Epoch 4/100, N_batch 79, Elapsed Time 2.9713830947875977s
+ - classification loss: 1.358051513671875
+Epoch 5/100
+Task 0, Epoch 5/100, N_batch 79, Elapsed Time 2.953814744949341s
+ - classification loss: 1.223681884765625
+Epoch 6/100
+Task 0, Epoch 6/100, N_batch 79, Elapsed Time 2.965508460998535s
+ - classification loss: 1.31498681640625
+Epoch 7/100
+Task 0, Epoch 7/100, N_batch 79, Elapsed Time 2.972902536392212s
+ - classification loss: 1.200132568359375
+Epoch 8/100
+Task 0, Epoch 8/100, N_batch 79, Elapsed Time 2.970181703567505s
+ - classification loss: 1.3369798583984376
+Epoch 9/100
+Task 0, Epoch 9/100, N_batch 79, Elapsed Time 2.972933292388916s
+ - classification loss: 1.251495361328125
+Epoch 10/100
+Task 0, Epoch 10/100, N_batch 79, Elapsed Time 2.955484628677368s
+ - classification loss: 1.535038818359375
+Epoch 11/100
+Task 0, Epoch 11/100, N_batch 79, Elapsed Time 2.9721431732177734s
+ - classification loss: 1.709259521484375
+Epoch 12/100
+Task 0, Epoch 12/100, N_batch 79, Elapsed Time 2.9640109539031982s
+ - classification loss: 1.3749000244140626
+Epoch 13/100
+Task 0, Epoch 13/100, N_batch 79, Elapsed Time 2.9548046588897705s
+ - classification loss: 1.3985614013671874
+Epoch 14/100
+Task 0, Epoch 14/100, N_batch 79, Elapsed Time 2.9656543731689453s
+ - classification loss: 0.873144287109375
+Epoch 15/100
+Task 0, Epoch 15/100, N_batch 79, Elapsed Time 2.949920177459717s
+ - classification loss: 1.7444320068359376
+Epoch 16/100
+Task 0, Epoch 16/100, N_batch 79, Elapsed Time 2.9702563285827637s
+ - classification loss: 0.9111405639648438
+Epoch 17/100
+Task 0, Epoch 17/100, N_batch 79, Elapsed Time 2.964259386062622s
+ - classification loss: 0.79277880859375
+Epoch 18/100
+Task 0, Epoch 18/100, N_batch 79, Elapsed Time 2.9744176864624023s
+ - classification loss: 0.8626135864257812
+Epoch 19/100
+Task 0, Epoch 19/100, N_batch 79, Elapsed Time 2.9745125770568848s
+ - classification loss: 1.0544324951171875
+Epoch 20/100
+Task 0, Epoch 20/100, N_batch 79, Elapsed Time 2.975663423538208s
+ - classification loss: 1.225614013671875
+Epoch 21/100
+Task 0, Epoch 21/100, N_batch 79, Elapsed Time 2.97619366645813s
+ - classification loss: 0.7350379028320313
+Epoch 22/100
+Task 0, Epoch 22/100, N_batch 79, Elapsed Time 2.9653186798095703s
+ - classification loss: 1.1643818359375
+Epoch 23/100
+Task 0, Epoch 23/100, N_batch 79, Elapsed Time 2.9843173027038574s
+ - classification loss: 0.97125048828125
+Epoch 24/100
+Task 0, Epoch 24/100, N_batch 79, Elapsed Time 2.9801859855651855s
+ - classification loss: 0.9272208251953125
+Epoch 25/100
+Task 0, Epoch 25/100, N_batch 79, Elapsed Time 2.9722843170166016s
+ - classification loss: 0.6982240600585937
+Epoch 26/100
+Task 0, Epoch 26/100, N_batch 79, Elapsed Time 2.9613471031188965s
+ - classification loss: 0.7172852783203125
+Epoch 27/100
+Task 0, Epoch 27/100, N_batch 79, Elapsed Time 2.9780378341674805s
+ - classification loss: 0.6762896118164062
+Epoch 28/100
+Task 0, Epoch 28/100, N_batch 79, Elapsed Time 2.975940704345703s
+ - classification loss: 0.6538333129882813
+Epoch 29/100
+Task 0, Epoch 29/100, N_batch 79, Elapsed Time 2.9658379554748535s
+ - classification loss: 0.835004638671875
+Epoch 30/100
+Task 0, Epoch 30/100, N_batch 79, Elapsed Time 2.978076457977295s
+ - classification loss: 0.62980078125
+Epoch 31/100
+Task 0, Epoch 31/100, N_batch 79, Elapsed Time 2.972032070159912s
+ - classification loss: 0.637277587890625
+Epoch 32/100
+Task 0, Epoch 32/100, N_batch 79, Elapsed Time 2.963109016418457s
+ - classification loss: 0.559666259765625
+Epoch 33/100
+Task 0, Epoch 33/100, N_batch 79, Elapsed Time 2.957601308822632s
+ - classification loss: 0.7155657348632812
+Epoch 34/100
+Task 0, Epoch 34/100, N_batch 79, Elapsed Time 2.966590166091919s
+ - classification loss: 0.5835324096679687
+Epoch 35/100
+Task 0, Epoch 35/100, N_batch 79, Elapsed Time 2.9717698097229004s
+ - classification loss: 1.0180328979492188
+Epoch 36/100
+Task 0, Epoch 36/100, N_batch 79, Elapsed Time 2.9767541885375977s
+ - classification loss: 0.6830833129882813
+Epoch 37/100
+Task 0, Epoch 37/100, N_batch 79, Elapsed Time 2.975977659225464s
+ - classification loss: 0.6463194580078125
+Epoch 38/100
+Task 0, Epoch 38/100, N_batch 79, Elapsed Time 2.977022886276245s
+ - classification loss: 0.6950640869140625
+Epoch 39/100
+Task 0, Epoch 39/100, N_batch 79, Elapsed Time 2.9838945865631104s
+ - classification loss: 0.7056536865234375
+Epoch 40/100
+Task 0, Epoch 40/100, N_batch 79, Elapsed Time 2.964773178100586s
+ - classification loss: 0.904495849609375
+Epoch 41/100
+Task 0, Epoch 41/100, N_batch 79, Elapsed Time 2.9769978523254395s
+ - classification loss: 0.5701911010742188
+Epoch 42/100
+Task 0, Epoch 42/100, N_batch 79, Elapsed Time 2.976914644241333s
+ - classification loss: 0.9323084716796874
+Epoch 43/100
+Task 0, Epoch 43/100, N_batch 79, Elapsed Time 2.9701333045959473s
+ - classification loss: 0.6495504150390625
+Epoch 44/100
+Task 0, Epoch 44/100, N_batch 79, Elapsed Time 2.97106671333313s
+ - classification loss: 0.571196533203125
+Epoch 45/100
+Task 0, Epoch 45/100, N_batch 79, Elapsed Time 2.9786946773529053s
+ - classification loss: 0.3823358154296875
+Epoch 46/100
+Task 0, Epoch 46/100, N_batch 79, Elapsed Time 2.982175350189209s
+ - classification loss: 0.36175311279296873
+Epoch 47/100
+Task 0, Epoch 47/100, N_batch 79, Elapsed Time 2.9878337383270264s
+ - classification loss: 0.363162841796875
+Epoch 48/100
+Task 0, Epoch 48/100, N_batch 79, Elapsed Time 2.9873428344726562s
+ - classification loss: 0.3394809875488281
+Epoch 49/100
+Task 0, Epoch 49/100, N_batch 79, Elapsed Time 2.9772653579711914s
+ - classification loss: 0.382310791015625
+Epoch 50/100
+Task 0, Epoch 50/100, N_batch 79, Elapsed Time 2.987942695617676s
+ - classification loss: 0.33495440673828125
+Epoch 51/100
+Task 0, Epoch 51/100, N_batch 79, Elapsed Time 2.965602159500122s
+ - classification loss: 0.35132373046875
+Epoch 52/100
+Task 0, Epoch 52/100, N_batch 79, Elapsed Time 2.990591526031494s
+ - classification loss: 0.35831304931640623
+Epoch 53/100
+Task 0, Epoch 53/100, N_batch 79, Elapsed Time 2.980311155319214s
+ - classification loss: 0.3670146484375
+Epoch 54/100
+Task 0, Epoch 54/100, N_batch 79, Elapsed Time 2.982144355773926s
+ - classification loss: 0.35745233154296874
+Epoch 55/100
+Task 0, Epoch 55/100, N_batch 79, Elapsed Time 2.9762728214263916s
+ - classification loss: 0.35654278564453123
+Epoch 56/100
+Task 0, Epoch 56/100, N_batch 79, Elapsed Time 2.9828696250915527s
+ - classification loss: 0.35563067626953127
+Epoch 57/100
+Task 0, Epoch 57/100, N_batch 79, Elapsed Time 2.9772720336914062s
+ - classification loss: 0.3913871154785156
+Epoch 58/100
+Task 0, Epoch 58/100, N_batch 79, Elapsed Time 2.9829819202423096s
+ - classification loss: 0.3729245300292969
+Epoch 59/100
+Task 0, Epoch 59/100, N_batch 79, Elapsed Time 2.968914270401001s
+ - classification loss: 0.3570093078613281
+Epoch 60/100
+Task 0, Epoch 60/100, N_batch 79, Elapsed Time 2.9870755672454834s
+ - classification loss: 0.37943133544921875
+Epoch 61/100
+Task 0, Epoch 61/100, N_batch 79, Elapsed Time 2.982710599899292s
+ - classification loss: 0.3438526611328125
+Epoch 62/100
+Task 0, Epoch 62/100, N_batch 79, Elapsed Time 2.988893985748291s
+ - classification loss: 0.3820504150390625
+Epoch 63/100
+Task 0, Epoch 63/100, N_batch 79, Elapsed Time 2.9815611839294434s
+ - classification loss: 0.35229556274414064
+Epoch 64/100
+Task 0, Epoch 64/100, N_batch 79, Elapsed Time 2.9776837825775146s
+ - classification loss: 0.3507550048828125
+Epoch 65/100
+Task 0, Epoch 65/100, N_batch 79, Elapsed Time 2.9781665802001953s
+ - classification loss: 0.36266009521484377
+Epoch 66/100
+Task 0, Epoch 66/100, N_batch 79, Elapsed Time 3.0007100105285645s
+ - classification loss: 0.35357989501953124
+Epoch 67/100
+Task 0, Epoch 67/100, N_batch 79, Elapsed Time 2.9887008666992188s
+ - classification loss: 0.37929095458984374
+Epoch 68/100
+Task 0, Epoch 68/100, N_batch 79, Elapsed Time 2.9757297039031982s
+ - classification loss: 0.3316548461914062
+Epoch 69/100
+Task 0, Epoch 69/100, N_batch 79, Elapsed Time 2.9774317741394043s
+ - classification loss: 0.39303253173828123
+Epoch 70/100
+Task 0, Epoch 70/100, N_batch 79, Elapsed Time 2.982997179031372s
+ - classification loss: 0.3665504150390625
+Epoch 71/100
+Task 0, Epoch 71/100, N_batch 79, Elapsed Time 2.985715389251709s
+ - classification loss: 0.36486929321289063
+Epoch 72/100
+Task 0, Epoch 72/100, N_batch 79, Elapsed Time 2.9806056022644043s
+ - classification loss: 0.3722590637207031
+Epoch 73/100
+Task 0, Epoch 73/100, N_batch 79, Elapsed Time 2.968972682952881s
+ - classification loss: 0.344615478515625
+Epoch 74/100
+Task 0, Epoch 74/100, N_batch 79, Elapsed Time 2.97147274017334s
+ - classification loss: 0.39097430419921875
+Epoch 75/100
+Task 0, Epoch 75/100, N_batch 79, Elapsed Time 2.987609386444092s
+ - classification loss: 0.36722885131835936
+Epoch 76/100
+Task 0, Epoch 76/100, N_batch 79, Elapsed Time 2.9848761558532715s
+ - classification loss: 0.3617239990234375
+Epoch 77/100
+Task 0, Epoch 77/100, N_batch 79, Elapsed Time 2.9876394271850586s
+ - classification loss: 0.3384984130859375
+Epoch 78/100
+Task 0, Epoch 78/100, N_batch 79, Elapsed Time 2.9971604347229004s
+ - classification loss: 0.3947330322265625
+Epoch 79/100
+Task 0, Epoch 79/100, N_batch 79, Elapsed Time 2.983383893966675s
+ - classification loss: 0.3691982421875
+Epoch 80/100
+Task 0, Epoch 80/100, N_batch 79, Elapsed Time 2.9733691215515137s
+ - classification loss: 0.37110455322265623
+Epoch 81/100
+Task 0, Epoch 81/100, N_batch 79, Elapsed Time 2.9702110290527344s
+ - classification loss: 0.40304052734375
+Epoch 82/100
+Task 0, Epoch 82/100, N_batch 79, Elapsed Time 2.965845823287964s
+ - classification loss: 0.35452975463867187
+Epoch 83/100
+Task 0, Epoch 83/100, N_batch 79, Elapsed Time 2.9752676486968994s
+ - classification loss: 0.38313665771484373
+Epoch 84/100
+Task 0, Epoch 84/100, N_batch 79, Elapsed Time 2.98730731010437s
+ - classification loss: 0.3817950744628906
+Epoch 85/100
+Task 0, Epoch 85/100, N_batch 79, Elapsed Time 2.9817183017730713s
+ - classification loss: 0.3425257568359375
+Epoch 86/100
+Task 0, Epoch 86/100, N_batch 79, Elapsed Time 2.9771292209625244s
+ - classification loss: 0.37222613525390624
+Epoch 87/100
+Task 0, Epoch 87/100, N_batch 79, Elapsed Time 2.9680991172790527s
+ - classification loss: 0.37161300659179686
+Epoch 88/100
+Task 0, Epoch 88/100, N_batch 79, Elapsed Time 2.995162010192871s
+ - classification loss: 0.3767703857421875
+Epoch 89/100
+Task 0, Epoch 89/100, N_batch 79, Elapsed Time 2.9873688220977783s
+ - classification loss: 0.37463897705078125
+Epoch 90/100
+Task 0, Epoch 90/100, N_batch 79, Elapsed Time 2.9891750812530518s
+ - classification loss: 0.364823974609375
+Epoch 91/100
+Task 0, Epoch 91/100, N_batch 79, Elapsed Time 2.976109743118286s
+ - classification loss: 0.3542708129882812
+Epoch 92/100
+Task 0, Epoch 92/100, N_batch 79, Elapsed Time 2.981384515762329s
+ - classification loss: 0.35912188720703125
+Epoch 93/100
+Task 0, Epoch 93/100, N_batch 79, Elapsed Time 2.9854581356048584s
+ - classification loss: 0.3428953552246094
+Epoch 94/100
+Task 0, Epoch 94/100, N_batch 79, Elapsed Time 2.9738388061523438s
+ - classification loss: 0.359337158203125
+Epoch 95/100
+Task 0, Epoch 95/100, N_batch 79, Elapsed Time 2.9687368869781494s
+ - classification loss: 0.3654418640136719
+Epoch 96/100
+Task 0, Epoch 96/100, N_batch 79, Elapsed Time 2.975301742553711s
+ - classification loss: 0.3492851257324219
+Epoch 97/100
+Task 0, Epoch 97/100, N_batch 79, Elapsed Time 2.9729413986206055s
+ - classification loss: 0.36067642211914064
+Epoch 98/100
+Task 0, Epoch 98/100, N_batch 79, Elapsed Time 2.9801113605499268s
+ - classification loss: 0.3641357421875
+Epoch 99/100
+Task 0, Epoch 99/100, N_batch 79, Elapsed Time 2.9886834621429443s
+ - classification loss: 0.35080035400390625
+Centered classifier head: 9 stable directions
+
+ >>> Test on task  0 : TAw acc= 89.8%, forg=  0.0% | TAg acc = 89.8%, forg =  0.0%  <<<
+######################################## --> TRAINING HEAD 1
+
+Freezing Batch Norm
+Using Adam Optimizer With Fixed LR: 
+                        Backbone LR: 0.0001, Head LR 0.0001, Weight Decay 0.0002
+Approach total epochs 100
+Epoch 0/100
+DPR losses: stable 0.137701, complement 0.044727
+Task 1, Epoch 0/100, N_batch 79, Elapsed Time 1.2978277206420898s
+ - classification loss: 1.4344332275390625
+Epoch 1/100
+DPR losses: stable 0.056758, complement 0.132897
+Task 1, Epoch 1/100, N_batch 79, Elapsed Time 1.2461378574371338s
+ - classification loss: 1.1285382080078126
+Epoch 2/100
+DPR losses: stable 0.079443, complement 0.155596
+Task 1, Epoch 2/100, N_batch 79, Elapsed Time 1.253204345703125s
+ - classification loss: 1.0071361083984376
+Epoch 3/100
+DPR losses: stable 0.118235, complement 0.162652
+Task 1, Epoch 3/100, N_batch 79, Elapsed Time 1.2322001457214355s
+ - classification loss: 0.860793701171875
+Epoch 4/100
+DPR losses: stable 0.097554, complement 0.163028
+Task 1, Epoch 4/100, N_batch 79, Elapsed Time 1.2395873069763184s
+ - classification loss: 0.8248131103515625
+Epoch 5/100
+DPR losses: stable 0.119841, complement 0.157097
+Task 1, Epoch 5/100, N_batch 79, Elapsed Time 1.2295687198638916s
+ - classification loss: 0.7688316650390625
+Epoch 6/100
+DPR losses: stable 0.109574, complement 0.155815
+Task 1, Epoch 6/100, N_batch 79, Elapsed Time 1.2314136028289795s
+ - classification loss: 0.72699169921875
+Epoch 7/100
+DPR losses: stable 0.119501, complement 0.153531
+Task 1, Epoch 7/100, N_batch 79, Elapsed Time 1.2453746795654297s
+ - classification loss: 0.705979736328125
+Epoch 8/100
+DPR losses: stable 0.113013, complement 0.150111
+Task 1, Epoch 8/100, N_batch 79, Elapsed Time 1.2461566925048828s
+ - classification loss: 0.6702169189453125
+Epoch 9/100
+DPR losses: stable 0.107663, complement 0.144133
+Task 1, Epoch 9/100, N_batch 79, Elapsed Time 1.239490032196045s
+ - classification loss: 0.6561790771484375
+Epoch 10/100
+DPR losses: stable 0.113420, complement 0.144732
+Task 1, Epoch 10/100, N_batch 79, Elapsed Time 1.2240469455718994s
+ - classification loss: 0.6313399047851562
+Epoch 11/100
+DPR losses: stable 0.116299, complement 0.141032
+Task 1, Epoch 11/100, N_batch 79, Elapsed Time 1.2428102493286133s
+ - classification loss: 0.6122761840820312
+Epoch 12/100
+DPR losses: stable 0.121277, complement 0.141581
+Task 1, Epoch 12/100, N_batch 79, Elapsed Time 1.2268154621124268s
+ - classification loss: 0.5975817260742188
+Epoch 13/100
+DPR losses: stable 0.147400, complement 0.140197
+Task 1, Epoch 13/100, N_batch 79, Elapsed Time 1.2432496547698975s
+ - classification loss: 0.5748225708007813
+Epoch 14/100
+DPR losses: stable 0.120948, complement 0.135972
+Task 1, Epoch 14/100, N_batch 79, Elapsed Time 1.2444708347320557s
+ - classification loss: 0.5711144409179687
+Epoch 15/100
+DPR losses: stable 0.126054, complement 0.135548
+Task 1, Epoch 15/100, N_batch 79, Elapsed Time 1.2468593120574951s
+ - classification loss: 0.5960339965820313
+Epoch 16/100
+DPR losses: stable 0.120353, complement 0.132167
+Task 1, Epoch 16/100, N_batch 79, Elapsed Time 1.2490935325622559s
+ - classification loss: 0.555842041015625
+Epoch 17/100
+DPR losses: stable 0.113225, complement 0.129273
+Task 1, Epoch 17/100, N_batch 79, Elapsed Time 1.263458251953125s
+ - classification loss: 0.5384371337890625
+Epoch 18/100
+DPR losses: stable 0.120703, complement 0.129582
+Task 1, Epoch 18/100, N_batch 79, Elapsed Time 1.2412493228912354s
+ - classification loss: 0.560275390625
+Epoch 19/100
+DPR losses: stable 0.118136, complement 0.127632
+Task 1, Epoch 19/100, N_batch 79, Elapsed Time 1.230919599533081s
+ - classification loss: 0.5427071533203125
+Epoch 20/100
+DPR losses: stable 0.129229, complement 0.125664
+Task 1, Epoch 20/100, N_batch 79, Elapsed Time 1.2346298694610596s
+ - classification loss: 0.5092140197753906
+Epoch 21/100
+DPR losses: stable 0.125873, complement 0.124822
+Task 1, Epoch 21/100, N_batch 79, Elapsed Time 1.2339599132537842s
+ - classification loss: 0.5306185913085938
+Epoch 22/100
+DPR losses: stable 0.129864, complement 0.128942
+Task 1, Epoch 22/100, N_batch 79, Elapsed Time 1.2404112815856934s
+ - classification loss: 0.5079023742675781
+Epoch 23/100
+DPR losses: stable 0.115555, complement 0.122329
+Task 1, Epoch 23/100, N_batch 79, Elapsed Time 1.2566044330596924s
+ - classification loss: 0.49577960205078125
+Epoch 24/100
+DPR losses: stable 0.138807, complement 0.122604
+Task 1, Epoch 24/100, N_batch 79, Elapsed Time 1.2473840713500977s
+ - classification loss: 0.5287214965820313
+Epoch 25/100
+DPR losses: stable 0.132510, complement 0.123389
+Task 1, Epoch 25/100, N_batch 79, Elapsed Time 1.244004249572754s
+ - classification loss: 0.5185164794921875
+Epoch 26/100
+DPR losses: stable 0.125796, complement 0.119619
+Task 1, Epoch 26/100, N_batch 79, Elapsed Time 1.243546962738037s
+ - classification loss: 0.5268443603515625
+Epoch 27/100
+DPR losses: stable 0.121336, complement 0.119444
+Task 1, Epoch 27/100, N_batch 79, Elapsed Time 1.2364273071289062s
+ - classification loss: 0.48329446411132815
+Epoch 28/100
+DPR losses: stable 0.128999, complement 0.118969
+Task 1, Epoch 28/100, N_batch 79, Elapsed Time 1.2421422004699707s
+ - classification loss: 0.4869728698730469
+Epoch 29/100
+DPR losses: stable 0.107035, complement 0.118175
+Task 1, Epoch 29/100, N_batch 79, Elapsed Time 1.2261409759521484s
+ - classification loss: 0.44485272216796873
+Epoch 30/100
+DPR losses: stable 0.118145, complement 0.114438
+Task 1, Epoch 30/100, N_batch 79, Elapsed Time 1.2418663501739502s
+ - classification loss: 0.47526953125
+Epoch 31/100
+DPR losses: stable 0.125975, complement 0.116859
+Task 1, Epoch 31/100, N_batch 79, Elapsed Time 1.2301805019378662s
+ - classification loss: 0.4438833312988281
+Epoch 32/100
+DPR losses: stable 0.124128, complement 0.115376
+Task 1, Epoch 32/100, N_batch 79, Elapsed Time 1.2429957389831543s
+ - classification loss: 0.46475244140625
+Epoch 33/100
+DPR losses: stable 0.125115, complement 0.114144
+Task 1, Epoch 33/100, N_batch 79, Elapsed Time 1.2407536506652832s
+ - classification loss: 0.4772119750976562
+Epoch 34/100
+DPR losses: stable 0.117769, complement 0.113170
+Task 1, Epoch 34/100, N_batch 79, Elapsed Time 1.240297794342041s
+ - classification loss: 0.44957211303710937
+Epoch 35/100
+DPR losses: stable 0.123803, complement 0.110915
+Task 1, Epoch 35/100, N_batch 79, Elapsed Time 1.2442269325256348s
+ - classification loss: 0.43491607666015625
+Epoch 36/100
+DPR losses: stable 0.133063, complement 0.111281
+Task 1, Epoch 36/100, N_batch 79, Elapsed Time 1.2316794395446777s
+ - classification loss: 0.4439725036621094
+Epoch 37/100
+DPR losses: stable 0.124110, complement 0.112852
+Task 1, Epoch 37/100, N_batch 79, Elapsed Time 1.2275056838989258s
+ - classification loss: 0.45161346435546873
+Epoch 38/100
+DPR losses: stable 0.131679, complement 0.110384
+Task 1, Epoch 38/100, N_batch 79, Elapsed Time 1.2239019870758057s
+ - classification loss: 0.44876742553710935
+Epoch 39/100
+DPR losses: stable 0.119677, complement 0.108776
+Task 1, Epoch 39/100, N_batch 79, Elapsed Time 1.240422248840332s
+ - classification loss: 0.45260247802734377
+Epoch 40/100
+DPR losses: stable 0.124967, complement 0.108056
+Task 1, Epoch 40/100, N_batch 79, Elapsed Time 1.2209396362304688s
+ - classification loss: 0.417976806640625
+Epoch 41/100
+DPR losses: stable 0.117574, complement 0.110477
+Task 1, Epoch 41/100, N_batch 79, Elapsed Time 1.2333858013153076s
+ - classification loss: 0.4235811157226563
+Epoch 42/100
+DPR losses: stable 0.119313, complement 0.107179
+Task 1, Epoch 42/100, N_batch 79, Elapsed Time 1.2381176948547363s
+ - classification loss: 0.4119384155273437
+Epoch 43/100
+DPR losses: stable 0.116792, complement 0.106101
+Task 1, Epoch 43/100, N_batch 79, Elapsed Time 1.2244806289672852s
+ - classification loss: 0.4542244567871094
+Epoch 44/100
+DPR losses: stable 0.125683, complement 0.106522
+Task 1, Epoch 44/100, N_batch 79, Elapsed Time 1.2279996871948242s
+ - classification loss: 0.42531097412109375
+Epoch 45/100
+DPR losses: stable 0.111015, complement 0.104171
+Task 1, Epoch 45/100, N_batch 79, Elapsed Time 1.2303133010864258s
+ - classification loss: 0.45970135498046877
+Epoch 46/100
+DPR losses: stable 0.126774, complement 0.103333
+Task 1, Epoch 46/100, N_batch 79, Elapsed Time 1.2266781330108643s
+ - classification loss: 0.42937066650390626
+Epoch 47/100
+DPR losses: stable 0.130231, complement 0.105577
+Task 1, Epoch 47/100, N_batch 79, Elapsed Time 1.2307512760162354s
+ - classification loss: 0.45419305419921874
+Epoch 48/100
+DPR losses: stable 0.148281, complement 0.105775
+Task 1, Epoch 48/100, N_batch 79, Elapsed Time 1.2424888610839844s
+ - classification loss: 0.4453919067382813
+Epoch 49/100
+DPR losses: stable 0.116938, complement 0.103239
+Task 1, Epoch 49/100, N_batch 79, Elapsed Time 1.243055820465088s
+ - classification loss: 0.45155255126953125
+Epoch 50/100
+DPR losses: stable 0.113327, complement 0.103073
+Task 1, Epoch 50/100, N_batch 79, Elapsed Time 1.2434501647949219s
+ - classification loss: 0.48329959106445314
+Epoch 51/100
+DPR losses: stable 0.113326, complement 0.098561
+Task 1, Epoch 51/100, N_batch 79, Elapsed Time 1.2315940856933594s
+ - classification loss: 0.46353524780273436
+Epoch 52/100
+DPR losses: stable 0.138444, complement 0.104356
+Task 1, Epoch 52/100, N_batch 79, Elapsed Time 1.2383427619934082s
+ - classification loss: 0.4394123229980469
+Epoch 53/100
+DPR losses: stable 0.115064, complement 0.099495
+Task 1, Epoch 53/100, N_batch 79, Elapsed Time 1.2371041774749756s
+ - classification loss: 0.43802691650390624
+Epoch 54/100
+DPR losses: stable 0.115970, complement 0.099861
+Task 1, Epoch 54/100, N_batch 79, Elapsed Time 1.2346906661987305s
+ - classification loss: 0.48636172485351564
+Epoch 55/100
+DPR losses: stable 0.137302, complement 0.101114
+Task 1, Epoch 55/100, N_batch 79, Elapsed Time 1.2244958877563477s
+ - classification loss: 0.4295582275390625
+Epoch 56/100
+DPR losses: stable 0.121707, complement 0.102617
+Task 1, Epoch 56/100, N_batch 79, Elapsed Time 1.2294676303863525s
+ - classification loss: 0.44232501220703124
+Epoch 57/100
+DPR losses: stable 0.119060, complement 0.097995
+Task 1, Epoch 57/100, N_batch 79, Elapsed Time 1.239060878753662s
+ - classification loss: 0.4582937622070313
+Epoch 58/100
+DPR losses: stable 0.130380, complement 0.099006
+Task 1, Epoch 58/100, N_batch 79, Elapsed Time 1.2472617626190186s
+ - classification loss: 0.41608380126953126
+Epoch 59/100
+DPR losses: stable 0.133864, complement 0.097341
+Task 1, Epoch 59/100, N_batch 79, Elapsed Time 1.2251496315002441s
+ - classification loss: 0.4418802795410156
+Epoch 60/100
+DPR losses: stable 0.137171, complement 0.097543
+Task 1, Epoch 60/100, N_batch 79, Elapsed Time 1.22892165184021s
+ - classification loss: 0.42409371948242186
+Epoch 61/100
+DPR losses: stable 0.122011, complement 0.097737
+Task 1, Epoch 61/100, N_batch 79, Elapsed Time 1.2434606552124023s
+ - classification loss: 0.445739501953125
+Epoch 62/100
+DPR losses: stable 0.132279, complement 0.096517
+Task 1, Epoch 62/100, N_batch 79, Elapsed Time 1.2269182205200195s
+ - classification loss: 0.42824822998046874
+Epoch 63/100
+DPR losses: stable 0.135129, complement 0.096673
+Task 1, Epoch 63/100, N_batch 79, Elapsed Time 1.2316763401031494s
+ - classification loss: 0.4271966247558594
+Epoch 64/100
+DPR losses: stable 0.131433, complement 0.094930
+Task 1, Epoch 64/100, N_batch 79, Elapsed Time 1.2285802364349365s
+ - classification loss: 0.44981759643554686
+Epoch 65/100
+DPR losses: stable 0.122933, complement 0.096149
+Task 1, Epoch 65/100, N_batch 79, Elapsed Time 1.2451913356781006s
+ - classification loss: 0.3975823974609375
+Epoch 66/100
+DPR losses: stable 0.114875, complement 0.093188
+Task 1, Epoch 66/100, N_batch 79, Elapsed Time 1.2418599128723145s
+ - classification loss: 0.413585205078125
+Epoch 67/100
+DPR losses: stable 0.129349, complement 0.094170
+Task 1, Epoch 67/100, N_batch 79, Elapsed Time 1.2384743690490723s
+ - classification loss: 0.44126885986328124
+Epoch 68/100
+DPR losses: stable 0.114130, complement 0.093586
+Task 1, Epoch 68/100, N_batch 79, Elapsed Time 1.2491660118103027s
+ - classification loss: 0.42504388427734374
+Epoch 69/100
+DPR losses: stable 0.124308, complement 0.093335
+Task 1, Epoch 69/100, N_batch 79, Elapsed Time 1.2453937530517578s
+ - classification loss: 0.460128173828125
+Epoch 70/100
+DPR losses: stable 0.121196, complement 0.090250
+Task 1, Epoch 70/100, N_batch 79, Elapsed Time 1.2411079406738281s
+ - classification loss: 0.48304779052734376
+Epoch 71/100
+DPR losses: stable 0.113958, complement 0.090884
+Task 1, Epoch 71/100, N_batch 79, Elapsed Time 1.240865707397461s
+ - classification loss: 0.392164794921875
+Epoch 72/100
+DPR losses: stable 0.128339, complement 0.093257
+Task 1, Epoch 72/100, N_batch 79, Elapsed Time 1.2235560417175293s
+ - classification loss: 0.4068795776367187
+Epoch 73/100
+DPR losses: stable 0.121067, complement 0.092552
+Task 1, Epoch 73/100, N_batch 79, Elapsed Time 1.2301368713378906s
+ - classification loss: 0.39503179931640625
+Epoch 74/100
+DPR losses: stable 0.132048, complement 0.092230
+Task 1, Epoch 74/100, N_batch 79, Elapsed Time 1.2376422882080078s
+ - classification loss: 0.418947021484375
+Epoch 75/100
+DPR losses: stable 0.117109, complement 0.089923
+Task 1, Epoch 75/100, N_batch 79, Elapsed Time 1.2385973930358887s
+ - classification loss: 0.42410736083984374
+Epoch 76/100
+DPR losses: stable 0.131325, complement 0.089317
+Task 1, Epoch 76/100, N_batch 79, Elapsed Time 1.2283151149749756s
+ - classification loss: 0.4589326171875
+Epoch 77/100
+DPR losses: stable 0.146428, complement 0.089908
+Task 1, Epoch 77/100, N_batch 79, Elapsed Time 1.2372114658355713s
+ - classification loss: 0.4250997619628906
+Epoch 78/100
+DPR losses: stable 0.117367, complement 0.088979
+Task 1, Epoch 78/100, N_batch 79, Elapsed Time 1.2374062538146973s
+ - classification loss: 0.44726205444335937
+Epoch 79/100
+DPR losses: stable 0.111883, complement 0.087365
+Task 1, Epoch 79/100, N_batch 79, Elapsed Time 1.2358810901641846s
+ - classification loss: 0.43845794677734373
+Epoch 80/100
+DPR losses: stable 0.117826, complement 0.087636
+Task 1, Epoch 80/100, N_batch 79, Elapsed Time 1.2268593311309814s
+ - classification loss: 0.4382060546875
+Epoch 81/100
+DPR losses: stable 0.110702, complement 0.087333
+Task 1, Epoch 81/100, N_batch 79, Elapsed Time 1.234168529510498s
+ - classification loss: 0.410509521484375
+Epoch 82/100
+DPR losses: stable 0.114162, complement 0.086714
+Task 1, Epoch 82/100, N_batch 79, Elapsed Time 1.2421824932098389s
+ - classification loss: 0.4163172607421875
+Epoch 83/100
+DPR losses: stable 0.130776, complement 0.086805
+Task 1, Epoch 83/100, N_batch 79, Elapsed Time 1.2220988273620605s
+ - classification loss: 0.454025390625
+Epoch 84/100
+DPR losses: stable 0.116949, complement 0.087110
+Task 1, Epoch 84/100, N_batch 79, Elapsed Time 1.2374467849731445s
+ - classification loss: 0.46798516845703125
+Epoch 85/100
+DPR losses: stable 0.123576, complement 0.087033
+Task 1, Epoch 85/100, N_batch 79, Elapsed Time 1.2289674282073975s
+ - classification loss: 0.4163074951171875
+Epoch 86/100
+DPR losses: stable 0.137152, complement 0.086606
+Task 1, Epoch 86/100, N_batch 79, Elapsed Time 1.2395751476287842s
+ - classification loss: 0.4409806823730469
+Epoch 87/100
+DPR losses: stable 0.117356, complement 0.086124
+Task 1, Epoch 87/100, N_batch 79, Elapsed Time 1.242177963256836s
+ - classification loss: 0.402018798828125
+Epoch 88/100
+DPR losses: stable 0.115449, complement 0.084394
+Task 1, Epoch 88/100, N_batch 79, Elapsed Time 1.2250926494598389s
+ - classification loss: 0.4221941833496094
+Epoch 89/100
+DPR losses: stable 0.114648, complement 0.084436
+Task 1, Epoch 89/100, N_batch 79, Elapsed Time 1.2409579753875732s
+ - classification loss: 0.4280355224609375
+Epoch 90/100
+DPR losses: stable 0.131196, complement 0.084861
+Task 1, Epoch 90/100, N_batch 79, Elapsed Time 1.2260289192199707s
+ - classification loss: 0.4164620361328125
+Epoch 91/100
+DPR losses: stable 0.109859, complement 0.084237
+Task 1, Epoch 91/100, N_batch 79, Elapsed Time 1.2267513275146484s
+ - classification loss: 0.507069580078125
+Epoch 92/100
+DPR losses: stable 0.131290, complement 0.085791
+Task 1, Epoch 92/100, N_batch 79, Elapsed Time 1.2250452041625977s
+ - classification loss: 0.41355419921875
+Epoch 93/100
+DPR losses: stable 0.120310, complement 0.083853
+Task 1, Epoch 93/100, N_batch 79, Elapsed Time 1.2220735549926758s
+ - classification loss: 0.4030910034179688
+Epoch 94/100
+DPR losses: stable 0.131109, complement 0.084345
+Task 1, Epoch 94/100, N_batch 79, Elapsed Time 1.225121021270752s
+ - classification loss: 0.45225369262695314
+Epoch 95/100
+DPR losses: stable 0.127832, complement 0.085861
+Task 1, Epoch 95/100, N_batch 79, Elapsed Time 1.2248642444610596s
+ - classification loss: 0.4641877746582031
+Epoch 96/100
+DPR losses: stable 0.113831, complement 0.082578
+Task 1, Epoch 96/100, N_batch 79, Elapsed Time 1.23893141746521s
+ - classification loss: 0.44543243408203126
+Epoch 97/100
+DPR losses: stable 0.125084, complement 0.083240
+Task 1, Epoch 97/100, N_batch 79, Elapsed Time 1.2441387176513672s
+ - classification loss: 0.4142232666015625
+Epoch 98/100
+DPR losses: stable 0.124524, complement 0.081532
+Task 1, Epoch 98/100, N_batch 79, Elapsed Time 1.2432408332824707s
+ - classification loss: 0.4445655822753906
+Epoch 99/100
+DPR losses: stable 0.120194, complement 0.081109
+Task 1, Epoch 99/100, N_batch 79, Elapsed Time 1.241438388824463s
+ - classification loss: 0.4759853820800781
+Computing affine prototype alignment
+Affine transport MSE 0.009723, elapsed time 2.5352094173431396
+Classifier calibration from cached features
+Centered classifier head: 19 stable directions
+
+ >>> Test on task  0 : TAw acc= 89.5%, forg=  0.3% | TAg acc = 83.2%, forg =  6.6%  <<<
+
+ >>> Test on task  1 : TAw acc= 86.1%, forg=  0.0% | TAg acc = 77.0%, forg =  0.0%  <<<
+######################################## --> TRAINING HEAD 2
+
+Freezing Batch Norm
+Using Adam Optimizer With Fixed LR: 
+                        Backbone LR: 0.0001, Head LR 0.0001, Weight Decay 0.0002
+Approach total epochs 100
+Epoch 0/100
+DPR losses: stable 0.121795, complement 0.029652
+Task 2, Epoch 0/100, N_batch 79, Elapsed Time 1.2510361671447754s
+ - classification loss: 1.450110107421875
+Epoch 1/100
+DPR losses: stable 0.079027, complement 0.114931
+Task 2, Epoch 1/100, N_batch 79, Elapsed Time 1.2548372745513916s
+ - classification loss: 1.083381103515625
+Epoch 2/100
+DPR losses: stable 0.100725, complement 0.138657
+Task 2, Epoch 2/100, N_batch 79, Elapsed Time 1.2570934295654297s
+ - classification loss: 0.94945654296875
+Epoch 3/100
+DPR losses: stable 0.104923, complement 0.144566
+Task 2, Epoch 3/100, N_batch 79, Elapsed Time 1.2569587230682373s
+ - classification loss: 0.8653787841796875
+Epoch 4/100
+DPR losses: stable 0.123983, complement 0.141081
+Task 2, Epoch 4/100, N_batch 79, Elapsed Time 1.2598848342895508s
+ - classification loss: 0.8087764892578125
+Epoch 5/100
+DPR losses: stable 0.121088, complement 0.140894
+Task 2, Epoch 5/100, N_batch 79, Elapsed Time 1.246319055557251s
+ - classification loss: 0.7534391479492187
+Epoch 6/100
+DPR losses: stable 0.131979, complement 0.134929
+Task 2, Epoch 6/100, N_batch 79, Elapsed Time 1.2361257076263428s
+ - classification loss: 0.7464627685546875
+Epoch 7/100
+DPR losses: stable 0.124809, complement 0.131670
+Task 2, Epoch 7/100, N_batch 79, Elapsed Time 1.2359027862548828s
+ - classification loss: 0.7305341796875
+Epoch 8/100
+DPR losses: stable 0.131696, complement 0.128833
+Task 2, Epoch 8/100, N_batch 79, Elapsed Time 1.253385305404663s
+ - classification loss: 0.7147650146484374
+Epoch 9/100
+DPR losses: stable 0.135131, complement 0.124681
+Task 2, Epoch 9/100, N_batch 79, Elapsed Time 1.2508213520050049s
+ - classification loss: 0.6804630126953125
+Epoch 10/100
+DPR losses: stable 0.141819, complement 0.122523
+Task 2, Epoch 10/100, N_batch 79, Elapsed Time 1.2482190132141113s
+ - classification loss: 0.6498054809570313
+Epoch 11/100
+DPR losses: stable 0.145443, complement 0.119760
+Task 2, Epoch 11/100, N_batch 79, Elapsed Time 1.247434377670288s
+ - classification loss: 0.6457238159179688
+Epoch 12/100
+DPR losses: stable 0.154768, complement 0.117577
+Task 2, Epoch 12/100, N_batch 79, Elapsed Time 1.2515974044799805s
+ - classification loss: 0.6184754638671875
+Epoch 13/100
+DPR losses: stable 0.161373, complement 0.115308
+Task 2, Epoch 13/100, N_batch 79, Elapsed Time 1.2494990825653076s
+ - classification loss: 0.5994420166015625
+Epoch 14/100
+DPR losses: stable 0.144727, complement 0.110929
+Task 2, Epoch 14/100, N_batch 79, Elapsed Time 1.2459723949432373s
+ - classification loss: 0.6296428833007812
+Epoch 15/100
+DPR losses: stable 0.140306, complement 0.109668
+Task 2, Epoch 15/100, N_batch 79, Elapsed Time 1.241901159286499s
+ - classification loss: 0.6199330444335938
+Epoch 16/100
+DPR losses: stable 0.143899, complement 0.108986
+Task 2, Epoch 16/100, N_batch 79, Elapsed Time 1.2369210720062256s
+ - classification loss: 0.619836669921875
+Epoch 17/100
+DPR losses: stable 0.156653, complement 0.106520
+Task 2, Epoch 17/100, N_batch 79, Elapsed Time 1.2377803325653076s
+ - classification loss: 0.584430419921875
+Epoch 18/100
+DPR losses: stable 0.149206, complement 0.106447
+Task 2, Epoch 18/100, N_batch 79, Elapsed Time 1.2640831470489502s
+ - classification loss: 0.5781710815429687
+Epoch 19/100
+DPR losses: stable 0.142917, complement 0.103201
+Task 2, Epoch 19/100, N_batch 79, Elapsed Time 1.257047176361084s
+ - classification loss: 0.56169921875
+Epoch 20/100
+DPR losses: stable 0.159667, complement 0.104557
+Task 2, Epoch 20/100, N_batch 79, Elapsed Time 1.2582342624664307s
+ - classification loss: 0.5730371704101562
+Epoch 21/100
+DPR losses: stable 0.152448, complement 0.101971
+Task 2, Epoch 21/100, N_batch 79, Elapsed Time 1.2447962760925293s
+ - classification loss: 0.5467225341796875
+Epoch 22/100
+DPR losses: stable 0.147090, complement 0.102355
+Task 2, Epoch 22/100, N_batch 79, Elapsed Time 1.2533411979675293s
+ - classification loss: 0.5592650146484375
+Epoch 23/100
+DPR losses: stable 0.152158, complement 0.100953
+Task 2, Epoch 23/100, N_batch 79, Elapsed Time 1.2526636123657227s
+ - classification loss: 0.5474778442382813
+Epoch 24/100
+DPR losses: stable 0.151157, complement 0.099086
+Task 2, Epoch 24/100, N_batch 79, Elapsed Time 1.2506697177886963s
+ - classification loss: 0.5627930908203125
+Epoch 25/100
+DPR losses: stable 0.145758, complement 0.097195
+Task 2, Epoch 25/100, N_batch 79, Elapsed Time 1.2590644359588623s
+ - classification loss: 0.5283632202148437
+Epoch 26/100
+DPR losses: stable 0.149221, complement 0.096638
+Task 2, Epoch 26/100, N_batch 79, Elapsed Time 1.250143051147461s
+ - classification loss: 0.5292444458007812
+Epoch 27/100
+DPR losses: stable 0.167659, complement 0.097594
+Task 2, Epoch 27/100, N_batch 79, Elapsed Time 1.2385380268096924s
+ - classification loss: 0.5563922119140625
+Epoch 28/100
+DPR losses: stable 0.160382, complement 0.094078
+Task 2, Epoch 28/100, N_batch 79, Elapsed Time 1.2573935985565186s
+ - classification loss: 0.519388427734375
+Epoch 29/100
+DPR losses: stable 0.151617, complement 0.096424
+Task 2, Epoch 29/100, N_batch 79, Elapsed Time 1.2476513385772705s
+ - classification loss: 0.5224988403320312
+Epoch 30/100
+DPR losses: stable 0.163741, complement 0.093981
+Task 2, Epoch 30/100, N_batch 79, Elapsed Time 1.2470996379852295s
+ - classification loss: 0.5244742431640625
+Epoch 31/100
+DPR losses: stable 0.151247, complement 0.094120
+Task 2, Epoch 31/100, N_batch 79, Elapsed Time 1.2616550922393799s
+ - classification loss: 0.5112777709960937
+Epoch 32/100
+DPR losses: stable 0.145685, complement 0.094460
+Task 2, Epoch 32/100, N_batch 79, Elapsed Time 1.2561638355255127s
+ - classification loss: 0.528793701171875
+Epoch 33/100
+DPR losses: stable 0.159710, complement 0.094220
+Task 2, Epoch 33/100, N_batch 79, Elapsed Time 1.2574851512908936s
+ - classification loss: 0.49142779541015624
+Epoch 34/100
+DPR losses: stable 0.161784, complement 0.092897
+Task 2, Epoch 34/100, N_batch 79, Elapsed Time 1.2577409744262695s
+ - classification loss: 0.51354541015625
+Epoch 35/100
+DPR losses: stable 0.148596, complement 0.091105
+Task 2, Epoch 35/100, N_batch 79, Elapsed Time 1.2585878372192383s
+ - classification loss: 0.5296480712890625
+Epoch 36/100
+DPR losses: stable 0.173593, complement 0.091637
+Task 2, Epoch 36/100, N_batch 79, Elapsed Time 1.2549004554748535s
+ - classification loss: 0.5005914306640625
+Epoch 37/100
+DPR losses: stable 0.152599, complement 0.091227
+Task 2, Epoch 37/100, N_batch 79, Elapsed Time 1.2561111450195312s
+ - classification loss: 0.48940057373046875
+Epoch 38/100
+DPR losses: stable 0.157109, complement 0.092082
+Task 2, Epoch 38/100, N_batch 79, Elapsed Time 1.2636961936950684s
+ - classification loss: 0.513267822265625
+Epoch 39/100
+DPR losses: stable 0.165784, complement 0.089377
+Task 2, Epoch 39/100, N_batch 79, Elapsed Time 1.2457411289215088s
+ - classification loss: 0.480820068359375
+Epoch 40/100
+DPR losses: stable 0.163591, complement 0.090815
+Task 2, Epoch 40/100, N_batch 79, Elapsed Time 1.2562668323516846s
+ - classification loss: 0.4902990417480469
+Epoch 41/100
+DPR losses: stable 0.146647, complement 0.090042
+Task 2, Epoch 41/100, N_batch 79, Elapsed Time 1.261106014251709s
+ - classification loss: 0.49142449951171874
+Epoch 42/100
+DPR losses: stable 0.167481, complement 0.088299
+Task 2, Epoch 42/100, N_batch 79, Elapsed Time 1.26326322555542s
+ - classification loss: 0.48909808349609374
+Epoch 43/100
+DPR losses: stable 0.156933, complement 0.088281
+Task 2, Epoch 43/100, N_batch 79, Elapsed Time 1.2551391124725342s
+ - classification loss: 0.5305083618164063
+Epoch 44/100
+DPR losses: stable 0.152230, complement 0.086947
+Task 2, Epoch 44/100, N_batch 79, Elapsed Time 1.2589654922485352s
+ - classification loss: 0.4826185302734375
+Epoch 45/100
+DPR losses: stable 0.153578, complement 0.086996
+Task 2, Epoch 45/100, N_batch 79, Elapsed Time 1.2549324035644531s
+ - classification loss: 0.5072168884277344
+Epoch 46/100
+DPR losses: stable 0.182182, complement 0.087068
+Task 2, Epoch 46/100, N_batch 79, Elapsed Time 1.2499110698699951s
+ - classification loss: 0.49153961181640626
+Epoch 47/100
+DPR losses: stable 0.154034, complement 0.086027
+Task 2, Epoch 47/100, N_batch 79, Elapsed Time 1.2485122680664062s
+ - classification loss: 0.47319778442382815
+Epoch 48/100
+DPR losses: stable 0.175156, complement 0.087375
+Task 2, Epoch 48/100, N_batch 79, Elapsed Time 1.2500507831573486s
+ - classification loss: 0.49185140991210935
+Epoch 49/100
+DPR losses: stable 0.162207, complement 0.083595
+Task 2, Epoch 49/100, N_batch 79, Elapsed Time 1.260735273361206s
+ - classification loss: 0.54268408203125
+Epoch 50/100
+DPR losses: stable 0.164034, complement 0.085740
+Task 2, Epoch 50/100, N_batch 79, Elapsed Time 1.2570338249206543s
+ - classification loss: 0.497416748046875
+Epoch 51/100
+DPR losses: stable 0.155185, complement 0.085694
+Task 2, Epoch 51/100, N_batch 79, Elapsed Time 1.2438857555389404s
+ - classification loss: 0.52748681640625
+Epoch 52/100
+DPR losses: stable 0.149252, complement 0.084222
+Task 2, Epoch 52/100, N_batch 79, Elapsed Time 1.2564663887023926s
+ - classification loss: 0.4985513916015625
+Epoch 53/100
+DPR losses: stable 0.167951, complement 0.083954
+Task 2, Epoch 53/100, N_batch 79, Elapsed Time 1.2449262142181396s
+ - classification loss: 0.466194091796875
+Epoch 54/100
+DPR losses: stable 0.161696, complement 0.083186
+Task 2, Epoch 54/100, N_batch 79, Elapsed Time 1.254366159439087s
+ - classification loss: 0.5165721435546875
+Epoch 55/100
+DPR losses: stable 0.154158, complement 0.082399
+Task 2, Epoch 55/100, N_batch 79, Elapsed Time 1.2499427795410156s
+ - classification loss: 0.49481137084960936
+Epoch 56/100
+DPR losses: stable 0.157826, complement 0.082733
+Task 2, Epoch 56/100, N_batch 79, Elapsed Time 1.2547862529754639s
+ - classification loss: 0.4919794921875
+Epoch 57/100
+DPR losses: stable 0.168681, complement 0.082649
+Task 2, Epoch 57/100, N_batch 79, Elapsed Time 1.2612698078155518s
+ - classification loss: 0.4879659423828125
+Epoch 58/100
+DPR losses: stable 0.164071, complement 0.083063
+Task 2, Epoch 58/100, N_batch 79, Elapsed Time 1.2540879249572754s
+ - classification loss: 0.46212213134765623
+Epoch 59/100
+DPR losses: stable 0.151485, complement 0.082039
+Task 2, Epoch 59/100, N_batch 79, Elapsed Time 1.2395143508911133s
+ - classification loss: 0.5231297607421875
+Epoch 60/100
+DPR losses: stable 0.169307, complement 0.081343
+Task 2, Epoch 60/100, N_batch 79, Elapsed Time 1.255267858505249s
+ - classification loss: 0.47345294189453124
+Epoch 61/100
+DPR losses: stable 0.163877, complement 0.081259
+Task 2, Epoch 61/100, N_batch 79, Elapsed Time 1.2574236392974854s
+ - classification loss: 0.4686768798828125
+Epoch 62/100
+DPR losses: stable 0.158766, complement 0.080613
+Task 2, Epoch 62/100, N_batch 79, Elapsed Time 1.24172043800354s
+ - classification loss: 0.4685653076171875
+Epoch 63/100
+DPR losses: stable 0.173415, complement 0.081163
+Task 2, Epoch 63/100, N_batch 79, Elapsed Time 1.2412011623382568s
+ - classification loss: 0.4543824462890625
+Epoch 64/100
+DPR losses: stable 0.182181, complement 0.080941
+Task 2, Epoch 64/100, N_batch 79, Elapsed Time 1.249098777770996s
+ - classification loss: 0.485622802734375
+Epoch 65/100
+DPR losses: stable 0.153824, complement 0.079092
+Task 2, Epoch 65/100, N_batch 79, Elapsed Time 1.2492709159851074s
+ - classification loss: 0.4756358642578125
+Epoch 66/100
+DPR losses: stable 0.160118, complement 0.081361
+Task 2, Epoch 66/100, N_batch 79, Elapsed Time 1.2483367919921875s
+ - classification loss: 0.46345220947265625
+Epoch 67/100
+DPR losses: stable 0.147659, complement 0.078727
+Task 2, Epoch 67/100, N_batch 79, Elapsed Time 1.2624855041503906s
+ - classification loss: 0.48204147338867187
+Epoch 68/100
+DPR losses: stable 0.147700, complement 0.077775
+Task 2, Epoch 68/100, N_batch 79, Elapsed Time 1.2526617050170898s
+ - classification loss: 0.49980496215820314
+Epoch 69/100
+DPR losses: stable 0.154748, complement 0.076927
+Task 2, Epoch 69/100, N_batch 79, Elapsed Time 1.2453224658966064s
+ - classification loss: 0.4875042419433594
+Epoch 70/100
+DPR losses: stable 0.153833, complement 0.077869
+Task 2, Epoch 70/100, N_batch 79, Elapsed Time 1.259389877319336s
+ - classification loss: 0.48536480712890623
+Epoch 71/100
+DPR losses: stable 0.156256, complement 0.078044
+Task 2, Epoch 71/100, N_batch 79, Elapsed Time 1.2490365505218506s
+ - classification loss: 0.4941591491699219
+Epoch 72/100
+DPR losses: stable 0.165354, complement 0.076922
+Task 2, Epoch 72/100, N_batch 79, Elapsed Time 1.2359554767608643s
+ - classification loss: 0.5013435974121093
+Epoch 73/100
+DPR losses: stable 0.156349, complement 0.076592
+Task 2, Epoch 73/100, N_batch 79, Elapsed Time 1.254141092300415s
+ - classification loss: 0.4924007873535156
+Epoch 74/100
+DPR losses: stable 0.155571, complement 0.077018
+Task 2, Epoch 74/100, N_batch 79, Elapsed Time 1.2578644752502441s
+ - classification loss: 0.5090082397460938
+Epoch 75/100
+DPR losses: stable 0.150448, complement 0.075599
+Task 2, Epoch 75/100, N_batch 79, Elapsed Time 1.2577524185180664s
+ - classification loss: 0.4971632080078125
+Epoch 76/100
+DPR losses: stable 0.154325, complement 0.076228
+Task 2, Epoch 76/100, N_batch 79, Elapsed Time 1.2542362213134766s
+ - classification loss: 0.48771536254882814
+Epoch 77/100
+DPR losses: stable 0.153102, complement 0.075925
+Task 2, Epoch 77/100, N_batch 79, Elapsed Time 1.241077184677124s
+ - classification loss: 0.48697869873046873
+Epoch 78/100
+DPR losses: stable 0.160538, complement 0.077218
+Task 2, Epoch 78/100, N_batch 79, Elapsed Time 1.2475240230560303s
+ - classification loss: 0.48323443603515626
+Epoch 79/100
+DPR losses: stable 0.159485, complement 0.073901
+Task 2, Epoch 79/100, N_batch 79, Elapsed Time 1.238471508026123s
+ - classification loss: 0.46881951904296876
+Epoch 80/100
+DPR losses: stable 0.163799, complement 0.073060
+Task 2, Epoch 80/100, N_batch 79, Elapsed Time 1.2533929347991943s
+ - classification loss: 0.458136474609375
+Epoch 81/100
+DPR losses: stable 0.154553, complement 0.074072
+Task 2, Epoch 81/100, N_batch 79, Elapsed Time 1.2497758865356445s
+ - classification loss: 0.49019219970703126
+Epoch 82/100
+DPR losses: stable 0.164900, complement 0.075669
+Task 2, Epoch 82/100, N_batch 79, Elapsed Time 1.24306058883667s
+ - classification loss: 0.4873574523925781
+Epoch 83/100
+DPR losses: stable 0.167969, complement 0.073672
+Task 2, Epoch 83/100, N_batch 79, Elapsed Time 1.2514007091522217s
+ - classification loss: 0.51239697265625
+Epoch 84/100
+DPR losses: stable 0.169866, complement 0.073809
+Task 2, Epoch 84/100, N_batch 79, Elapsed Time 1.2620165348052979s
+ - classification loss: 0.4648896789550781
+Epoch 85/100
+DPR losses: stable 0.153966, complement 0.072412
+Task 2, Epoch 85/100, N_batch 79, Elapsed Time 1.2587659358978271s
+ - classification loss: 0.4683956298828125
+Epoch 86/100
+DPR losses: stable 0.165581, complement 0.072748
+Task 2, Epoch 86/100, N_batch 79, Elapsed Time 1.2537410259246826s
+ - classification loss: 0.4919619140625
+Epoch 87/100
+DPR losses: stable 0.151320, complement 0.072166
+Task 2, Epoch 87/100, N_batch 79, Elapsed Time 1.2402927875518799s
+ - classification loss: 0.4903620910644531
+Epoch 88/100
+DPR losses: stable 0.166469, complement 0.073974
+Task 2, Epoch 88/100, N_batch 79, Elapsed Time 1.259248971939087s
+ - classification loss: 0.48242279052734377
+Epoch 89/100
+DPR losses: stable 0.148517, complement 0.069599
+Task 2, Epoch 89/100, N_batch 79, Elapsed Time 1.2506015300750732s
+ - classification loss: 0.48252899169921876
+Epoch 90/100
+DPR losses: stable 0.154764, complement 0.072216
+Task 2, Epoch 90/100, N_batch 79, Elapsed Time 1.246330976486206s
+ - classification loss: 0.47289068603515627
+Epoch 91/100
+DPR losses: stable 0.174339, complement 0.071061
+Task 2, Epoch 91/100, N_batch 79, Elapsed Time 1.2575867176055908s
+ - classification loss: 0.49216265869140624
+Epoch 92/100
+DPR losses: stable 0.164071, complement 0.072205
+Task 2, Epoch 92/100, N_batch 79, Elapsed Time 1.2510020732879639s
+ - classification loss: 0.4559097595214844
+Epoch 93/100
+DPR losses: stable 0.155859, complement 0.071593
+Task 2, Epoch 93/100, N_batch 79, Elapsed Time 1.2538492679595947s
+ - classification loss: 0.4698120422363281
+Epoch 94/100
+DPR losses: stable 0.156095, complement 0.070514
+Task 2, Epoch 94/100, N_batch 79, Elapsed Time 1.243544101715088s
+ - classification loss: 0.4644902648925781
+Epoch 95/100
+DPR losses: stable 0.155746, complement 0.070050
+Task 2, Epoch 95/100, N_batch 79, Elapsed Time 1.2431156635284424s
+ - classification loss: 0.4631195068359375
+Epoch 96/100
+DPR losses: stable 0.165929, complement 0.071028
+Task 2, Epoch 96/100, N_batch 79, Elapsed Time 1.2418148517608643s
+ - classification loss: 0.47730398559570314
+Epoch 97/100
+DPR losses: stable 0.148397, complement 0.069108
+Task 2, Epoch 97/100, N_batch 79, Elapsed Time 1.245434045791626s
+ - classification loss: 0.4638583374023437
+Epoch 98/100
+DPR losses: stable 0.143452, complement 0.069416
+Task 2, Epoch 98/100, N_batch 79, Elapsed Time 1.258817434310913s
+ - classification loss: 0.5382831420898437
+Epoch 99/100
+DPR losses: stable 0.157408, complement 0.069707
+Task 2, Epoch 99/100, N_batch 79, Elapsed Time 1.25331449508667s
+ - classification loss: 0.4722285766601563
+Computing affine prototype alignment
+Affine transport MSE 0.007735, elapsed time 2.6321473121643066
+Classifier calibration from cached features
+Centered classifier head: 29 stable directions
+
+ >>> Test on task  0 : TAw acc= 88.5%, forg=  1.3% | TAg acc = 78.8%, forg = 11.0%  <<<
+
+ >>> Test on task  1 : TAw acc= 86.8%, forg= -0.7% | TAg acc = 67.2%, forg =  9.8%  <<<
+
+ >>> Test on task  2 : TAw acc= 86.0%, forg=  0.0% | TAg acc = 63.2%, forg =  0.0%  <<<
+######################################## --> TRAINING HEAD 3
+
+Freezing Batch Norm
+Using Adam Optimizer With Fixed LR: 
+                        Backbone LR: 0.0001, Head LR 0.0001, Weight Decay 0.0002
+Approach total epochs 100
+Epoch 0/100
+DPR losses: stable 0.131590, complement 0.025792
+Task 3, Epoch 0/100, N_batch 79, Elapsed Time 1.2647316455841064s
+ - classification loss: 1.5094503173828124
+Epoch 1/100
+DPR losses: stable 0.077146, complement 0.106540
+Task 3, Epoch 1/100, N_batch 79, Elapsed Time 1.2622528076171875s
+ - classification loss: 1.079930419921875
+Epoch 2/100
+DPR losses: stable 0.113598, complement 0.146545
+Task 3, Epoch 2/100, N_batch 79, Elapsed Time 1.2714993953704834s
+ - classification loss: 0.9255125732421875
+Epoch 3/100
+DPR losses: stable 0.124551, complement 0.156249
+Task 3, Epoch 3/100, N_batch 79, Elapsed Time 1.2530748844146729s
+ - classification loss: 0.8584228515625
+Epoch 4/100
+DPR losses: stable 0.139878, complement 0.155562
+Task 3, Epoch 4/100, N_batch 79, Elapsed Time 1.259098768234253s
+ - classification loss: 0.8219009399414062
+Epoch 5/100
+DPR losses: stable 0.138982, complement 0.153462
+Task 3, Epoch 5/100, N_batch 79, Elapsed Time 1.2652130126953125s
+ - classification loss: 0.7632567138671875
+Epoch 6/100
+DPR losses: stable 0.144189, complement 0.145971
+Task 3, Epoch 6/100, N_batch 79, Elapsed Time 1.2572441101074219s
+ - classification loss: 0.730682861328125
+Epoch 7/100
+DPR losses: stable 0.141907, complement 0.142229
+Task 3, Epoch 7/100, N_batch 79, Elapsed Time 1.2609639167785645s
+ - classification loss: 0.7017525634765625
+Epoch 8/100
+DPR losses: stable 0.144788, complement 0.137286
+Task 3, Epoch 8/100, N_batch 79, Elapsed Time 1.2554023265838623s
+ - classification loss: 0.6811641845703125
+Epoch 9/100
+DPR losses: stable 0.158166, complement 0.132950
+Task 3, Epoch 9/100, N_batch 79, Elapsed Time 1.2571253776550293s
+ - classification loss: 0.6760301513671875
+Epoch 10/100
+DPR losses: stable 0.143239, complement 0.127821
+Task 3, Epoch 10/100, N_batch 79, Elapsed Time 1.2464914321899414s
+ - classification loss: 0.6183279418945312
+Epoch 11/100
+DPR losses: stable 0.144722, complement 0.124759
+Task 3, Epoch 11/100, N_batch 79, Elapsed Time 1.2592973709106445s
+ - classification loss: 0.6274977416992188
+Epoch 12/100
+DPR losses: stable 0.144778, complement 0.121331
+Task 3, Epoch 12/100, N_batch 79, Elapsed Time 1.2436692714691162s
+ - classification loss: 0.6309447631835937
+Epoch 13/100
+DPR losses: stable 0.149932, complement 0.118484
+Task 3, Epoch 13/100, N_batch 79, Elapsed Time 1.2565786838531494s
+ - classification loss: 0.6114093627929688
+Epoch 14/100
+DPR losses: stable 0.159778, complement 0.114454
+Task 3, Epoch 14/100, N_batch 79, Elapsed Time 1.2592010498046875s
+ - classification loss: 0.60556201171875
+Epoch 15/100
+DPR losses: stable 0.151823, complement 0.112947
+Task 3, Epoch 15/100, N_batch 79, Elapsed Time 1.262878179550171s
+ - classification loss: 0.5846904296875
+Epoch 16/100
+DPR losses: stable 0.154615, complement 0.112428
+Task 3, Epoch 16/100, N_batch 79, Elapsed Time 1.264378547668457s
+ - classification loss: 0.5744714965820312
+Epoch 17/100
+DPR losses: stable 0.166701, complement 0.109716
+Task 3, Epoch 17/100, N_batch 79, Elapsed Time 1.2418429851531982s
+ - classification loss: 0.5789820556640625
+Epoch 18/100
+DPR losses: stable 0.162181, complement 0.106158
+Task 3, Epoch 18/100, N_batch 79, Elapsed Time 1.253746509552002s
+ - classification loss: 0.561339111328125
+Epoch 19/100
+DPR losses: stable 0.171214, complement 0.104861
+Task 3, Epoch 19/100, N_batch 79, Elapsed Time 1.2641232013702393s
+ - classification loss: 0.5575023193359375
+Epoch 20/100
+DPR losses: stable 0.170748, complement 0.104243
+Task 3, Epoch 20/100, N_batch 79, Elapsed Time 1.2557783126831055s
+ - classification loss: 0.5433263549804688
+Epoch 21/100
+DPR losses: stable 0.173061, complement 0.103086
+Task 3, Epoch 21/100, N_batch 79, Elapsed Time 1.2672860622406006s
+ - classification loss: 0.5267577514648437
+Epoch 22/100
+DPR losses: stable 0.159063, complement 0.100493
+Task 3, Epoch 22/100, N_batch 79, Elapsed Time 1.2552728652954102s
+ - classification loss: 0.5216881103515625
+Epoch 23/100
+DPR losses: stable 0.166052, complement 0.099052
+Task 3, Epoch 23/100, N_batch 79, Elapsed Time 1.260462760925293s
+ - classification loss: 0.5206959228515625
+Epoch 24/100
+DPR losses: stable 0.153130, complement 0.099280
+Task 3, Epoch 24/100, N_batch 79, Elapsed Time 1.2659235000610352s
+ - classification loss: 0.5153203735351563
+Epoch 25/100
+DPR losses: stable 0.164398, complement 0.098314
+Task 3, Epoch 25/100, N_batch 79, Elapsed Time 1.2546372413635254s
+ - classification loss: 0.5189032592773437
+Epoch 26/100
+DPR losses: stable 0.158656, complement 0.095409
+Task 3, Epoch 26/100, N_batch 79, Elapsed Time 1.2607877254486084s
+ - classification loss: 0.5083487548828125
+Epoch 27/100
+DPR losses: stable 0.177261, complement 0.094863
+Task 3, Epoch 27/100, N_batch 79, Elapsed Time 1.2601978778839111s
+ - classification loss: 0.5478067626953125
+Epoch 28/100
+DPR losses: stable 0.179776, complement 0.096070
+Task 3, Epoch 28/100, N_batch 79, Elapsed Time 1.2435379028320312s
+ - classification loss: 0.49687905883789063
+Epoch 29/100
+DPR losses: stable 0.164995, complement 0.092655
+Task 3, Epoch 29/100, N_batch 79, Elapsed Time 1.2507576942443848s
+ - classification loss: 0.48211203002929687
+Epoch 30/100
+DPR losses: stable 0.177821, complement 0.093435
+Task 3, Epoch 30/100, N_batch 79, Elapsed Time 1.2597198486328125s
+ - classification loss: 0.4883077392578125
+Epoch 31/100
+DPR losses: stable 0.173546, complement 0.091550
+Task 3, Epoch 31/100, N_batch 79, Elapsed Time 1.259321928024292s
+ - classification loss: 0.5056095581054687
+Epoch 32/100
+DPR losses: stable 0.177048, complement 0.091742
+Task 3, Epoch 32/100, N_batch 79, Elapsed Time 1.259772539138794s
+ - classification loss: 0.5019382019042968
+Epoch 33/100
+DPR losses: stable 0.176450, complement 0.090112
+Task 3, Epoch 33/100, N_batch 79, Elapsed Time 1.2512328624725342s
+ - classification loss: 0.5069185791015625
+Epoch 34/100
+DPR losses: stable 0.193469, complement 0.089130
+Task 3, Epoch 34/100, N_batch 79, Elapsed Time 1.2620456218719482s
+ - classification loss: 0.501499267578125
+Epoch 35/100
+DPR losses: stable 0.192406, complement 0.087214
+Task 3, Epoch 35/100, N_batch 79, Elapsed Time 1.2535064220428467s
+ - classification loss: 0.4891163330078125
+Epoch 36/100
+DPR losses: stable 0.160922, complement 0.086704
+Task 3, Epoch 36/100, N_batch 79, Elapsed Time 1.2672584056854248s
+ - classification loss: 0.463095947265625
+Epoch 37/100
+DPR losses: stable 0.164164, complement 0.087022
+Task 3, Epoch 37/100, N_batch 79, Elapsed Time 1.2637479305267334s
+ - classification loss: 0.483424072265625
+Epoch 38/100
+DPR losses: stable 0.171362, complement 0.086226
+Task 3, Epoch 38/100, N_batch 79, Elapsed Time 1.2585124969482422s
+ - classification loss: 0.46295245361328125
+Epoch 39/100
+DPR losses: stable 0.158759, complement 0.085066
+Task 3, Epoch 39/100, N_batch 79, Elapsed Time 1.2566678524017334s
+ - classification loss: 0.48039788818359375
+Epoch 40/100
+DPR losses: stable 0.171170, complement 0.085744
+Task 3, Epoch 40/100, N_batch 79, Elapsed Time 1.2565076351165771s
+ - classification loss: 0.474054443359375
+Epoch 41/100
+DPR losses: stable 0.176737, complement 0.084358
+Task 3, Epoch 41/100, N_batch 79, Elapsed Time 1.2534046173095703s
+ - classification loss: 0.4870304565429687
+Epoch 42/100
+DPR losses: stable 0.166183, complement 0.082811
+Task 3, Epoch 42/100, N_batch 79, Elapsed Time 1.2618999481201172s
+ - classification loss: 0.5127265625
+Epoch 43/100
+DPR losses: stable 0.184907, complement 0.083109
+Task 3, Epoch 43/100, N_batch 79, Elapsed Time 1.2638840675354004s
+ - classification loss: 0.45572958374023437
+Epoch 44/100
+DPR losses: stable 0.166527, complement 0.083741
+Task 3, Epoch 44/100, N_batch 79, Elapsed Time 1.2691988945007324s
+ - classification loss: 0.4804495849609375
+Epoch 45/100
+DPR losses: stable 0.216323, complement 0.082083
+Task 3, Epoch 45/100, N_batch 79, Elapsed Time 1.26493501663208s
+ - classification loss: 0.46606634521484375
+Epoch 46/100
+DPR losses: stable 0.182826, complement 0.080770
+Task 3, Epoch 46/100, N_batch 79, Elapsed Time 1.2510623931884766s
+ - classification loss: 0.4780513000488281
+Epoch 47/100
+DPR losses: stable 0.180732, complement 0.082116
+Task 3, Epoch 47/100, N_batch 79, Elapsed Time 1.2623999118804932s
+ - classification loss: 0.4597917175292969
+Epoch 48/100
+DPR losses: stable 0.179823, complement 0.081314
+Task 3, Epoch 48/100, N_batch 79, Elapsed Time 1.259326696395874s
+ - classification loss: 0.45902569580078123
+Epoch 49/100
+DPR losses: stable 0.173804, complement 0.080055
+Task 3, Epoch 49/100, N_batch 79, Elapsed Time 1.2608447074890137s
+ - classification loss: 0.47954440307617185
+Epoch 50/100
+DPR losses: stable 0.178937, complement 0.080302
+Task 3, Epoch 50/100, N_batch 79, Elapsed Time 1.2622771263122559s
+ - classification loss: 0.47379495239257813
+Epoch 51/100
+DPR losses: stable 0.179886, complement 0.079193
+Task 3, Epoch 51/100, N_batch 79, Elapsed Time 1.2573819160461426s
+ - classification loss: 0.4740923461914063
+Epoch 52/100
+DPR losses: stable 0.176393, complement 0.078612
+Task 3, Epoch 52/100, N_batch 79, Elapsed Time 1.2701518535614014s
+ - classification loss: 0.460001953125
+Epoch 53/100
+DPR losses: stable 0.174568, complement 0.078584
+Task 3, Epoch 53/100, N_batch 79, Elapsed Time 1.2574617862701416s
+ - classification loss: 0.4795618896484375
+Epoch 54/100
+DPR losses: stable 0.179098, complement 0.077852
+Task 3, Epoch 54/100, N_batch 79, Elapsed Time 1.2683496475219727s
+ - classification loss: 0.46361221313476564
+Epoch 55/100
+DPR losses: stable 0.179197, complement 0.076982
+Task 3, Epoch 55/100, N_batch 79, Elapsed Time 1.2606542110443115s
+ - classification loss: 0.472059326171875
+Epoch 56/100
+DPR losses: stable 0.174044, complement 0.077737
+Task 3, Epoch 56/100, N_batch 79, Elapsed Time 1.2521073818206787s
+ - classification loss: 0.4711812744140625
+Epoch 57/100
+DPR losses: stable 0.178984, complement 0.077356
+Task 3, Epoch 57/100, N_batch 79, Elapsed Time 1.2604663372039795s
+ - classification loss: 0.45347113037109377
+Epoch 58/100
+DPR losses: stable 0.198636, complement 0.076945
+Task 3, Epoch 58/100, N_batch 79, Elapsed Time 1.2523918151855469s
+ - classification loss: 0.445031005859375
+Epoch 59/100
+DPR losses: stable 0.186761, complement 0.075662
+Task 3, Epoch 59/100, N_batch 79, Elapsed Time 1.2612428665161133s
+ - classification loss: 0.4654550476074219
+Epoch 60/100
+DPR losses: stable 0.183989, complement 0.075019
+Task 3, Epoch 60/100, N_batch 79, Elapsed Time 1.2852768898010254s
+ - classification loss: 0.45082595825195315
+Epoch 61/100
+DPR losses: stable 0.186785, complement 0.075126
+Task 3, Epoch 61/100, N_batch 79, Elapsed Time 1.2592735290527344s
+ - classification loss: 0.4393155517578125
+Epoch 62/100
+DPR losses: stable 0.168435, complement 0.074628
+Task 3, Epoch 62/100, N_batch 79, Elapsed Time 1.2612793445587158s
+ - classification loss: 0.46439068603515626
+Epoch 63/100
+DPR losses: stable 0.175554, complement 0.074938
+Task 3, Epoch 63/100, N_batch 79, Elapsed Time 1.269364356994629s
+ - classification loss: 0.4504268798828125
+Epoch 64/100
+DPR losses: stable 0.171760, complement 0.073472
+Task 3, Epoch 64/100, N_batch 79, Elapsed Time 1.2464280128479004s
+ - classification loss: 0.458658203125
+Epoch 65/100
+DPR losses: stable 0.175823, complement 0.072810
+Task 3, Epoch 65/100, N_batch 79, Elapsed Time 1.2514276504516602s
+ - classification loss: 0.45202508544921877
+Epoch 66/100
+DPR losses: stable 0.172808, complement 0.073524
+Task 3, Epoch 66/100, N_batch 79, Elapsed Time 1.2654755115509033s
+ - classification loss: 0.4764400939941406
+Epoch 67/100
+DPR losses: stable 0.187455, complement 0.073558
+Task 3, Epoch 67/100, N_batch 79, Elapsed Time 1.2541871070861816s
+ - classification loss: 0.4625667419433594
+Epoch 68/100
+DPR losses: stable 0.164739, complement 0.071314
+Task 3, Epoch 68/100, N_batch 79, Elapsed Time 1.2602331638336182s
+ - classification loss: 0.5040558471679687
+Epoch 69/100
+DPR losses: stable 0.177189, complement 0.071833
+Task 3, Epoch 69/100, N_batch 79, Elapsed Time 1.2536935806274414s
+ - classification loss: 0.44705508422851564
+Epoch 70/100
+DPR losses: stable 0.174845, complement 0.072121
+Task 3, Epoch 70/100, N_batch 79, Elapsed Time 1.2487242221832275s
+ - classification loss: 0.4614419860839844
+Epoch 71/100
+DPR losses: stable 0.182120, complement 0.071041
+Task 3, Epoch 71/100, N_batch 79, Elapsed Time 1.2474133968353271s
+ - classification loss: 0.4817718811035156
+Epoch 72/100
+DPR losses: stable 0.173548, complement 0.069891
+Task 3, Epoch 72/100, N_batch 79, Elapsed Time 1.263052225112915s
+ - classification loss: 0.45138800048828126
+Epoch 73/100
+DPR losses: stable 0.184607, complement 0.071177
+Task 3, Epoch 73/100, N_batch 79, Elapsed Time 1.2674365043640137s
+ - classification loss: 0.48738433837890627
+Epoch 74/100
+DPR losses: stable 0.172587, complement 0.068905
+Task 3, Epoch 74/100, N_batch 79, Elapsed Time 1.258521556854248s
+ - classification loss: 0.47217938232421874
+Epoch 75/100
+DPR losses: stable 0.196658, complement 0.069560
+Task 3, Epoch 75/100, N_batch 79, Elapsed Time 1.2630789279937744s
+ - classification loss: 0.44392425537109376
+Epoch 76/100
+DPR losses: stable 0.171101, complement 0.069451
+Task 3, Epoch 76/100, N_batch 79, Elapsed Time 1.2646844387054443s
+ - classification loss: 0.47971884155273437
+Epoch 77/100
+DPR losses: stable 0.186577, complement 0.070110
+Task 3, Epoch 77/100, N_batch 79, Elapsed Time 1.2646620273590088s
+ - classification loss: 0.45320538330078125
+Epoch 78/100
+DPR losses: stable 0.194556, complement 0.068672
+Task 3, Epoch 78/100, N_batch 79, Elapsed Time 1.2605547904968262s
+ - classification loss: 0.4545567321777344
+Epoch 79/100
+DPR losses: stable 0.164726, complement 0.068266
+Task 3, Epoch 79/100, N_batch 79, Elapsed Time 1.2664330005645752s
+ - classification loss: 0.4660640869140625
+Epoch 80/100
+DPR losses: stable 0.173409, complement 0.067724
+Task 3, Epoch 80/100, N_batch 79, Elapsed Time 1.256598949432373s
+ - classification loss: 0.4489234619140625
+Epoch 81/100
+DPR losses: stable 0.172573, complement 0.067563
+Task 3, Epoch 81/100, N_batch 79, Elapsed Time 1.2543730735778809s
+ - classification loss: 0.4255102844238281
+Epoch 82/100
+DPR losses: stable 0.164525, complement 0.067201
+Task 3, Epoch 82/100, N_batch 79, Elapsed Time 1.263625144958496s
+ - classification loss: 0.5259591064453125
+Epoch 83/100
+DPR losses: stable 0.194254, complement 0.068025
+Task 3, Epoch 83/100, N_batch 79, Elapsed Time 1.2610187530517578s
+ - classification loss: 0.45950347900390626
+Epoch 84/100
+DPR losses: stable 0.173054, complement 0.066404
+Task 3, Epoch 84/100, N_batch 79, Elapsed Time 1.2812590599060059s
+ - classification loss: 0.4672144775390625
+Epoch 85/100
+DPR losses: stable 0.176961, complement 0.066302
+Task 3, Epoch 85/100, N_batch 79, Elapsed Time 1.2531390190124512s
+ - classification loss: 0.43991842651367186
+Epoch 86/100
+DPR losses: stable 0.176234, complement 0.067050
+Task 3, Epoch 86/100, N_batch 79, Elapsed Time 1.252664566040039s
+ - classification loss: 0.459666015625
+Epoch 87/100
+DPR losses: stable 0.180480, complement 0.065856
+Task 3, Epoch 87/100, N_batch 79, Elapsed Time 1.2680919170379639s
+ - classification loss: 0.4551788330078125
+Epoch 88/100
+DPR losses: stable 0.183802, complement 0.066674
+Task 3, Epoch 88/100, N_batch 79, Elapsed Time 1.2708983421325684s
+ - classification loss: 0.4938328857421875
+Epoch 89/100
+DPR losses: stable 0.195075, complement 0.066527
+Task 3, Epoch 89/100, N_batch 79, Elapsed Time 1.2530739307403564s
+ - classification loss: 0.44696258544921874
+Epoch 90/100
+DPR losses: stable 0.176273, complement 0.064390
+Task 3, Epoch 90/100, N_batch 79, Elapsed Time 1.2517669200897217s
+ - classification loss: 0.4598114013671875
+Epoch 91/100
+DPR losses: stable 0.167688, complement 0.064657
+Task 3, Epoch 91/100, N_batch 79, Elapsed Time 1.270047903060913s
+ - classification loss: 0.45923052978515627
+Epoch 92/100
+DPR losses: stable 0.166804, complement 0.063500
+Task 3, Epoch 92/100, N_batch 79, Elapsed Time 1.2740552425384521s
+ - classification loss: 0.45396420288085937
+Epoch 93/100
+DPR losses: stable 0.173776, complement 0.064951
+Task 3, Epoch 93/100, N_batch 79, Elapsed Time 1.2577672004699707s
+ - classification loss: 0.468558837890625
+Epoch 94/100
+DPR losses: stable 0.183130, complement 0.066742
+Task 3, Epoch 94/100, N_batch 79, Elapsed Time 1.2640750408172607s
+ - classification loss: 0.4356542663574219
+Epoch 95/100
+DPR losses: stable 0.190852, complement 0.065106
+Task 3, Epoch 95/100, N_batch 79, Elapsed Time 1.2497072219848633s
+ - classification loss: 0.49078631591796873
+Epoch 96/100
+DPR losses: stable 0.196576, complement 0.065420
+Task 3, Epoch 96/100, N_batch 79, Elapsed Time 1.2671747207641602s
+ - classification loss: 0.44569467163085935
+Epoch 97/100
+DPR losses: stable 0.169726, complement 0.062919
+Task 3, Epoch 97/100, N_batch 79, Elapsed Time 1.2655329704284668s
+ - classification loss: 0.46297979736328126
+Epoch 98/100
+DPR losses: stable 0.188479, complement 0.065061
+Task 3, Epoch 98/100, N_batch 79, Elapsed Time 1.2627408504486084s
+ - classification loss: 0.45508734130859374
+Epoch 99/100
+DPR losses: stable 0.188414, complement 0.065011
+Task 3, Epoch 99/100, N_batch 79, Elapsed Time 1.2672622203826904s
+ - classification loss: 0.4452181701660156
+Computing affine prototype alignment
+Affine transport MSE 0.006816, elapsed time 2.7673847675323486
+Classifier calibration from cached features
+Centered classifier head: 39 stable directions
+
+ >>> Test on task  0 : TAw acc= 88.9%, forg=  0.9% | TAg acc = 75.4%, forg = 14.4%  <<<
+
+ >>> Test on task  1 : TAw acc= 87.1%, forg= -0.3% | TAg acc = 65.6%, forg = 11.4%  <<<
+
+ >>> Test on task  2 : TAw acc= 85.6%, forg=  0.4% | TAg acc = 58.4%, forg =  4.8%  <<<
+
+ >>> Test on task  3 : TAw acc= 85.9%, forg=  0.0% | TAg acc = 62.6%, forg =  0.0%  <<<
+######################################## --> TRAINING HEAD 4
+
+Freezing Batch Norm
+Using Adam Optimizer With Fixed LR: 
+                        Backbone LR: 0.0001, Head LR 0.0001, Weight Decay 0.0002
+Approach total epochs 100
+Epoch 0/100
+DPR losses: stable 0.145673, complement 0.017690
+Task 4, Epoch 0/100, N_batch 79, Elapsed Time 1.2564306259155273s
+ - classification loss: 1.6634287109375
+Epoch 1/100
+DPR losses: stable 0.064459, complement 0.069359
+Task 4, Epoch 1/100, N_batch 79, Elapsed Time 1.2599680423736572s
+ - classification loss: 1.3225906982421876
+Epoch 2/100
+DPR losses: stable 0.100600, complement 0.105214
+Task 4, Epoch 2/100, N_batch 79, Elapsed Time 1.2652668952941895s
+ - classification loss: 1.17394873046875
+Epoch 3/100
+DPR losses: stable 0.112085, complement 0.111892
+Task 4, Epoch 3/100, N_batch 79, Elapsed Time 1.2563984394073486s
+ - classification loss: 1.1083167724609375
+Epoch 4/100
+DPR losses: stable 0.128734, complement 0.115490
+Task 4, Epoch 4/100, N_batch 79, Elapsed Time 1.2536022663116455s
+ - classification loss: 1.045448974609375
+Epoch 5/100
+DPR losses: stable 0.135514, complement 0.114236
+Task 4, Epoch 5/100, N_batch 79, Elapsed Time 1.2686491012573242s
+ - classification loss: 1.0140684204101562
+Epoch 6/100
+DPR losses: stable 0.140421, complement 0.110715
+Task 4, Epoch 6/100, N_batch 79, Elapsed Time 1.2671000957489014s
+ - classification loss: 0.9912890014648438
+Epoch 7/100
+DPR losses: stable 0.147179, complement 0.110877
+Task 4, Epoch 7/100, N_batch 79, Elapsed Time 1.275275707244873s
+ - classification loss: 0.96617626953125
+Epoch 8/100
+DPR losses: stable 0.149217, complement 0.108330
+Task 4, Epoch 8/100, N_batch 79, Elapsed Time 1.26381516456604s
+ - classification loss: 0.9281697998046875
+Epoch 9/100
+DPR losses: stable 0.156461, complement 0.106365
+Task 4, Epoch 9/100, N_batch 79, Elapsed Time 1.2571978569030762s
+ - classification loss: 0.9114523315429688
+Epoch 10/100
+DPR losses: stable 0.163118, complement 0.106814
+Task 4, Epoch 10/100, N_batch 79, Elapsed Time 1.2754104137420654s
+ - classification loss: 0.883961669921875
+Epoch 11/100
+DPR losses: stable 0.159354, complement 0.103286
+Task 4, Epoch 11/100, N_batch 79, Elapsed Time 1.2646474838256836s
+ - classification loss: 0.8675560913085938
+Epoch 12/100
+DPR losses: stable 0.175389, complement 0.103756
+Task 4, Epoch 12/100, N_batch 79, Elapsed Time 1.2657814025878906s
+ - classification loss: 0.8484978637695313
+Epoch 13/100
+DPR losses: stable 0.165510, complement 0.099901
+Task 4, Epoch 13/100, N_batch 79, Elapsed Time 1.2672860622406006s
+ - classification loss: 0.8495035400390625
+Epoch 14/100
+DPR losses: stable 0.167471, complement 0.099647
+Task 4, Epoch 14/100, N_batch 79, Elapsed Time 1.2658557891845703s
+ - classification loss: 0.8296781005859375
+Epoch 15/100
+DPR losses: stable 0.170725, complement 0.097128
+Task 4, Epoch 15/100, N_batch 79, Elapsed Time 1.258589267730713s
+ - classification loss: 0.8150743408203125
+Epoch 16/100
+DPR losses: stable 0.174023, complement 0.096473
+Task 4, Epoch 16/100, N_batch 79, Elapsed Time 1.2537038326263428s
+ - classification loss: 0.8120057373046875
+Epoch 17/100
+DPR losses: stable 0.189079, complement 0.097350
+Task 4, Epoch 17/100, N_batch 79, Elapsed Time 1.2478306293487549s
+ - classification loss: 0.78407763671875
+Epoch 18/100
+DPR losses: stable 0.172762, complement 0.095218
+Task 4, Epoch 18/100, N_batch 79, Elapsed Time 1.2629683017730713s
+ - classification loss: 0.7870926513671875
+Epoch 19/100
+DPR losses: stable 0.174027, complement 0.094768
+Task 4, Epoch 19/100, N_batch 79, Elapsed Time 1.2646963596343994s
+ - classification loss: 0.78470556640625
+Epoch 20/100
+DPR losses: stable 0.174925, complement 0.093259
+Task 4, Epoch 20/100, N_batch 79, Elapsed Time 1.2655127048492432s
+ - classification loss: 0.7813530883789063
+Epoch 21/100
+DPR losses: stable 0.189689, complement 0.091679
+Task 4, Epoch 21/100, N_batch 79, Elapsed Time 1.2629716396331787s
+ - classification loss: 0.7557783203125
+Epoch 22/100
+DPR losses: stable 0.190369, complement 0.091386
+Task 4, Epoch 22/100, N_batch 79, Elapsed Time 1.2664580345153809s
+ - classification loss: 0.760251708984375
+Epoch 23/100
+DPR losses: stable 0.189654, complement 0.091150
+Task 4, Epoch 23/100, N_batch 79, Elapsed Time 1.2736284732818604s
+ - classification loss: 0.7492965087890625
+Epoch 24/100
+DPR losses: stable 0.203094, complement 0.091993
+Task 4, Epoch 24/100, N_batch 79, Elapsed Time 1.2626783847808838s
+ - classification loss: 0.7399807739257812
+Epoch 25/100
+DPR losses: stable 0.194808, complement 0.090363
+Task 4, Epoch 25/100, N_batch 79, Elapsed Time 1.257148265838623s
+ - classification loss: 0.7422528686523437
+Epoch 26/100
+DPR losses: stable 0.198803, complement 0.091388
+Task 4, Epoch 26/100, N_batch 79, Elapsed Time 1.2582850456237793s
+ - classification loss: 0.7458485107421875
+Epoch 27/100
+DPR losses: stable 0.212018, complement 0.089101
+Task 4, Epoch 27/100, N_batch 79, Elapsed Time 1.2655997276306152s
+ - classification loss: 0.7383071899414062
+Epoch 28/100
+DPR losses: stable 0.189626, complement 0.087924
+Task 4, Epoch 28/100, N_batch 79, Elapsed Time 1.2568531036376953s
+ - classification loss: 0.7084039306640625
+Epoch 29/100
+DPR losses: stable 0.182898, complement 0.089797
+Task 4, Epoch 29/100, N_batch 79, Elapsed Time 1.2636041641235352s
+ - classification loss: 0.7327235717773437
+Epoch 30/100
+DPR losses: stable 0.198939, complement 0.089142
+Task 4, Epoch 30/100, N_batch 79, Elapsed Time 1.2756760120391846s
+ - classification loss: 0.711135498046875
+Epoch 31/100
+DPR losses: stable 0.191186, complement 0.086830
+Task 4, Epoch 31/100, N_batch 79, Elapsed Time 1.2712864875793457s
+ - classification loss: 0.7284158325195312
+Epoch 32/100
+DPR losses: stable 0.201973, complement 0.088080
+Task 4, Epoch 32/100, N_batch 79, Elapsed Time 1.2754735946655273s
+ - classification loss: 0.7205943603515625
+Epoch 33/100
+DPR losses: stable 0.212807, complement 0.088111
+Task 4, Epoch 33/100, N_batch 79, Elapsed Time 1.2647745609283447s
+ - classification loss: 0.7045787353515625
+Epoch 34/100
+DPR losses: stable 0.208161, complement 0.086437
+Task 4, Epoch 34/100, N_batch 79, Elapsed Time 1.2523212432861328s
+ - classification loss: 0.7002879638671875
+Epoch 35/100
+DPR losses: stable 0.200738, complement 0.087341
+Task 4, Epoch 35/100, N_batch 79, Elapsed Time 1.2536280155181885s
+ - classification loss: 0.7184483642578126
+Epoch 36/100
+DPR losses: stable 0.225631, complement 0.085754
+Task 4, Epoch 36/100, N_batch 79, Elapsed Time 1.274970531463623s
+ - classification loss: 0.6922379760742188
+Epoch 37/100
+DPR losses: stable 0.212259, complement 0.086639
+Task 4, Epoch 37/100, N_batch 79, Elapsed Time 1.2649493217468262s
+ - classification loss: 0.7003519897460937
+Epoch 38/100
+DPR losses: stable 0.206988, complement 0.086172
+Task 4, Epoch 38/100, N_batch 79, Elapsed Time 1.266573429107666s
+ - classification loss: 0.6974863891601563
+Epoch 39/100
+DPR losses: stable 0.210691, complement 0.086378
+Task 4, Epoch 39/100, N_batch 79, Elapsed Time 1.283339023590088s
+ - classification loss: 0.6968319702148438
+Epoch 40/100
+DPR losses: stable 0.211554, complement 0.086481
+Task 4, Epoch 40/100, N_batch 79, Elapsed Time 1.2658944129943848s
+ - classification loss: 0.6865077514648438
+Epoch 41/100
+DPR losses: stable 0.215063, complement 0.086752
+Task 4, Epoch 41/100, N_batch 79, Elapsed Time 1.25484037399292s
+ - classification loss: 0.6969912109375
+Epoch 42/100
+DPR losses: stable 0.203836, complement 0.084716
+Task 4, Epoch 42/100, N_batch 79, Elapsed Time 1.267674446105957s
+ - classification loss: 0.7043816528320312
+Epoch 43/100
+DPR losses: stable 0.202948, complement 0.085586
+Task 4, Epoch 43/100, N_batch 79, Elapsed Time 1.2747642993927002s
+ - classification loss: 0.692797119140625
+Epoch 44/100
+DPR losses: stable 0.203907, complement 0.084634
+Task 4, Epoch 44/100, N_batch 79, Elapsed Time 1.2615225315093994s
+ - classification loss: 0.6820762329101563
+Epoch 45/100
+DPR losses: stable 0.202519, complement 0.084233
+Task 4, Epoch 45/100, N_batch 79, Elapsed Time 1.2669677734375s
+ - classification loss: 0.6771446533203125
+Epoch 46/100
+DPR losses: stable 0.213196, complement 0.084027
+Task 4, Epoch 46/100, N_batch 79, Elapsed Time 1.2789952754974365s
+ - classification loss: 0.6927650756835938
+Epoch 47/100
+DPR losses: stable 0.207250, complement 0.084155
+Task 4, Epoch 47/100, N_batch 79, Elapsed Time 1.2733442783355713s
+ - classification loss: 0.70473974609375
+Epoch 48/100
+DPR losses: stable 0.242501, complement 0.085258
+Task 4, Epoch 48/100, N_batch 79, Elapsed Time 1.2711613178253174s
+ - classification loss: 0.6688980102539063
+Epoch 49/100
+DPR losses: stable 0.219316, complement 0.085202
+Task 4, Epoch 49/100, N_batch 79, Elapsed Time 1.2652380466461182s
+ - classification loss: 0.6775519409179688
+Epoch 50/100
+DPR losses: stable 0.211886, complement 0.084130
+Task 4, Epoch 50/100, N_batch 79, Elapsed Time 1.2686288356781006s
+ - classification loss: 0.666417236328125
+Epoch 51/100
+DPR losses: stable 0.213475, complement 0.084163
+Task 4, Epoch 51/100, N_batch 79, Elapsed Time 1.2719371318817139s
+ - classification loss: 0.686649169921875
+Epoch 52/100
+DPR losses: stable 0.216211, complement 0.082564
+Task 4, Epoch 52/100, N_batch 79, Elapsed Time 1.2584972381591797s
+ - classification loss: 0.6789686279296875
+Epoch 53/100
+DPR losses: stable 0.214241, complement 0.084603
+Task 4, Epoch 53/100, N_batch 79, Elapsed Time 1.2635736465454102s
+ - classification loss: 0.696868408203125
+Epoch 54/100
+DPR losses: stable 0.221360, complement 0.082780
+Task 4, Epoch 54/100, N_batch 79, Elapsed Time 1.2659399509429932s
+ - classification loss: 0.6843816528320312
+Epoch 55/100
+DPR losses: stable 0.221946, complement 0.085024
+Task 4, Epoch 55/100, N_batch 79, Elapsed Time 1.2710661888122559s
+ - classification loss: 0.6965431518554688
+Epoch 56/100
+DPR losses: stable 0.217198, complement 0.083375
+Task 4, Epoch 56/100, N_batch 79, Elapsed Time 1.261232614517212s
+ - classification loss: 0.6670328369140625
+Epoch 57/100
+DPR losses: stable 0.232669, complement 0.083044
+Task 4, Epoch 57/100, N_batch 79, Elapsed Time 1.2665815353393555s
+ - classification loss: 0.6727987060546875
+Epoch 58/100
+DPR losses: stable 0.224394, complement 0.083416
+Task 4, Epoch 58/100, N_batch 79, Elapsed Time 1.262794017791748s
+ - classification loss: 0.7012915649414062
+Epoch 59/100
+DPR losses: stable 0.218402, complement 0.083939
+Task 4, Epoch 59/100, N_batch 79, Elapsed Time 1.2693383693695068s
+ - classification loss: 0.6843287963867187
+Epoch 60/100
+DPR losses: stable 0.220654, complement 0.083418
+Task 4, Epoch 60/100, N_batch 79, Elapsed Time 1.2728452682495117s
+ - classification loss: 0.7137679443359375
+Epoch 61/100
+DPR losses: stable 0.225167, complement 0.082572
+Task 4, Epoch 61/100, N_batch 79, Elapsed Time 1.2748892307281494s
+ - classification loss: 0.6784750366210938
+Epoch 62/100
+DPR losses: stable 0.223590, complement 0.081687
+Task 4, Epoch 62/100, N_batch 79, Elapsed Time 1.2743489742279053s
+ - classification loss: 0.6843870239257812
+Epoch 63/100
+DPR losses: stable 0.212526, complement 0.082383
+Task 4, Epoch 63/100, N_batch 79, Elapsed Time 1.2761526107788086s
+ - classification loss: 0.688873046875
+Epoch 64/100
+DPR losses: stable 0.216263, complement 0.080999
+Task 4, Epoch 64/100, N_batch 79, Elapsed Time 1.2558372020721436s
+ - classification loss: 0.7199642333984375
+Epoch 65/100
+DPR losses: stable 0.228222, complement 0.080326
+Task 4, Epoch 65/100, N_batch 79, Elapsed Time 1.2692315578460693s
+ - classification loss: 0.7397007446289062
+Epoch 66/100
+DPR losses: stable 0.223196, complement 0.080729
+Task 4, Epoch 66/100, N_batch 79, Elapsed Time 1.2597815990447998s
+ - classification loss: 0.6965471801757812
+Epoch 67/100
+DPR losses: stable 0.223225, complement 0.081474
+Task 4, Epoch 67/100, N_batch 79, Elapsed Time 1.2752032279968262s
+ - classification loss: 0.6868213500976562
+Epoch 68/100
+DPR losses: stable 0.230132, complement 0.080724
+Task 4, Epoch 68/100, N_batch 79, Elapsed Time 1.2684476375579834s
+ - classification loss: 0.6955858154296874
+Epoch 69/100
+DPR losses: stable 0.222430, complement 0.080847
+Task 4, Epoch 69/100, N_batch 79, Elapsed Time 1.2635619640350342s
+ - classification loss: 0.7376095581054688
+Epoch 70/100
+DPR losses: stable 0.207223, complement 0.080355
+Task 4, Epoch 70/100, N_batch 79, Elapsed Time 1.2703742980957031s
+ - classification loss: 0.6804569091796875
+Epoch 71/100
+DPR losses: stable 0.235544, complement 0.079745
+Task 4, Epoch 71/100, N_batch 79, Elapsed Time 1.2734088897705078s
+ - classification loss: 0.6789780883789063
+Epoch 72/100
+DPR losses: stable 0.216244, complement 0.079698
+Task 4, Epoch 72/100, N_batch 79, Elapsed Time 1.2686958312988281s
+ - classification loss: 0.7079268188476563
+Epoch 73/100
+DPR losses: stable 0.224090, complement 0.079214
+Task 4, Epoch 73/100, N_batch 79, Elapsed Time 1.2690677642822266s
+ - classification loss: 0.7002220458984375
+Epoch 74/100
+DPR losses: stable 0.232844, complement 0.079651
+Task 4, Epoch 74/100, N_batch 79, Elapsed Time 1.2633769512176514s
+ - classification loss: 0.6827591552734374
+Epoch 75/100
+DPR losses: stable 0.220778, complement 0.078983
+Task 4, Epoch 75/100, N_batch 79, Elapsed Time 1.2802176475524902s
+ - classification loss: 0.7182694702148438
+Epoch 76/100
+DPR losses: stable 0.223942, complement 0.078419
+Task 4, Epoch 76/100, N_batch 79, Elapsed Time 1.2563183307647705s
+ - classification loss: 0.704893310546875
+Epoch 77/100
+DPR losses: stable 0.226915, complement 0.078141
+Task 4, Epoch 77/100, N_batch 79, Elapsed Time 1.2595186233520508s
+ - classification loss: 0.6644696044921875
+Epoch 78/100
+DPR losses: stable 0.226451, complement 0.078084
+Task 4, Epoch 78/100, N_batch 79, Elapsed Time 1.2661166191101074s
+ - classification loss: 0.7073759765625
+Epoch 79/100
+DPR losses: stable 0.214924, complement 0.077810
+Task 4, Epoch 79/100, N_batch 79, Elapsed Time 1.258493185043335s
+ - classification loss: 0.6790712890625
+Epoch 80/100
+DPR losses: stable 0.214026, complement 0.076453
+Task 4, Epoch 80/100, N_batch 79, Elapsed Time 1.2640752792358398s
+ - classification loss: 0.7063433837890625
+Epoch 81/100
+DPR losses: stable 0.222673, complement 0.078046
+Task 4, Epoch 81/100, N_batch 79, Elapsed Time 1.2643029689788818s
+ - classification loss: 0.6982041015625
+Epoch 82/100
+DPR losses: stable 0.212017, complement 0.077503
+Task 4, Epoch 82/100, N_batch 79, Elapsed Time 1.2618486881256104s
+ - classification loss: 0.70755615234375
+Epoch 83/100
+DPR losses: stable 0.222166, complement 0.076315
+Task 4, Epoch 83/100, N_batch 79, Elapsed Time 1.2588284015655518s
+ - classification loss: 0.6829229125976563
+Epoch 84/100
+DPR losses: stable 0.218218, complement 0.076886
+Task 4, Epoch 84/100, N_batch 79, Elapsed Time 1.2725975513458252s
+ - classification loss: 0.6813704833984375
+Epoch 85/100
+DPR losses: stable 0.238413, complement 0.076206
+Task 4, Epoch 85/100, N_batch 79, Elapsed Time 1.2654283046722412s
+ - classification loss: 0.72477587890625
+Epoch 86/100
+DPR losses: stable 0.234229, complement 0.076784
+Task 4, Epoch 86/100, N_batch 79, Elapsed Time 1.2701923847198486s
+ - classification loss: 0.7244546508789063
+Epoch 87/100
+DPR losses: stable 0.218721, complement 0.075813
+Task 4, Epoch 87/100, N_batch 79, Elapsed Time 1.2587950229644775s
+ - classification loss: 0.7228424682617187
+Epoch 88/100
+DPR losses: stable 0.225405, complement 0.074749
+Task 4, Epoch 88/100, N_batch 79, Elapsed Time 1.2744648456573486s
+ - classification loss: 0.734186767578125
+Epoch 89/100
+DPR losses: stable 0.225060, complement 0.077514
+Task 4, Epoch 89/100, N_batch 79, Elapsed Time 1.2644984722137451s
+ - classification loss: 0.73529150390625
+Epoch 90/100
+DPR losses: stable 0.239302, complement 0.075993
+Task 4, Epoch 90/100, N_batch 79, Elapsed Time 1.2679738998413086s
+ - classification loss: 0.7145795288085938
+Epoch 91/100
+DPR losses: stable 0.220909, complement 0.073591
+Task 4, Epoch 91/100, N_batch 79, Elapsed Time 1.26237154006958s
+ - classification loss: 0.7134609375
+Epoch 92/100
+DPR losses: stable 0.219187, complement 0.075410
+Task 4, Epoch 92/100, N_batch 79, Elapsed Time 1.2657041549682617s
+ - classification loss: 0.7147298583984375
+Epoch 93/100
+DPR losses: stable 0.222868, complement 0.073491
+Task 4, Epoch 93/100, N_batch 79, Elapsed Time 1.2603905200958252s
+ - classification loss: 0.7372982177734375
+Epoch 94/100
+DPR losses: stable 0.222351, complement 0.074134
+Task 4, Epoch 94/100, N_batch 79, Elapsed Time 1.2725889682769775s
+ - classification loss: 0.7239185180664063
+Epoch 95/100
+DPR losses: stable 0.228964, complement 0.074547
+Task 4, Epoch 95/100, N_batch 79, Elapsed Time 1.266690731048584s
+ - classification loss: 0.7330283203125
+Epoch 96/100
+DPR losses: stable 0.220417, complement 0.073118
+Task 4, Epoch 96/100, N_batch 79, Elapsed Time 1.2515809535980225s
+ - classification loss: 0.705625732421875
+Epoch 97/100
+DPR losses: stable 0.221472, complement 0.073593
+Task 4, Epoch 97/100, N_batch 79, Elapsed Time 1.2509212493896484s
+ - classification loss: 0.7419011840820312
+Epoch 98/100
+DPR losses: stable 0.214756, complement 0.072609
+Task 4, Epoch 98/100, N_batch 79, Elapsed Time 1.2469921112060547s
+ - classification loss: 0.7342672729492188
+Epoch 99/100
+DPR losses: stable 0.221063, complement 0.072447
+Task 4, Epoch 99/100, N_batch 79, Elapsed Time 1.2652151584625244s
+ - classification loss: 0.7043154907226562
+Computing affine prototype alignment
+Affine transport MSE 0.008430, elapsed time 2.829287052154541
+Classifier calibration from cached features
+Centered classifier head: 49 stable directions
+
+ >>> Test on task  0 : TAw acc= 88.7%, forg=  1.1% | TAg acc = 72.9%, forg = 16.9%  <<<
+
+ >>> Test on task  1 : TAw acc= 87.2%, forg= -0.1% | TAg acc = 61.3%, forg = 15.7%  <<<
+
+ >>> Test on task  2 : TAw acc= 84.7%, forg=  1.3% | TAg acc = 55.6%, forg =  7.6%  <<<
+
+ >>> Test on task  3 : TAw acc= 86.1%, forg= -0.2% | TAg acc = 57.2%, forg =  5.4%  <<<
+
+ >>> Test on task  4 : TAw acc= 77.4%, forg=  0.0% | TAg acc = 55.4%, forg =  0.0%  <<<
+######################################## --> TRAINING HEAD 5
+
+Freezing Batch Norm
+Using Adam Optimizer With Fixed LR: 
+                        Backbone LR: 0.0001, Head LR 0.0001, Weight Decay 0.0002
+Approach total epochs 100
+Epoch 0/100
+DPR losses: stable 0.153482, complement 0.026261
+Task 5, Epoch 0/100, N_batch 79, Elapsed Time 1.2582273483276367s
+ - classification loss: 1.4188148193359376
+Epoch 1/100
+DPR losses: stable 0.090743, complement 0.102215
+Task 5, Epoch 1/100, N_batch 79, Elapsed Time 1.2740910053253174s
+ - classification loss: 0.9989088134765625
+Epoch 2/100
+DPR losses: stable 0.128178, complement 0.139793
+Task 5, Epoch 2/100, N_batch 79, Elapsed Time 1.272068738937378s
+ - classification loss: 0.8439397583007813
+Epoch 3/100
+DPR losses: stable 0.137935, complement 0.149442
+Task 5, Epoch 3/100, N_batch 79, Elapsed Time 1.2731330394744873s
+ - classification loss: 0.742974365234375
+Epoch 4/100
+DPR losses: stable 0.142998, complement 0.148206
+Task 5, Epoch 4/100, N_batch 79, Elapsed Time 1.2704131603240967s
+ - classification loss: 0.691475341796875
+Epoch 5/100
+DPR losses: stable 0.146196, complement 0.143957
+Task 5, Epoch 5/100, N_batch 79, Elapsed Time 1.2673213481903076s
+ - classification loss: 0.6684681396484375
+Epoch 6/100
+DPR losses: stable 0.156616, complement 0.136133
+Task 5, Epoch 6/100, N_batch 79, Elapsed Time 1.2700777053833008s
+ - classification loss: 0.636370849609375
+Epoch 7/100
+DPR losses: stable 0.156351, complement 0.132759
+Task 5, Epoch 7/100, N_batch 79, Elapsed Time 1.277038335800171s
+ - classification loss: 0.5878759765625
+Epoch 8/100
+DPR losses: stable 0.156919, complement 0.127025
+Task 5, Epoch 8/100, N_batch 79, Elapsed Time 1.2601473331451416s
+ - classification loss: 0.5747181396484375
+Epoch 9/100
+DPR losses: stable 0.154859, complement 0.119750
+Task 5, Epoch 9/100, N_batch 79, Elapsed Time 1.2728996276855469s
+ - classification loss: 0.56382958984375
+Epoch 10/100
+DPR losses: stable 0.159247, complement 0.117798
+Task 5, Epoch 10/100, N_batch 79, Elapsed Time 1.2702178955078125s
+ - classification loss: 0.5426309204101563
+Epoch 11/100
+DPR losses: stable 0.157334, complement 0.113004
+Task 5, Epoch 11/100, N_batch 79, Elapsed Time 1.265805721282959s
+ - classification loss: 0.5416952514648438
+Epoch 12/100
+DPR losses: stable 0.146928, complement 0.109640
+Task 5, Epoch 12/100, N_batch 79, Elapsed Time 1.2726147174835205s
+ - classification loss: 0.5160394897460937
+Epoch 13/100
+DPR losses: stable 0.149106, complement 0.104462
+Task 5, Epoch 13/100, N_batch 79, Elapsed Time 1.274632453918457s
+ - classification loss: 0.4988445434570313
+Epoch 14/100
+DPR losses: stable 0.160423, complement 0.105868
+Task 5, Epoch 14/100, N_batch 79, Elapsed Time 1.2746467590332031s
+ - classification loss: 0.4982460021972656
+Epoch 15/100
+DPR losses: stable 0.180348, complement 0.099515
+Task 5, Epoch 15/100, N_batch 79, Elapsed Time 1.277012586593628s
+ - classification loss: 0.4858854675292969
+Epoch 16/100
+DPR losses: stable 0.171505, complement 0.098709
+Task 5, Epoch 16/100, N_batch 79, Elapsed Time 1.2744669914245605s
+ - classification loss: 0.4823031921386719
+Epoch 17/100
+DPR losses: stable 0.164265, complement 0.095827
+Task 5, Epoch 17/100, N_batch 79, Elapsed Time 1.2746903896331787s
+ - classification loss: 0.48514520263671873
+Epoch 18/100
+DPR losses: stable 0.175081, complement 0.094930
+Task 5, Epoch 18/100, N_batch 79, Elapsed Time 1.2732102870941162s
+ - classification loss: 0.4681583251953125
+Epoch 19/100
+DPR losses: stable 0.176487, complement 0.091876
+Task 5, Epoch 19/100, N_batch 79, Elapsed Time 1.264352798461914s
+ - classification loss: 0.47436013793945314
+Epoch 20/100
+DPR losses: stable 0.172967, complement 0.089603
+Task 5, Epoch 20/100, N_batch 79, Elapsed Time 1.2662301063537598s
+ - classification loss: 0.46469085693359374
+Epoch 21/100
+DPR losses: stable 0.179330, complement 0.088863
+Task 5, Epoch 21/100, N_batch 79, Elapsed Time 1.2755248546600342s
+ - classification loss: 0.438992431640625
+Epoch 22/100
+DPR losses: stable 0.163902, complement 0.086165
+Task 5, Epoch 22/100, N_batch 79, Elapsed Time 1.2720625400543213s
+ - classification loss: 0.43761569213867185
+Epoch 23/100
+DPR losses: stable 0.165166, complement 0.085470
+Task 5, Epoch 23/100, N_batch 79, Elapsed Time 1.258556842803955s
+ - classification loss: 0.4492382202148438
+Epoch 24/100
+DPR losses: stable 0.176354, complement 0.084432
+Task 5, Epoch 24/100, N_batch 79, Elapsed Time 1.276906967163086s
+ - classification loss: 0.44030517578125
+Epoch 25/100
+DPR losses: stable 0.174172, complement 0.082834
+Task 5, Epoch 25/100, N_batch 79, Elapsed Time 1.2647557258605957s
+ - classification loss: 0.4379811096191406
+Epoch 26/100
+DPR losses: stable 0.179635, complement 0.081478
+Task 5, Epoch 26/100, N_batch 79, Elapsed Time 1.2643680572509766s
+ - classification loss: 0.4161627197265625
+Epoch 27/100
+DPR losses: stable 0.180964, complement 0.080951
+Task 5, Epoch 27/100, N_batch 79, Elapsed Time 1.2762198448181152s
+ - classification loss: 0.4295564270019531
+Epoch 28/100
+DPR losses: stable 0.172841, complement 0.079257
+Task 5, Epoch 28/100, N_batch 79, Elapsed Time 1.2627894878387451s
+ - classification loss: 0.41865374755859375
+Epoch 29/100
+DPR losses: stable 0.177274, complement 0.079004
+Task 5, Epoch 29/100, N_batch 79, Elapsed Time 1.2707536220550537s
+ - classification loss: 0.42618170166015623
+Epoch 30/100
+DPR losses: stable 0.173111, complement 0.077153
+Task 5, Epoch 30/100, N_batch 79, Elapsed Time 1.2707428932189941s
+ - classification loss: 0.4163966674804688
+Epoch 31/100
+DPR losses: stable 0.175663, complement 0.076557
+Task 5, Epoch 31/100, N_batch 79, Elapsed Time 1.2754971981048584s
+ - classification loss: 0.3935775146484375
+Epoch 32/100
+DPR losses: stable 0.169942, complement 0.075841
+Task 5, Epoch 32/100, N_batch 79, Elapsed Time 1.2744195461273193s
+ - classification loss: 0.4177837829589844
+Epoch 33/100
+DPR losses: stable 0.182009, complement 0.075026
+Task 5, Epoch 33/100, N_batch 79, Elapsed Time 1.2713053226470947s
+ - classification loss: 0.393239501953125
+Epoch 34/100
+DPR losses: stable 0.184178, complement 0.073373
+Task 5, Epoch 34/100, N_batch 79, Elapsed Time 1.2633514404296875s
+ - classification loss: 0.3973123168945312
+Epoch 35/100
+DPR losses: stable 0.177226, complement 0.073850
+Task 5, Epoch 35/100, N_batch 79, Elapsed Time 1.2745580673217773s
+ - classification loss: 0.388572021484375
+Epoch 36/100
+DPR losses: stable 0.182055, complement 0.072210
+Task 5, Epoch 36/100, N_batch 79, Elapsed Time 1.2670822143554688s
+ - classification loss: 0.3927359313964844
+Epoch 37/100
+DPR losses: stable 0.176434, complement 0.071006
+Task 5, Epoch 37/100, N_batch 79, Elapsed Time 1.2742836475372314s
+ - classification loss: 0.40808657836914064
+Epoch 38/100
+DPR losses: stable 0.171702, complement 0.070938
+Task 5, Epoch 38/100, N_batch 79, Elapsed Time 1.262770175933838s
+ - classification loss: 0.39925265502929685
+Epoch 39/100
+DPR losses: stable 0.180536, complement 0.069642
+Task 5, Epoch 39/100, N_batch 79, Elapsed Time 1.280461311340332s
+ - classification loss: 0.4148541870117187
+Epoch 40/100
+DPR losses: stable 0.188105, complement 0.070232
+Task 5, Epoch 40/100, N_batch 79, Elapsed Time 1.2574937343597412s
+ - classification loss: 0.385988037109375
+Epoch 41/100
+DPR losses: stable 0.185776, complement 0.069447
+Task 5, Epoch 41/100, N_batch 79, Elapsed Time 1.2770864963531494s
+ - classification loss: 0.40425259399414065
+Epoch 42/100
+DPR losses: stable 0.191048, complement 0.069198
+Task 5, Epoch 42/100, N_batch 79, Elapsed Time 1.2743680477142334s
+ - classification loss: 0.37290664672851564
+Epoch 43/100
+DPR losses: stable 0.213002, complement 0.069240
+Task 5, Epoch 43/100, N_batch 79, Elapsed Time 1.2751038074493408s
+ - classification loss: 0.40808749389648435
+Epoch 44/100
+DPR losses: stable 0.172038, complement 0.067327
+Task 5, Epoch 44/100, N_batch 79, Elapsed Time 1.2733855247497559s
+ - classification loss: 0.3815167541503906
+Epoch 45/100
+DPR losses: stable 0.175070, complement 0.067103
+Task 5, Epoch 45/100, N_batch 79, Elapsed Time 1.2570762634277344s
+ - classification loss: 0.38901605224609376
+Epoch 46/100
+DPR losses: stable 0.176966, complement 0.065859
+Task 5, Epoch 46/100, N_batch 79, Elapsed Time 1.2739899158477783s
+ - classification loss: 0.4056866455078125
+Epoch 47/100
+DPR losses: stable 0.190435, complement 0.065207
+Task 5, Epoch 47/100, N_batch 79, Elapsed Time 1.2736613750457764s
+ - classification loss: 0.39044430541992187
+Epoch 48/100
+DPR losses: stable 0.181499, complement 0.065868
+Task 5, Epoch 48/100, N_batch 79, Elapsed Time 1.2793347835540771s
+ - classification loss: 0.3872964782714844
+Epoch 49/100
+DPR losses: stable 0.176682, complement 0.064489
+Task 5, Epoch 49/100, N_batch 79, Elapsed Time 1.2773432731628418s
+ - classification loss: 0.3943529357910156
+Epoch 50/100
+DPR losses: stable 0.187118, complement 0.064242
+Task 5, Epoch 50/100, N_batch 79, Elapsed Time 1.2716825008392334s
+ - classification loss: 0.3911155700683594
+Epoch 51/100
+DPR losses: stable 0.195108, complement 0.063735
+Task 5, Epoch 51/100, N_batch 79, Elapsed Time 1.2727274894714355s
+ - classification loss: 0.3970417175292969
+Epoch 52/100
+DPR losses: stable 0.183864, complement 0.064198
+Task 5, Epoch 52/100, N_batch 79, Elapsed Time 1.2693474292755127s
+ - classification loss: 0.40368673706054686
+Epoch 53/100
+DPR losses: stable 0.197308, complement 0.062498
+Task 5, Epoch 53/100, N_batch 79, Elapsed Time 1.258845329284668s
+ - classification loss: 0.3787505493164062
+Epoch 54/100
+DPR losses: stable 0.182203, complement 0.063431
+Task 5, Epoch 54/100, N_batch 79, Elapsed Time 1.2713618278503418s
+ - classification loss: 0.4241942138671875
+Epoch 55/100
+DPR losses: stable 0.184125, complement 0.063975
+Task 5, Epoch 55/100, N_batch 79, Elapsed Time 1.262101411819458s
+ - classification loss: 0.4159139404296875
+Epoch 56/100
+DPR losses: stable 0.185658, complement 0.062454
+Task 5, Epoch 56/100, N_batch 79, Elapsed Time 1.274801254272461s
+ - classification loss: 0.3846264343261719
+Epoch 57/100
+DPR losses: stable 0.179054, complement 0.061916
+Task 5, Epoch 57/100, N_batch 79, Elapsed Time 1.2612528800964355s
+ - classification loss: 0.37657785034179686
+Epoch 58/100
+DPR losses: stable 0.190794, complement 0.061207
+Task 5, Epoch 58/100, N_batch 79, Elapsed Time 1.2584478855133057s
+ - classification loss: 0.406140380859375
+Epoch 59/100
+DPR losses: stable 0.193460, complement 0.060857
+Task 5, Epoch 59/100, N_batch 79, Elapsed Time 1.2657063007354736s
+ - classification loss: 0.3753533935546875
+Epoch 60/100
+DPR losses: stable 0.200469, complement 0.060390
+Task 5, Epoch 60/100, N_batch 79, Elapsed Time 1.2802417278289795s
+ - classification loss: 0.3944119873046875
+Epoch 61/100
+DPR losses: stable 0.199617, complement 0.061205
+Task 5, Epoch 61/100, N_batch 79, Elapsed Time 1.2727704048156738s
+ - classification loss: 0.3804804992675781
+Epoch 62/100
+DPR losses: stable 0.200254, complement 0.060308
+Task 5, Epoch 62/100, N_batch 79, Elapsed Time 1.265589952468872s
+ - classification loss: 0.40104989624023435
+Epoch 63/100
+DPR losses: stable 0.188158, complement 0.057903
+Task 5, Epoch 63/100, N_batch 79, Elapsed Time 1.2609903812408447s
+ - classification loss: 0.3827159423828125
+Epoch 64/100
+DPR losses: stable 0.183110, complement 0.058531
+Task 5, Epoch 64/100, N_batch 79, Elapsed Time 1.259859323501587s
+ - classification loss: 0.3903398742675781
+Epoch 65/100
+DPR losses: stable 0.183307, complement 0.058330
+Task 5, Epoch 65/100, N_batch 79, Elapsed Time 1.2716820240020752s
+ - classification loss: 0.37951953125
+Epoch 66/100
+DPR losses: stable 0.184335, complement 0.057432
+Task 5, Epoch 66/100, N_batch 79, Elapsed Time 1.278517246246338s
+ - classification loss: 0.3856695861816406
+Epoch 67/100
+DPR losses: stable 0.196825, complement 0.058643
+Task 5, Epoch 67/100, N_batch 79, Elapsed Time 1.2785975933074951s
+ - classification loss: 0.395791259765625
+Epoch 68/100
+DPR losses: stable 0.173954, complement 0.056630
+Task 5, Epoch 68/100, N_batch 79, Elapsed Time 1.278202772140503s
+ - classification loss: 0.37039602661132814
+Epoch 69/100
+DPR losses: stable 0.179852, complement 0.056642
+Task 5, Epoch 69/100, N_batch 79, Elapsed Time 1.270569086074829s
+ - classification loss: 0.3746298828125
+Epoch 70/100
+DPR losses: stable 0.190653, complement 0.057573
+Task 5, Epoch 70/100, N_batch 79, Elapsed Time 1.2701914310455322s
+ - classification loss: 0.4029024353027344
+Epoch 71/100
+DPR losses: stable 0.181671, complement 0.056519
+Task 5, Epoch 71/100, N_batch 79, Elapsed Time 1.2715001106262207s
+ - classification loss: 0.37661871337890623
+Epoch 72/100
+DPR losses: stable 0.194755, complement 0.056888
+Task 5, Epoch 72/100, N_batch 79, Elapsed Time 1.2801012992858887s
+ - classification loss: 0.3867763366699219
+Epoch 73/100
+DPR losses: stable 0.188337, complement 0.056465
+Task 5, Epoch 73/100, N_batch 79, Elapsed Time 1.2636423110961914s
+ - classification loss: 0.37714251708984375
+Epoch 74/100
+DPR losses: stable 0.215562, complement 0.056813
+Task 5, Epoch 74/100, N_batch 79, Elapsed Time 1.273561954498291s
+ - classification loss: 0.40998101806640624
+Epoch 75/100
+DPR losses: stable 0.183260, complement 0.056389
+Task 5, Epoch 75/100, N_batch 79, Elapsed Time 1.255610704421997s
+ - classification loss: 0.36405078125
+Epoch 76/100
+DPR losses: stable 0.184398, complement 0.055171
+Task 5, Epoch 76/100, N_batch 79, Elapsed Time 1.272749900817871s
+ - classification loss: 0.3710028076171875
+Epoch 77/100
+DPR losses: stable 0.184541, complement 0.055849
+Task 5, Epoch 77/100, N_batch 79, Elapsed Time 1.2601754665374756s
+ - classification loss: 0.38305239868164065
+Epoch 78/100
+DPR losses: stable 0.189584, complement 0.055025
+Task 5, Epoch 78/100, N_batch 79, Elapsed Time 1.2671022415161133s
+ - classification loss: 0.390780029296875
+Epoch 79/100
+DPR losses: stable 0.198712, complement 0.055313
+Task 5, Epoch 79/100, N_batch 79, Elapsed Time 1.2825138568878174s
+ - classification loss: 0.3782352905273437
+Epoch 80/100
+DPR losses: stable 0.180434, complement 0.054276
+Task 5, Epoch 80/100, N_batch 79, Elapsed Time 1.2924339771270752s
+ - classification loss: 0.41791845703125
+Epoch 81/100
+DPR losses: stable 0.176851, complement 0.053847
+Task 5, Epoch 81/100, N_batch 79, Elapsed Time 1.2593915462493896s
+ - classification loss: 0.40961480712890624
+Epoch 82/100
+DPR losses: stable 0.203342, complement 0.053848
+Task 5, Epoch 82/100, N_batch 79, Elapsed Time 1.263549566268921s
+ - classification loss: 0.38679705810546877
+Epoch 83/100
+DPR losses: stable 0.194230, complement 0.052913
+Task 5, Epoch 83/100, N_batch 79, Elapsed Time 1.2784366607666016s
+ - classification loss: 0.38511773681640626
+Epoch 84/100
+DPR losses: stable 0.185215, complement 0.053319
+Task 5, Epoch 84/100, N_batch 79, Elapsed Time 1.268068552017212s
+ - classification loss: 0.39280072021484375
+Epoch 85/100
+DPR losses: stable 0.201369, complement 0.053313
+Task 5, Epoch 85/100, N_batch 79, Elapsed Time 1.2557449340820312s
+ - classification loss: 0.37487832641601565
+Epoch 86/100
+DPR losses: stable 0.194156, complement 0.053467
+Task 5, Epoch 86/100, N_batch 79, Elapsed Time 1.270411729812622s
+ - classification loss: 0.38605111694335936
+Epoch 87/100
+DPR losses: stable 0.186169, complement 0.053156
+Task 5, Epoch 87/100, N_batch 79, Elapsed Time 1.2699482440948486s
+ - classification loss: 0.38162127685546876
+Epoch 88/100
+DPR losses: stable 0.190434, complement 0.052230
+Task 5, Epoch 88/100, N_batch 79, Elapsed Time 1.2669148445129395s
+ - classification loss: 0.38204388427734376
+Epoch 89/100
+DPR losses: stable 0.204299, complement 0.052469
+Task 5, Epoch 89/100, N_batch 79, Elapsed Time 1.2660746574401855s
+ - classification loss: 0.37535556030273437
+Epoch 90/100
+DPR losses: stable 0.179273, complement 0.051891
+Task 5, Epoch 90/100, N_batch 79, Elapsed Time 1.270782232284546s
+ - classification loss: 0.37950238037109374
+Epoch 91/100
+DPR losses: stable 0.185511, complement 0.052636
+Task 5, Epoch 91/100, N_batch 79, Elapsed Time 1.2577228546142578s
+ - classification loss: 0.37650491333007813
+Epoch 92/100
+DPR losses: stable 0.201618, complement 0.052576
+Task 5, Epoch 92/100, N_batch 79, Elapsed Time 1.271461009979248s
+ - classification loss: 0.40216607666015625
+Epoch 93/100
+DPR losses: stable 0.215192, complement 0.051914
+Task 5, Epoch 93/100, N_batch 79, Elapsed Time 1.2765474319458008s
+ - classification loss: 0.3724966125488281
+Epoch 94/100
+DPR losses: stable 0.186558, complement 0.051308
+Task 5, Epoch 94/100, N_batch 79, Elapsed Time 1.255535364151001s
+ - classification loss: 0.38690264892578125
+Epoch 95/100
+DPR losses: stable 0.201871, complement 0.049680
+Task 5, Epoch 95/100, N_batch 79, Elapsed Time 1.2794387340545654s
+ - classification loss: 0.36973870849609375
+Epoch 96/100
+DPR losses: stable 0.177602, complement 0.049391
+Task 5, Epoch 96/100, N_batch 79, Elapsed Time 1.2803034782409668s
+ - classification loss: 0.3596591796875
+Epoch 97/100
+DPR losses: stable 0.187680, complement 0.051216
+Task 5, Epoch 97/100, N_batch 79, Elapsed Time 1.2646000385284424s
+ - classification loss: 0.3819526977539062
+Epoch 98/100
+DPR losses: stable 0.177780, complement 0.050423
+Task 5, Epoch 98/100, N_batch 79, Elapsed Time 1.2540411949157715s
+ - classification loss: 0.3859728393554688
+Epoch 99/100
+DPR losses: stable 0.194679, complement 0.049925
+Task 5, Epoch 99/100, N_batch 79, Elapsed Time 1.2714736461639404s
+ - classification loss: 0.40024551391601565
+Computing affine prototype alignment
+Affine transport MSE 0.004709, elapsed time 2.9535744190216064
+Classifier calibration from cached features
+Centered classifier head: 59 stable directions
+
+ >>> Test on task  0 : TAw acc= 88.8%, forg=  1.0% | TAg acc = 69.9%, forg = 19.9%  <<<
+
+ >>> Test on task  1 : TAw acc= 86.5%, forg=  0.7% | TAg acc = 59.7%, forg = 17.3%  <<<
+
+ >>> Test on task  2 : TAw acc= 84.5%, forg=  1.5% | TAg acc = 52.9%, forg = 10.3%  <<<
+
+ >>> Test on task  3 : TAw acc= 85.9%, forg=  0.2% | TAg acc = 55.1%, forg =  7.5%  <<<
+
+ >>> Test on task  4 : TAw acc= 77.0%, forg=  0.4% | TAg acc = 50.5%, forg =  4.9%  <<<
+
+ >>> Test on task  5 : TAw acc= 87.8%, forg=  0.0% | TAg acc = 65.6%, forg =  0.0%  <<<
+######################################## --> TRAINING HEAD 6
+
+Freezing Batch Norm
+Using Adam Optimizer With Fixed LR: 
+                        Backbone LR: 0.0001, Head LR 0.0001, Weight Decay 0.0002
+Approach total epochs 100
+Epoch 0/100
+DPR losses: stable 0.154747, complement 0.023638
+Task 6, Epoch 0/100, N_batch 79, Elapsed Time 1.279564619064331s
+ - classification loss: 1.3443421630859376
+Epoch 1/100
+DPR losses: stable 0.082880, complement 0.088316
+Task 6, Epoch 1/100, N_batch 79, Elapsed Time 1.2722718715667725s
+ - classification loss: 0.9530322265625
+Epoch 2/100
+DPR losses: stable 0.108297, complement 0.123286
+Task 6, Epoch 2/100, N_batch 79, Elapsed Time 1.2664852142333984s
+ - classification loss: 0.808924560546875
+Epoch 3/100
+DPR losses: stable 0.129213, complement 0.129047
+Task 6, Epoch 3/100, N_batch 79, Elapsed Time 1.2888665199279785s
+ - classification loss: 0.7291517333984375
+Epoch 4/100
+DPR losses: stable 0.129252, complement 0.127409
+Task 6, Epoch 4/100, N_batch 79, Elapsed Time 1.2757525444030762s
+ - classification loss: 0.6801832885742187
+Epoch 5/100
+DPR losses: stable 0.140226, complement 0.121481
+Task 6, Epoch 5/100, N_batch 79, Elapsed Time 1.273714303970337s
+ - classification loss: 0.6449912109375
+Epoch 6/100
+DPR losses: stable 0.138306, complement 0.115794
+Task 6, Epoch 6/100, N_batch 79, Elapsed Time 1.2777090072631836s
+ - classification loss: 0.626617431640625
+Epoch 7/100
+DPR losses: stable 0.154402, complement 0.112292
+Task 6, Epoch 7/100, N_batch 79, Elapsed Time 1.2790634632110596s
+ - classification loss: 0.5849611206054688
+Epoch 8/100
+DPR losses: stable 0.154020, complement 0.106234
+Task 6, Epoch 8/100, N_batch 79, Elapsed Time 1.2710614204406738s
+ - classification loss: 0.5716487426757813
+Epoch 9/100
+DPR losses: stable 0.159665, complement 0.100650
+Task 6, Epoch 9/100, N_batch 79, Elapsed Time 1.2729573249816895s
+ - classification loss: 0.554286865234375
+Epoch 10/100
+DPR losses: stable 0.140235, complement 0.096524
+Task 6, Epoch 10/100, N_batch 79, Elapsed Time 1.2791831493377686s
+ - classification loss: 0.5363593139648437
+Epoch 11/100
+DPR losses: stable 0.148077, complement 0.092685
+Task 6, Epoch 11/100, N_batch 79, Elapsed Time 1.2585186958312988s
+ - classification loss: 0.519116455078125
+Epoch 12/100
+DPR losses: stable 0.144110, complement 0.090001
+Task 6, Epoch 12/100, N_batch 79, Elapsed Time 1.2635533809661865s
+ - classification loss: 0.520324951171875
+Epoch 13/100
+DPR losses: stable 0.162801, complement 0.086463
+Task 6, Epoch 13/100, N_batch 79, Elapsed Time 1.27711820602417s
+ - classification loss: 0.5012572631835938
+Epoch 14/100
+DPR losses: stable 0.150883, complement 0.084390
+Task 6, Epoch 14/100, N_batch 79, Elapsed Time 1.2674357891082764s
+ - classification loss: 0.48908984375
+Epoch 15/100
+DPR losses: stable 0.152268, complement 0.082181
+Task 6, Epoch 15/100, N_batch 79, Elapsed Time 1.2846317291259766s
+ - classification loss: 0.48801727294921876
+Epoch 16/100
+DPR losses: stable 0.167708, complement 0.079021
+Task 6, Epoch 16/100, N_batch 79, Elapsed Time 1.2642877101898193s
+ - classification loss: 0.4747822875976562
+Epoch 17/100
+DPR losses: stable 0.161912, complement 0.077613
+Task 6, Epoch 17/100, N_batch 79, Elapsed Time 1.2714085578918457s
+ - classification loss: 0.468647216796875
+Epoch 18/100
+DPR losses: stable 0.156763, complement 0.075170
+Task 6, Epoch 18/100, N_batch 79, Elapsed Time 1.27656888961792s
+ - classification loss: 0.46778829956054685
+Epoch 19/100
+DPR losses: stable 0.161376, complement 0.073230
+Task 6, Epoch 19/100, N_batch 79, Elapsed Time 1.2707936763763428s
+ - classification loss: 0.4479012451171875
+Epoch 20/100
+DPR losses: stable 0.169893, complement 0.072896
+Task 6, Epoch 20/100, N_batch 79, Elapsed Time 1.28501558303833s
+ - classification loss: 0.4515704650878906
+Epoch 21/100
+DPR losses: stable 0.160671, complement 0.069820
+Task 6, Epoch 21/100, N_batch 79, Elapsed Time 1.273773193359375s
+ - classification loss: 0.4510066223144531
+Epoch 22/100
+DPR losses: stable 0.173333, complement 0.068156
+Task 6, Epoch 22/100, N_batch 79, Elapsed Time 1.2713127136230469s
+ - classification loss: 0.44114306640625
+Epoch 23/100
+DPR losses: stable 0.163031, complement 0.067643
+Task 6, Epoch 23/100, N_batch 79, Elapsed Time 1.259246587753296s
+ - classification loss: 0.4415810852050781
+Epoch 24/100
+DPR losses: stable 0.176391, complement 0.066116
+Task 6, Epoch 24/100, N_batch 79, Elapsed Time 1.268737554550171s
+ - classification loss: 0.4372515869140625
+Epoch 25/100
+DPR losses: stable 0.169337, complement 0.064602
+Task 6, Epoch 25/100, N_batch 79, Elapsed Time 1.2680387496948242s
+ - classification loss: 0.43866006469726565
+Epoch 26/100
+DPR losses: stable 0.162669, complement 0.063885
+Task 6, Epoch 26/100, N_batch 79, Elapsed Time 1.2755961418151855s
+ - classification loss: 0.4242901000976563
+Epoch 27/100
+DPR losses: stable 0.174358, complement 0.062582
+Task 6, Epoch 27/100, N_batch 79, Elapsed Time 1.271378755569458s
+ - classification loss: 0.4289165344238281
+Epoch 28/100
+DPR losses: stable 0.181510, complement 0.061702
+Task 6, Epoch 28/100, N_batch 79, Elapsed Time 1.2823224067687988s
+ - classification loss: 0.4174465637207031
+Epoch 29/100
+DPR losses: stable 0.186974, complement 0.062017
+Task 6, Epoch 29/100, N_batch 79, Elapsed Time 1.2771234512329102s
+ - classification loss: 0.41129531860351565
+Epoch 30/100
+DPR losses: stable 0.171837, complement 0.061677
+Task 6, Epoch 30/100, N_batch 79, Elapsed Time 1.259493112564087s
+ - classification loss: 0.40824185180664063
+Epoch 31/100
+DPR losses: stable 0.170547, complement 0.060747
+Task 6, Epoch 31/100, N_batch 79, Elapsed Time 1.275709629058838s
+ - classification loss: 0.4070252380371094
+Epoch 32/100
+DPR losses: stable 0.190733, complement 0.059665
+Task 6, Epoch 32/100, N_batch 79, Elapsed Time 1.277707576751709s
+ - classification loss: 0.40139218139648436
+Epoch 33/100
+DPR losses: stable 0.177810, complement 0.058982
+Task 6, Epoch 33/100, N_batch 79, Elapsed Time 1.2805202007293701s
+ - classification loss: 0.4081764831542969
+Epoch 34/100
+DPR losses: stable 0.176995, complement 0.058473
+Task 6, Epoch 34/100, N_batch 79, Elapsed Time 1.267164945602417s
+ - classification loss: 0.40526995849609376
+Epoch 35/100
+DPR losses: stable 0.176604, complement 0.058049
+Task 6, Epoch 35/100, N_batch 79, Elapsed Time 1.2723402976989746s
+ - classification loss: 0.3959649963378906
+Epoch 36/100
+DPR losses: stable 0.177814, complement 0.056464
+Task 6, Epoch 36/100, N_batch 79, Elapsed Time 1.2592594623565674s
+ - classification loss: 0.3992952575683594
+Epoch 37/100
+DPR losses: stable 0.189489, complement 0.056405
+Task 6, Epoch 37/100, N_batch 79, Elapsed Time 1.2624821662902832s
+ - classification loss: 0.41701507568359375
+Epoch 38/100
+DPR losses: stable 0.192306, complement 0.056346
+Task 6, Epoch 38/100, N_batch 79, Elapsed Time 1.2754807472229004s
+ - classification loss: 0.38759384155273435
+Epoch 39/100
+DPR losses: stable 0.191537, complement 0.055741
+Task 6, Epoch 39/100, N_batch 79, Elapsed Time 1.2775228023529053s
+ - classification loss: 0.3877438659667969
+Epoch 40/100
+DPR losses: stable 0.193399, complement 0.055932
+Task 6, Epoch 40/100, N_batch 79, Elapsed Time 1.2561020851135254s
+ - classification loss: 0.3816495361328125
+Epoch 41/100
+DPR losses: stable 0.204475, complement 0.055352
+Task 6, Epoch 41/100, N_batch 79, Elapsed Time 1.2712867259979248s
+ - classification loss: 0.40659979248046874
+Epoch 42/100
+DPR losses: stable 0.186834, complement 0.054927
+Task 6, Epoch 42/100, N_batch 79, Elapsed Time 1.2695631980895996s
+ - classification loss: 0.400000244140625
+Epoch 43/100
+DPR losses: stable 0.187997, complement 0.054476
+Task 6, Epoch 43/100, N_batch 79, Elapsed Time 1.271437644958496s
+ - classification loss: 0.3999221496582031
+Epoch 44/100
+DPR losses: stable 0.189591, complement 0.053558
+Task 6, Epoch 44/100, N_batch 79, Elapsed Time 1.2691404819488525s
+ - classification loss: 0.40824395751953124
+Epoch 45/100
+DPR losses: stable 0.185012, complement 0.053579
+Task 6, Epoch 45/100, N_batch 79, Elapsed Time 1.2612977027893066s
+ - classification loss: 0.4028626708984375
+Epoch 46/100
+DPR losses: stable 0.197558, complement 0.053326
+Task 6, Epoch 46/100, N_batch 79, Elapsed Time 1.265596866607666s
+ - classification loss: 0.3888035888671875
+Epoch 47/100
+DPR losses: stable 0.189348, complement 0.053222
+Task 6, Epoch 47/100, N_batch 79, Elapsed Time 1.2700388431549072s
+ - classification loss: 0.3818845825195312
+Epoch 48/100
+DPR losses: stable 0.183047, complement 0.053407
+Task 6, Epoch 48/100, N_batch 79, Elapsed Time 1.2756903171539307s
+ - classification loss: 0.375131591796875
+Epoch 49/100
+DPR losses: stable 0.198609, complement 0.052260
+Task 6, Epoch 49/100, N_batch 79, Elapsed Time 1.2805395126342773s
+ - classification loss: 0.3874781494140625
+Epoch 50/100
+DPR losses: stable 0.200036, complement 0.052011
+Task 6, Epoch 50/100, N_batch 79, Elapsed Time 1.2640628814697266s
+ - classification loss: 0.3974302673339844
+Epoch 51/100
+DPR losses: stable 0.207295, complement 0.051879
+Task 6, Epoch 51/100, N_batch 79, Elapsed Time 1.2598671913146973s
+ - classification loss: 0.37607479858398435
+Epoch 52/100
+DPR losses: stable 0.197806, complement 0.052515
+Task 6, Epoch 52/100, N_batch 79, Elapsed Time 1.2705192565917969s
+ - classification loss: 0.37842333984375
+Epoch 53/100
+DPR losses: stable 0.193411, complement 0.051012
+Task 6, Epoch 53/100, N_batch 79, Elapsed Time 1.2605137825012207s
+ - classification loss: 0.37574365234375
+Epoch 54/100
+DPR losses: stable 0.187455, complement 0.051225
+Task 6, Epoch 54/100, N_batch 79, Elapsed Time 1.2785770893096924s
+ - classification loss: 0.3724617309570312
+Epoch 55/100
+DPR losses: stable 0.189086, complement 0.051804
+Task 6, Epoch 55/100, N_batch 79, Elapsed Time 1.2763936519622803s
+ - classification loss: 0.35901168823242186
+Epoch 56/100
+DPR losses: stable 0.185925, complement 0.049646
+Task 6, Epoch 56/100, N_batch 79, Elapsed Time 1.2798593044281006s
+ - classification loss: 0.367630859375
+Epoch 57/100
+DPR losses: stable 0.201033, complement 0.050363
+Task 6, Epoch 57/100, N_batch 79, Elapsed Time 1.2762303352355957s
+ - classification loss: 0.3672879943847656
+Epoch 58/100
+DPR losses: stable 0.192895, complement 0.049964
+Task 6, Epoch 58/100, N_batch 79, Elapsed Time 1.2757163047790527s
+ - classification loss: 0.38769183349609376
+Epoch 59/100
+DPR losses: stable 0.207014, complement 0.049090
+Task 6, Epoch 59/100, N_batch 79, Elapsed Time 1.280076265335083s
+ - classification loss: 0.39818572998046875
+Epoch 60/100
+DPR losses: stable 0.233860, complement 0.050450
+Task 6, Epoch 60/100, N_batch 79, Elapsed Time 1.2565159797668457s
+ - classification loss: 0.39114208984375
+Epoch 61/100
+DPR losses: stable 0.197803, complement 0.049531
+Task 6, Epoch 61/100, N_batch 79, Elapsed Time 1.2595810890197754s
+ - classification loss: 0.40672305297851563
+Epoch 62/100
+DPR losses: stable 0.204539, complement 0.049103
+Task 6, Epoch 62/100, N_batch 79, Elapsed Time 1.263490915298462s
+ - classification loss: 0.371792236328125
+Epoch 63/100
+DPR losses: stable 0.199257, complement 0.049441
+Task 6, Epoch 63/100, N_batch 79, Elapsed Time 1.2780742645263672s
+ - classification loss: 0.38315994262695313
+Epoch 64/100
+DPR losses: stable 0.196721, complement 0.049436
+Task 6, Epoch 64/100, N_batch 79, Elapsed Time 1.2694952487945557s
+ - classification loss: 0.3706365051269531
+Epoch 65/100
+DPR losses: stable 0.200927, complement 0.047836
+Task 6, Epoch 65/100, N_batch 79, Elapsed Time 1.2655813694000244s
+ - classification loss: 0.3682318420410156
+Epoch 66/100
+DPR losses: stable 0.197370, complement 0.048147
+Task 6, Epoch 66/100, N_batch 79, Elapsed Time 1.2678253650665283s
+ - classification loss: 0.3586639404296875
+Epoch 67/100
+DPR losses: stable 0.206269, complement 0.049305
+Task 6, Epoch 67/100, N_batch 79, Elapsed Time 1.2742462158203125s
+ - classification loss: 0.363465087890625
+Epoch 68/100
+DPR losses: stable 0.198148, complement 0.048240
+Task 6, Epoch 68/100, N_batch 79, Elapsed Time 1.2617340087890625s
+ - classification loss: 0.363105224609375
+Epoch 69/100
+DPR losses: stable 0.196150, complement 0.048205
+Task 6, Epoch 69/100, N_batch 79, Elapsed Time 1.2625281810760498s
+ - classification loss: 0.3561371154785156
+Epoch 70/100
+DPR losses: stable 0.204558, complement 0.048003
+Task 6, Epoch 70/100, N_batch 79, Elapsed Time 1.2634892463684082s
+ - classification loss: 0.3830556945800781
+Epoch 71/100
+DPR losses: stable 0.196557, complement 0.047729
+Task 6, Epoch 71/100, N_batch 79, Elapsed Time 1.2688310146331787s
+ - classification loss: 0.36896453857421874
+Epoch 72/100
+DPR losses: stable 0.208935, complement 0.047862
+Task 6, Epoch 72/100, N_batch 79, Elapsed Time 1.2700612545013428s
+ - classification loss: 0.370279296875
+Epoch 73/100
+DPR losses: stable 0.195674, complement 0.047099
+Task 6, Epoch 73/100, N_batch 79, Elapsed Time 1.2740907669067383s
+ - classification loss: 0.3745964660644531
+Epoch 74/100
+DPR losses: stable 0.195467, complement 0.046383
+Task 6, Epoch 74/100, N_batch 79, Elapsed Time 1.268775463104248s
+ - classification loss: 0.36682855224609373
+Epoch 75/100
+DPR losses: stable 0.194967, complement 0.046526
+Task 6, Epoch 75/100, N_batch 79, Elapsed Time 1.2660472393035889s
+ - classification loss: 0.36081289672851563
+Epoch 76/100
+DPR losses: stable 0.199316, complement 0.046683
+Task 6, Epoch 76/100, N_batch 79, Elapsed Time 1.2832248210906982s
+ - classification loss: 0.3759039306640625
+Epoch 77/100
+DPR losses: stable 0.216469, complement 0.047276
+Task 6, Epoch 77/100, N_batch 79, Elapsed Time 1.2600336074829102s
+ - classification loss: 0.36906207275390623
+Epoch 78/100
+DPR losses: stable 0.193698, complement 0.046704
+Task 6, Epoch 78/100, N_batch 79, Elapsed Time 1.2799408435821533s
+ - classification loss: 0.37906478881835937
+Epoch 79/100
+DPR losses: stable 0.198181, complement 0.045758
+Task 6, Epoch 79/100, N_batch 79, Elapsed Time 1.278226613998413s
+ - classification loss: 0.3782625122070313
+Epoch 80/100
+DPR losses: stable 0.214231, complement 0.046256
+Task 6, Epoch 80/100, N_batch 79, Elapsed Time 1.266594648361206s
+ - classification loss: 0.389751708984375
+Epoch 81/100
+DPR losses: stable 0.208903, complement 0.046563
+Task 6, Epoch 81/100, N_batch 79, Elapsed Time 1.264697790145874s
+ - classification loss: 0.36543963623046877
+Epoch 82/100
+DPR losses: stable 0.196385, complement 0.045865
+Task 6, Epoch 82/100, N_batch 79, Elapsed Time 1.2675890922546387s
+ - classification loss: 0.3732656555175781
+Epoch 83/100
+DPR losses: stable 0.194824, complement 0.046275
+Task 6, Epoch 83/100, N_batch 79, Elapsed Time 1.2729907035827637s
+ - classification loss: 0.3733526306152344
+Epoch 84/100
+DPR losses: stable 0.198256, complement 0.045076
+Task 6, Epoch 84/100, N_batch 79, Elapsed Time 1.2755210399627686s
+ - classification loss: 0.35942767333984377
+Epoch 85/100
+DPR losses: stable 0.206569, complement 0.045257
+Task 6, Epoch 85/100, N_batch 79, Elapsed Time 1.27119779586792s
+ - classification loss: 0.3708426208496094
+Epoch 86/100
+DPR losses: stable 0.199579, complement 0.044949
+Task 6, Epoch 86/100, N_batch 79, Elapsed Time 1.2760822772979736s
+ - classification loss: 0.3676763000488281
+Epoch 87/100
+DPR losses: stable 0.196036, complement 0.044708
+Task 6, Epoch 87/100, N_batch 79, Elapsed Time 1.2768821716308594s
+ - classification loss: 0.37735882568359375
+Epoch 88/100
+DPR losses: stable 0.195163, complement 0.044716
+Task 6, Epoch 88/100, N_batch 79, Elapsed Time 1.2686614990234375s
+ - classification loss: 0.34649456787109373
+Epoch 89/100
+DPR losses: stable 0.203991, complement 0.044599
+Task 6, Epoch 89/100, N_batch 79, Elapsed Time 1.2776691913604736s
+ - classification loss: 0.37701309204101563
+Epoch 90/100
+DPR losses: stable 0.226777, complement 0.044900
+Task 6, Epoch 90/100, N_batch 79, Elapsed Time 1.2762553691864014s
+ - classification loss: 0.3709038391113281
+Epoch 91/100
+DPR losses: stable 0.203109, complement 0.044853
+Task 6, Epoch 91/100, N_batch 79, Elapsed Time 1.2540080547332764s
+ - classification loss: 0.3666966552734375
+Epoch 92/100
+DPR losses: stable 0.212650, complement 0.044436
+Task 6, Epoch 92/100, N_batch 79, Elapsed Time 1.2632899284362793s
+ - classification loss: 0.38092306518554686
+Epoch 93/100
+DPR losses: stable 0.220093, complement 0.044170
+Task 6, Epoch 93/100, N_batch 79, Elapsed Time 1.2726268768310547s
+ - classification loss: 0.3723800354003906
+Epoch 94/100
+DPR losses: stable 0.200226, complement 0.044271
+Task 6, Epoch 94/100, N_batch 79, Elapsed Time 1.2756216526031494s
+ - classification loss: 0.3739961853027344
+Epoch 95/100
+DPR losses: stable 0.214783, complement 0.044319
+Task 6, Epoch 95/100, N_batch 79, Elapsed Time 1.2802104949951172s
+ - classification loss: 0.37975250244140624
+Epoch 96/100
+DPR losses: stable 0.198099, complement 0.043848
+Task 6, Epoch 96/100, N_batch 79, Elapsed Time 1.271573781967163s
+ - classification loss: 0.370421630859375
+Epoch 97/100
+DPR losses: stable 0.202828, complement 0.043977
+Task 6, Epoch 97/100, N_batch 79, Elapsed Time 1.2636473178863525s
+ - classification loss: 0.3937021179199219
+Epoch 98/100
+DPR losses: stable 0.209589, complement 0.044292
+Task 6, Epoch 98/100, N_batch 79, Elapsed Time 1.273292064666748s
+ - classification loss: 0.36433346557617186
+Epoch 99/100
+DPR losses: stable 0.195057, complement 0.044101
+Task 6, Epoch 99/100, N_batch 79, Elapsed Time 1.284529685974121s
+ - classification loss: 0.37490570068359375
+Computing affine prototype alignment
+Affine transport MSE 0.004262, elapsed time 3.000138521194458
+Classifier calibration from cached features
+Centered classifier head: 69 stable directions
+
+ >>> Test on task  0 : TAw acc= 89.1%, forg=  0.7% | TAg acc = 67.4%, forg = 22.4%  <<<
+
+ >>> Test on task  1 : TAw acc= 87.2%, forg=  0.0% | TAg acc = 57.6%, forg = 19.4%  <<<
+
+ >>> Test on task  2 : TAw acc= 84.5%, forg=  1.5% | TAg acc = 49.4%, forg = 13.8%  <<<
+
+ >>> Test on task  3 : TAw acc= 86.2%, forg= -0.1% | TAg acc = 52.1%, forg = 10.5%  <<<
+
+ >>> Test on task  4 : TAw acc= 77.6%, forg= -0.2% | TAg acc = 48.9%, forg =  6.5%  <<<
+
+ >>> Test on task  5 : TAw acc= 87.7%, forg=  0.1% | TAg acc = 63.3%, forg =  2.3%  <<<
+
+ >>> Test on task  6 : TAw acc= 88.1%, forg=  0.0% | TAg acc = 56.0%, forg =  0.0%  <<<
+######################################## --> TRAINING HEAD 7
+
+Freezing Batch Norm
+Using Adam Optimizer With Fixed LR: 
+                        Backbone LR: 0.0001, Head LR 0.0001, Weight Decay 0.0002
+Approach total epochs 100
+Epoch 0/100
+DPR losses: stable 0.146980, complement 0.028514
+Task 7, Epoch 0/100, N_batch 79, Elapsed Time 1.2740440368652344s
+ - classification loss: 1.335330810546875
+Epoch 1/100
+DPR losses: stable 0.095279, complement 0.109530
+Task 7, Epoch 1/100, N_batch 79, Elapsed Time 1.2600374221801758s
+ - classification loss: 0.9471947631835937
+Epoch 2/100
+DPR losses: stable 0.120171, complement 0.140206
+Task 7, Epoch 2/100, N_batch 79, Elapsed Time 1.2863609790802002s
+ - classification loss: 0.8157501220703125
+Epoch 3/100
+DPR losses: stable 0.138576, complement 0.140814
+Task 7, Epoch 3/100, N_batch 79, Elapsed Time 1.2918109893798828s
+ - classification loss: 0.73096337890625
+Epoch 4/100
+DPR losses: stable 0.149697, complement 0.134157
+Task 7, Epoch 4/100, N_batch 79, Elapsed Time 1.2791938781738281s
+ - classification loss: 0.679301513671875
+Epoch 5/100
+DPR losses: stable 0.138184, complement 0.127597
+Task 7, Epoch 5/100, N_batch 79, Elapsed Time 1.2854835987091064s
+ - classification loss: 0.6431629638671875
+Epoch 6/100
+DPR losses: stable 0.150989, complement 0.120229
+Task 7, Epoch 6/100, N_batch 79, Elapsed Time 1.281503438949585s
+ - classification loss: 0.5970072021484375
+Epoch 7/100
+DPR losses: stable 0.141648, complement 0.113842
+Task 7, Epoch 7/100, N_batch 79, Elapsed Time 1.28117036819458s
+ - classification loss: 0.5729917602539063
+Epoch 8/100
+DPR losses: stable 0.141828, complement 0.107796
+Task 7, Epoch 8/100, N_batch 79, Elapsed Time 1.291687250137329s
+ - classification loss: 0.5512294311523438
+Epoch 9/100
+DPR losses: stable 0.150324, complement 0.102446
+Task 7, Epoch 9/100, N_batch 79, Elapsed Time 1.279280424118042s
+ - classification loss: 0.531933837890625
+Epoch 10/100
+DPR losses: stable 0.150434, complement 0.098998
+Task 7, Epoch 10/100, N_batch 79, Elapsed Time 1.2768709659576416s
+ - classification loss: 0.52211279296875
+Epoch 11/100
+DPR losses: stable 0.154889, complement 0.092975
+Task 7, Epoch 11/100, N_batch 79, Elapsed Time 1.2681453227996826s
+ - classification loss: 0.5057289733886718
+Epoch 12/100
+DPR losses: stable 0.152942, complement 0.090453
+Task 7, Epoch 12/100, N_batch 79, Elapsed Time 1.2727115154266357s
+ - classification loss: 0.4834591064453125
+Epoch 13/100
+DPR losses: stable 0.147411, complement 0.086379
+Task 7, Epoch 13/100, N_batch 79, Elapsed Time 1.285475730895996s
+ - classification loss: 0.48418450927734374
+Epoch 14/100
+DPR losses: stable 0.150024, complement 0.082794
+Task 7, Epoch 14/100, N_batch 79, Elapsed Time 1.267225980758667s
+ - classification loss: 0.46937811279296876
+Epoch 15/100
+DPR losses: stable 0.156104, complement 0.080326
+Task 7, Epoch 15/100, N_batch 79, Elapsed Time 1.2774832248687744s
+ - classification loss: 0.45219476318359375
+Epoch 16/100
+DPR losses: stable 0.167163, complement 0.078538
+Task 7, Epoch 16/100, N_batch 79, Elapsed Time 1.2658169269561768s
+ - classification loss: 0.44727450561523435
+Epoch 17/100
+DPR losses: stable 0.166719, complement 0.074756
+Task 7, Epoch 17/100, N_batch 79, Elapsed Time 1.2714061737060547s
+ - classification loss: 0.43904248046875
+Epoch 18/100
+DPR losses: stable 0.159798, complement 0.073019
+Task 7, Epoch 18/100, N_batch 79, Elapsed Time 1.277435064315796s
+ - classification loss: 0.4357907409667969
+Epoch 19/100
+DPR losses: stable 0.169297, complement 0.071665
+Task 7, Epoch 19/100, N_batch 79, Elapsed Time 1.281693458557129s
+ - classification loss: 0.43433724975585936
+Epoch 20/100
+DPR losses: stable 0.153276, complement 0.069266
+Task 7, Epoch 20/100, N_batch 79, Elapsed Time 1.2810442447662354s
+ - classification loss: 0.41870425415039064
+Epoch 21/100
+DPR losses: stable 0.164470, complement 0.067736
+Task 7, Epoch 21/100, N_batch 79, Elapsed Time 1.2640504837036133s
+ - classification loss: 0.42017608642578125
+Epoch 22/100
+DPR losses: stable 0.169860, complement 0.066470
+Task 7, Epoch 22/100, N_batch 79, Elapsed Time 1.2836253643035889s
+ - classification loss: 0.429760498046875
+Epoch 23/100
+DPR losses: stable 0.162061, complement 0.066201
+Task 7, Epoch 23/100, N_batch 79, Elapsed Time 1.2855372428894043s
+ - classification loss: 0.412169189453125
+Epoch 24/100
+DPR losses: stable 0.167183, complement 0.064150
+Task 7, Epoch 24/100, N_batch 79, Elapsed Time 1.2673871517181396s
+ - classification loss: 0.4179754638671875
+Epoch 25/100
+DPR losses: stable 0.173707, complement 0.063106
+Task 7, Epoch 25/100, N_batch 79, Elapsed Time 1.275627851486206s
+ - classification loss: 0.39705783081054685
+Epoch 26/100
+DPR losses: stable 0.175897, complement 0.062205
+Task 7, Epoch 26/100, N_batch 79, Elapsed Time 1.2597322463989258s
+ - classification loss: 0.40561862182617187
+Epoch 27/100
+DPR losses: stable 0.181831, complement 0.060613
+Task 7, Epoch 27/100, N_batch 79, Elapsed Time 1.2791697978973389s
+ - classification loss: 0.4002261962890625
+Epoch 28/100
+DPR losses: stable 0.188809, complement 0.059188
+Task 7, Epoch 28/100, N_batch 79, Elapsed Time 1.2724058628082275s
+ - classification loss: 0.39731878662109377
+Epoch 29/100
+DPR losses: stable 0.172394, complement 0.058960
+Task 7, Epoch 29/100, N_batch 79, Elapsed Time 1.2841598987579346s
+ - classification loss: 0.3885736083984375
+Epoch 30/100
+DPR losses: stable 0.165291, complement 0.058138
+Task 7, Epoch 30/100, N_batch 79, Elapsed Time 1.2907965183258057s
+ - classification loss: 0.3879341430664062
+Epoch 31/100
+DPR losses: stable 0.173905, complement 0.057093
+Task 7, Epoch 31/100, N_batch 79, Elapsed Time 1.2764525413513184s
+ - classification loss: 0.387843505859375
+Epoch 32/100
+DPR losses: stable 0.182267, complement 0.055614
+Task 7, Epoch 32/100, N_batch 79, Elapsed Time 1.2731876373291016s
+ - classification loss: 0.38818380737304686
+Epoch 33/100
+DPR losses: stable 0.169817, complement 0.056023
+Task 7, Epoch 33/100, N_batch 79, Elapsed Time 1.2809028625488281s
+ - classification loss: 0.36412844848632814
+Epoch 34/100
+DPR losses: stable 0.174873, complement 0.055393
+Task 7, Epoch 34/100, N_batch 79, Elapsed Time 1.2659151554107666s
+ - classification loss: 0.3812521362304688
+Epoch 35/100
+DPR losses: stable 0.167661, complement 0.054959
+Task 7, Epoch 35/100, N_batch 79, Elapsed Time 1.261141061782837s
+ - classification loss: 0.37080548095703125
+Epoch 36/100
+DPR losses: stable 0.170773, complement 0.053693
+Task 7, Epoch 36/100, N_batch 79, Elapsed Time 1.288290023803711s
+ - classification loss: 0.365896240234375
+Epoch 37/100
+DPR losses: stable 0.173115, complement 0.054246
+Task 7, Epoch 37/100, N_batch 79, Elapsed Time 1.2806470394134521s
+ - classification loss: 0.3632665710449219
+Epoch 38/100
+DPR losses: stable 0.173405, complement 0.052734
+Task 7, Epoch 38/100, N_batch 79, Elapsed Time 1.2820849418640137s
+ - classification loss: 0.367545166015625
+Epoch 39/100
+DPR losses: stable 0.182282, complement 0.052282
+Task 7, Epoch 39/100, N_batch 79, Elapsed Time 1.2681312561035156s
+ - classification loss: 0.3698984985351563
+Epoch 40/100
+DPR losses: stable 0.175481, complement 0.051611
+Task 7, Epoch 40/100, N_batch 79, Elapsed Time 1.2722744941711426s
+ - classification loss: 0.3699400634765625
+Epoch 41/100
+DPR losses: stable 0.177345, complement 0.052467
+Task 7, Epoch 41/100, N_batch 79, Elapsed Time 1.2866971492767334s
+ - classification loss: 0.35764990234375
+Epoch 42/100
+DPR losses: stable 0.190723, complement 0.050454
+Task 7, Epoch 42/100, N_batch 79, Elapsed Time 1.2759654521942139s
+ - classification loss: 0.354918212890625
+Epoch 43/100
+DPR losses: stable 0.188289, complement 0.049917
+Task 7, Epoch 43/100, N_batch 79, Elapsed Time 1.2789809703826904s
+ - classification loss: 0.36457171630859375
+Epoch 44/100
+DPR losses: stable 0.194850, complement 0.049610
+Task 7, Epoch 44/100, N_batch 79, Elapsed Time 1.281259536743164s
+ - classification loss: 0.3551665344238281
+Epoch 45/100
+DPR losses: stable 0.176731, complement 0.049898
+Task 7, Epoch 45/100, N_batch 79, Elapsed Time 1.2683796882629395s
+ - classification loss: 0.3701271362304687
+Epoch 46/100
+DPR losses: stable 0.182373, complement 0.049209
+Task 7, Epoch 46/100, N_batch 79, Elapsed Time 1.2757554054260254s
+ - classification loss: 0.37210498046875
+Epoch 47/100
+DPR losses: stable 0.203357, complement 0.048363
+Task 7, Epoch 47/100, N_batch 79, Elapsed Time 1.2878789901733398s
+ - classification loss: 0.3560509338378906
+Epoch 48/100
+DPR losses: stable 0.177619, complement 0.047768
+Task 7, Epoch 48/100, N_batch 79, Elapsed Time 1.2784392833709717s
+ - classification loss: 0.3626805419921875
+Epoch 49/100
+DPR losses: stable 0.183970, complement 0.048148
+Task 7, Epoch 49/100, N_batch 79, Elapsed Time 1.265061616897583s
+ - classification loss: 0.3611434326171875
+Epoch 50/100
+DPR losses: stable 0.185698, complement 0.046956
+Task 7, Epoch 50/100, N_batch 79, Elapsed Time 1.2847137451171875s
+ - classification loss: 0.36848431396484377
+Epoch 51/100
+DPR losses: stable 0.189875, complement 0.047219
+Task 7, Epoch 51/100, N_batch 79, Elapsed Time 1.262418270111084s
+ - classification loss: 0.35299761962890625
+Epoch 52/100
+DPR losses: stable 0.179909, complement 0.046990
+Task 7, Epoch 52/100, N_batch 79, Elapsed Time 1.2606322765350342s
+ - classification loss: 0.3518600769042969
+Epoch 53/100
+DPR losses: stable 0.191668, complement 0.047347
+Task 7, Epoch 53/100, N_batch 79, Elapsed Time 1.2762110233306885s
+ - classification loss: 0.3559796447753906
+Epoch 54/100
+DPR losses: stable 0.195930, complement 0.046962
+Task 7, Epoch 54/100, N_batch 79, Elapsed Time 1.2617568969726562s
+ - classification loss: 0.3517397155761719
+Epoch 55/100
+DPR losses: stable 0.181955, complement 0.046618
+Task 7, Epoch 55/100, N_batch 79, Elapsed Time 1.282313346862793s
+ - classification loss: 0.3612344970703125
+Epoch 56/100
+DPR losses: stable 0.182119, complement 0.045394
+Task 7, Epoch 56/100, N_batch 79, Elapsed Time 1.2829151153564453s
+ - classification loss: 0.36972235107421875
+Epoch 57/100
+DPR losses: stable 0.177563, complement 0.045507
+Task 7, Epoch 57/100, N_batch 79, Elapsed Time 1.2823486328125s
+ - classification loss: 0.3560513916015625
+Epoch 58/100
+DPR losses: stable 0.184385, complement 0.046179
+Task 7, Epoch 58/100, N_batch 79, Elapsed Time 1.2615807056427002s
+ - classification loss: 0.34696746826171876
+Epoch 59/100
+DPR losses: stable 0.195429, complement 0.045599
+Task 7, Epoch 59/100, N_batch 79, Elapsed Time 1.2794950008392334s
+ - classification loss: 0.34767828369140624
+Epoch 60/100
+DPR losses: stable 0.180632, complement 0.045230
+Task 7, Epoch 60/100, N_batch 79, Elapsed Time 1.2578544616699219s
+ - classification loss: 0.35279562377929685
+Epoch 61/100
+DPR losses: stable 0.191024, complement 0.045241
+Task 7, Epoch 61/100, N_batch 79, Elapsed Time 1.2917191982269287s
+ - classification loss: 0.3548724670410156
+Epoch 62/100
+DPR losses: stable 0.183624, complement 0.044092
+Task 7, Epoch 62/100, N_batch 79, Elapsed Time 1.285841464996338s
+ - classification loss: 0.34544284057617186
+Epoch 63/100
+DPR losses: stable 0.185736, complement 0.043925
+Task 7, Epoch 63/100, N_batch 79, Elapsed Time 1.2699432373046875s
+ - classification loss: 0.33360159301757814
+Epoch 64/100
+DPR losses: stable 0.184484, complement 0.043742
+Task 7, Epoch 64/100, N_batch 79, Elapsed Time 1.2828106880187988s
+ - classification loss: 0.3371590270996094
+Epoch 65/100
+DPR losses: stable 0.191574, complement 0.043669
+Task 7, Epoch 65/100, N_batch 79, Elapsed Time 1.2836430072784424s
+ - classification loss: 0.35642047119140624
+Epoch 66/100
+DPR losses: stable 0.198150, complement 0.043363
+Task 7, Epoch 66/100, N_batch 79, Elapsed Time 1.2852001190185547s
+ - classification loss: 0.3529251708984375
+Epoch 67/100
+DPR losses: stable 0.183640, complement 0.042733
+Task 7, Epoch 67/100, N_batch 79, Elapsed Time 1.287834644317627s
+ - classification loss: 0.35975506591796874
+Epoch 68/100
+DPR losses: stable 0.189939, complement 0.043011
+Task 7, Epoch 68/100, N_batch 79, Elapsed Time 1.2722938060760498s
+ - classification loss: 0.3472999877929687
+Epoch 69/100
+DPR losses: stable 0.187730, complement 0.042592
+Task 7, Epoch 69/100, N_batch 79, Elapsed Time 1.2794756889343262s
+ - classification loss: 0.34845574951171876
+Epoch 70/100
+DPR losses: stable 0.178443, complement 0.041544
+Task 7, Epoch 70/100, N_batch 79, Elapsed Time 1.2822859287261963s
+ - classification loss: 0.3452395324707031
+Epoch 71/100
+DPR losses: stable 0.191901, complement 0.041797
+Task 7, Epoch 71/100, N_batch 79, Elapsed Time 1.2930381298065186s
+ - classification loss: 0.3634140319824219
+Epoch 72/100
+DPR losses: stable 0.193162, complement 0.041164
+Task 7, Epoch 72/100, N_batch 79, Elapsed Time 1.2754943370819092s
+ - classification loss: 0.35584646606445314
+Epoch 73/100
+DPR losses: stable 0.194842, complement 0.041990
+Task 7, Epoch 73/100, N_batch 79, Elapsed Time 1.2734968662261963s
+ - classification loss: 0.35080911254882813
+Epoch 74/100
+DPR losses: stable 0.198618, complement 0.042071
+Task 7, Epoch 74/100, N_batch 79, Elapsed Time 1.2606463432312012s
+ - classification loss: 0.333453369140625
+Epoch 75/100
+DPR losses: stable 0.209862, complement 0.041728
+Task 7, Epoch 75/100, N_batch 79, Elapsed Time 1.2856571674346924s
+ - classification loss: 0.34913174438476563
+Epoch 76/100
+DPR losses: stable 0.191142, complement 0.041614
+Task 7, Epoch 76/100, N_batch 79, Elapsed Time 1.2747750282287598s
+ - classification loss: 0.3516725769042969
+Epoch 77/100
+DPR losses: stable 0.187880, complement 0.040685
+Task 7, Epoch 77/100, N_batch 79, Elapsed Time 1.2782058715820312s
+ - classification loss: 0.3610870056152344
+Epoch 78/100
+DPR losses: stable 0.186614, complement 0.040472
+Task 7, Epoch 78/100, N_batch 79, Elapsed Time 1.2888667583465576s
+ - classification loss: 0.33859527587890625
+Epoch 79/100
+DPR losses: stable 0.201315, complement 0.041133
+Task 7, Epoch 79/100, N_batch 79, Elapsed Time 1.2652602195739746s
+ - classification loss: 0.3409361572265625
+Epoch 80/100
+DPR losses: stable 0.190165, complement 0.040934
+Task 7, Epoch 80/100, N_batch 79, Elapsed Time 1.2713546752929688s
+ - classification loss: 0.3859657592773437
+Epoch 81/100
+DPR losses: stable 0.194526, complement 0.040408
+Task 7, Epoch 81/100, N_batch 79, Elapsed Time 1.2836039066314697s
+ - classification loss: 0.34365789794921875
+Epoch 82/100
+DPR losses: stable 0.191637, complement 0.040035
+Task 7, Epoch 82/100, N_batch 79, Elapsed Time 1.2716083526611328s
+ - classification loss: 0.3357356872558594
+Epoch 83/100
+DPR losses: stable 0.194774, complement 0.040683
+Task 7, Epoch 83/100, N_batch 79, Elapsed Time 1.361881971359253s
+ - classification loss: 0.3491829833984375
+Epoch 84/100
+DPR losses: stable 0.181789, complement 0.039696
+Task 7, Epoch 84/100, N_batch 79, Elapsed Time 1.285130262374878s
+ - classification loss: 0.342322265625
+Epoch 85/100
+DPR losses: stable 0.182577, complement 0.039789
+Task 7, Epoch 85/100, N_batch 79, Elapsed Time 1.2722256183624268s
+ - classification loss: 0.3357388916015625
+Epoch 86/100
+DPR losses: stable 0.182299, complement 0.040711
+Task 7, Epoch 86/100, N_batch 79, Elapsed Time 1.2851569652557373s
+ - classification loss: 0.3388841247558594
+Epoch 87/100
+DPR losses: stable 0.194682, complement 0.040323
+Task 7, Epoch 87/100, N_batch 79, Elapsed Time 1.2779009342193604s
+ - classification loss: 0.3408578186035156
+Epoch 88/100
+DPR losses: stable 0.188377, complement 0.039509
+Task 7, Epoch 88/100, N_batch 79, Elapsed Time 1.2690818309783936s
+ - classification loss: 0.34537371826171875
+Epoch 89/100
+DPR losses: stable 0.192949, complement 0.039777
+Task 7, Epoch 89/100, N_batch 79, Elapsed Time 1.2819154262542725s
+ - classification loss: 0.3432625732421875
+Epoch 90/100
+DPR losses: stable 0.190861, complement 0.039672
+Task 7, Epoch 90/100, N_batch 79, Elapsed Time 1.2637207508087158s
+ - classification loss: 0.3270387573242188
+Epoch 91/100
+DPR losses: stable 0.189539, complement 0.039411
+Task 7, Epoch 91/100, N_batch 79, Elapsed Time 1.2649762630462646s
+ - classification loss: 0.3338738708496094
+Epoch 92/100
+DPR losses: stable 0.197628, complement 0.039041
+Task 7, Epoch 92/100, N_batch 79, Elapsed Time 1.2781352996826172s
+ - classification loss: 0.33372869873046873
+Epoch 93/100
+DPR losses: stable 0.193353, complement 0.038404
+Task 7, Epoch 93/100, N_batch 79, Elapsed Time 1.2767789363861084s
+ - classification loss: 0.34016534423828126
+Epoch 94/100
+DPR losses: stable 0.188953, complement 0.038584
+Task 7, Epoch 94/100, N_batch 79, Elapsed Time 1.2826781272888184s
+ - classification loss: 0.34024249267578127
+Epoch 95/100
+DPR losses: stable 0.182505, complement 0.038978
+Task 7, Epoch 95/100, N_batch 79, Elapsed Time 1.2812089920043945s
+ - classification loss: 0.34213125610351564
+Epoch 96/100
+DPR losses: stable 0.185144, complement 0.038398
+Task 7, Epoch 96/100, N_batch 79, Elapsed Time 1.2816176414489746s
+ - classification loss: 0.3610317993164063
+Epoch 97/100
+DPR losses: stable 0.192381, complement 0.038131
+Task 7, Epoch 97/100, N_batch 79, Elapsed Time 1.280144214630127s
+ - classification loss: 0.3513895874023438
+Epoch 98/100
+DPR losses: stable 0.188144, complement 0.037387
+Task 7, Epoch 98/100, N_batch 79, Elapsed Time 1.2779815196990967s
+ - classification loss: 0.3441414184570312
+Epoch 99/100
+DPR losses: stable 0.195878, complement 0.038712
+Task 7, Epoch 99/100, N_batch 79, Elapsed Time 1.2792134284973145s
+ - classification loss: 0.37385986328125
+Computing affine prototype alignment
+Affine transport MSE 0.003696, elapsed time 3.063927173614502
+Classifier calibration from cached features
+Centered classifier head: 79 stable directions
+
+ >>> Test on task  0 : TAw acc= 88.4%, forg=  1.4% | TAg acc = 63.2%, forg = 26.6%  <<<
+
+ >>> Test on task  1 : TAw acc= 86.9%, forg=  0.3% | TAg acc = 55.4%, forg = 21.6%  <<<
+
+ >>> Test on task  2 : TAw acc= 84.2%, forg=  1.8% | TAg acc = 47.3%, forg = 15.9%  <<<
+
+ >>> Test on task  3 : TAw acc= 85.6%, forg=  0.6% | TAg acc = 51.5%, forg = 11.1%  <<<
+
+ >>> Test on task  4 : TAw acc= 77.6%, forg=  0.0% | TAg acc = 45.1%, forg = 10.3%  <<<
+
+ >>> Test on task  5 : TAw acc= 88.2%, forg= -0.4% | TAg acc = 60.2%, forg =  5.4%  <<<
+
+ >>> Test on task  6 : TAw acc= 88.4%, forg= -0.3% | TAg acc = 54.2%, forg =  1.8%  <<<
+
+ >>> Test on task  7 : TAw acc= 88.3%, forg=  0.0% | TAg acc = 55.0%, forg =  0.0%  <<<
+######################################## --> TRAINING HEAD 8
+
+Freezing Batch Norm
+Using Adam Optimizer With Fixed LR: 
+                        Backbone LR: 0.0001, Head LR 0.0001, Weight Decay 0.0002
+Approach total epochs 100
+Epoch 0/100
+DPR losses: stable 0.160345, complement 0.017254
+Task 8, Epoch 0/100, N_batch 79, Elapsed Time 1.273390769958496s
+ - classification loss: 1.53331201171875
+Epoch 1/100
+DPR losses: stable 0.079863, complement 0.067868
+Task 8, Epoch 1/100, N_batch 79, Elapsed Time 1.2706267833709717s
+ - classification loss: 1.1435927734375
+Epoch 2/100
+DPR losses: stable 0.114833, complement 0.103921
+Task 8, Epoch 2/100, N_batch 79, Elapsed Time 1.2837750911712646s
+ - classification loss: 0.9626337890625
+Epoch 3/100
+DPR losses: stable 0.141349, complement 0.116287
+Task 8, Epoch 3/100, N_batch 79, Elapsed Time 1.276219367980957s
+ - classification loss: 0.8593106689453125
+Epoch 4/100
+DPR losses: stable 0.146713, complement 0.117165
+Task 8, Epoch 4/100, N_batch 79, Elapsed Time 1.2845029830932617s
+ - classification loss: 0.793607666015625
+Epoch 5/100
+DPR losses: stable 0.150562, complement 0.114066
+Task 8, Epoch 5/100, N_batch 79, Elapsed Time 1.283668041229248s
+ - classification loss: 0.7544208984375
+Epoch 6/100
+DPR losses: stable 0.157458, complement 0.109399
+Task 8, Epoch 6/100, N_batch 79, Elapsed Time 1.2945747375488281s
+ - classification loss: 0.710216552734375
+Epoch 7/100
+DPR losses: stable 0.157119, complement 0.106460
+Task 8, Epoch 7/100, N_batch 79, Elapsed Time 1.2755415439605713s
+ - classification loss: 0.6877467041015625
+Epoch 8/100
+DPR losses: stable 0.156075, complement 0.103931
+Task 8, Epoch 8/100, N_batch 79, Elapsed Time 1.2911362648010254s
+ - classification loss: 0.6611600952148438
+Epoch 9/100
+DPR losses: stable 0.170926, complement 0.099983
+Task 8, Epoch 9/100, N_batch 79, Elapsed Time 1.2720303535461426s
+ - classification loss: 0.6373010864257812
+Epoch 10/100
+DPR losses: stable 0.173137, complement 0.097842
+Task 8, Epoch 10/100, N_batch 79, Elapsed Time 1.2872354984283447s
+ - classification loss: 0.6187754516601562
+Epoch 11/100
+DPR losses: stable 0.177717, complement 0.092865
+Task 8, Epoch 11/100, N_batch 79, Elapsed Time 1.2790279388427734s
+ - classification loss: 0.6037105102539062
+Epoch 12/100
+DPR losses: stable 0.180449, complement 0.090505
+Task 8, Epoch 12/100, N_batch 79, Elapsed Time 1.283646583557129s
+ - classification loss: 0.585585693359375
+Epoch 13/100
+DPR losses: stable 0.162265, complement 0.088269
+Task 8, Epoch 13/100, N_batch 79, Elapsed Time 1.2735927104949951s
+ - classification loss: 0.5741950073242188
+Epoch 14/100
+DPR losses: stable 0.161326, complement 0.086632
+Task 8, Epoch 14/100, N_batch 79, Elapsed Time 1.2843077182769775s
+ - classification loss: 0.56136083984375
+Epoch 15/100
+DPR losses: stable 0.164148, complement 0.084638
+Task 8, Epoch 15/100, N_batch 79, Elapsed Time 1.2875151634216309s
+ - classification loss: 0.572838134765625
+Epoch 16/100
+DPR losses: stable 0.197217, complement 0.082397
+Task 8, Epoch 16/100, N_batch 79, Elapsed Time 1.2710914611816406s
+ - classification loss: 0.550295654296875
+Epoch 17/100
+DPR losses: stable 0.174508, complement 0.079648
+Task 8, Epoch 17/100, N_batch 79, Elapsed Time 1.2809646129608154s
+ - classification loss: 0.541375244140625
+Epoch 18/100
+DPR losses: stable 0.173009, complement 0.078231
+Task 8, Epoch 18/100, N_batch 79, Elapsed Time 1.2917208671569824s
+ - classification loss: 0.52380615234375
+Epoch 19/100
+DPR losses: stable 0.170577, complement 0.076789
+Task 8, Epoch 19/100, N_batch 79, Elapsed Time 1.2928190231323242s
+ - classification loss: 0.5187926635742187
+Epoch 20/100
+DPR losses: stable 0.172943, complement 0.075966
+Task 8, Epoch 20/100, N_batch 79, Elapsed Time 1.2844338417053223s
+ - classification loss: 0.521169189453125
+Epoch 21/100
+DPR losses: stable 0.189921, complement 0.073763
+Task 8, Epoch 21/100, N_batch 79, Elapsed Time 1.276597023010254s
+ - classification loss: 0.5062651062011718
+Epoch 22/100
+DPR losses: stable 0.189917, complement 0.073828
+Task 8, Epoch 22/100, N_batch 79, Elapsed Time 1.2800371646881104s
+ - classification loss: 0.5000784912109375
+Epoch 23/100
+DPR losses: stable 0.189831, complement 0.072513
+Task 8, Epoch 23/100, N_batch 79, Elapsed Time 1.2857060432434082s
+ - classification loss: 0.4883780517578125
+Epoch 24/100
+DPR losses: stable 0.183949, complement 0.072156
+Task 8, Epoch 24/100, N_batch 79, Elapsed Time 1.2934541702270508s
+ - classification loss: 0.48751226806640624
+Epoch 25/100
+DPR losses: stable 0.200197, complement 0.070047
+Task 8, Epoch 25/100, N_batch 79, Elapsed Time 1.2817089557647705s
+ - classification loss: 0.5012727355957032
+Epoch 26/100
+DPR losses: stable 0.192664, complement 0.069587
+Task 8, Epoch 26/100, N_batch 79, Elapsed Time 1.2814455032348633s
+ - classification loss: 0.48830001831054687
+Epoch 27/100
+DPR losses: stable 0.192167, complement 0.069052
+Task 8, Epoch 27/100, N_batch 79, Elapsed Time 1.287212610244751s
+ - classification loss: 0.47685980224609376
+Epoch 28/100
+DPR losses: stable 0.189126, complement 0.067586
+Task 8, Epoch 28/100, N_batch 79, Elapsed Time 1.2891805171966553s
+ - classification loss: 0.46850775146484375
+Epoch 29/100
+DPR losses: stable 0.197651, complement 0.067245
+Task 8, Epoch 29/100, N_batch 79, Elapsed Time 1.285102128982544s
+ - classification loss: 0.45708355712890625
+Epoch 30/100
+DPR losses: stable 0.198675, complement 0.065865
+Task 8, Epoch 30/100, N_batch 79, Elapsed Time 1.2795755863189697s
+ - classification loss: 0.471548828125
+Epoch 31/100
+DPR losses: stable 0.193790, complement 0.066126
+Task 8, Epoch 31/100, N_batch 79, Elapsed Time 1.2855207920074463s
+ - classification loss: 0.4466291198730469
+Epoch 32/100
+DPR losses: stable 0.186748, complement 0.065420
+Task 8, Epoch 32/100, N_batch 79, Elapsed Time 1.2844524383544922s
+ - classification loss: 0.465683349609375
+Epoch 33/100
+DPR losses: stable 0.196594, complement 0.065124
+Task 8, Epoch 33/100, N_batch 79, Elapsed Time 1.282836675643921s
+ - classification loss: 0.45289483642578127
+Epoch 34/100
+DPR losses: stable 0.207822, complement 0.064195
+Task 8, Epoch 34/100, N_batch 79, Elapsed Time 1.2891201972961426s
+ - classification loss: 0.4468299560546875
+Epoch 35/100
+DPR losses: stable 0.202611, complement 0.063424
+Task 8, Epoch 35/100, N_batch 79, Elapsed Time 1.2879250049591064s
+ - classification loss: 0.4611611328125
+Epoch 36/100
+DPR losses: stable 0.201491, complement 0.064412
+Task 8, Epoch 36/100, N_batch 79, Elapsed Time 1.27583646774292s
+ - classification loss: 0.4540378112792969
+Epoch 37/100
+DPR losses: stable 0.199386, complement 0.062394
+Task 8, Epoch 37/100, N_batch 79, Elapsed Time 1.2905662059783936s
+ - classification loss: 0.45539642333984376
+Epoch 38/100
+DPR losses: stable 0.197885, complement 0.061808
+Task 8, Epoch 38/100, N_batch 79, Elapsed Time 1.2924232482910156s
+ - classification loss: 0.44834271240234375
+Epoch 39/100
+DPR losses: stable 0.206200, complement 0.061097
+Task 8, Epoch 39/100, N_batch 79, Elapsed Time 1.2820045948028564s
+ - classification loss: 0.4463939208984375
+Epoch 40/100
+DPR losses: stable 0.207765, complement 0.061073
+Task 8, Epoch 40/100, N_batch 79, Elapsed Time 1.2745816707611084s
+ - classification loss: 0.44845458984375
+Epoch 41/100
+DPR losses: stable 0.215351, complement 0.060539
+Task 8, Epoch 41/100, N_batch 79, Elapsed Time 1.274787425994873s
+ - classification loss: 0.43772747802734374
+Epoch 42/100
+DPR losses: stable 0.226803, complement 0.059972
+Task 8, Epoch 42/100, N_batch 79, Elapsed Time 1.2723369598388672s
+ - classification loss: 0.4415390625
+Epoch 43/100
+DPR losses: stable 0.195634, complement 0.059954
+Task 8, Epoch 43/100, N_batch 79, Elapsed Time 1.2910022735595703s
+ - classification loss: 0.44567608642578127
+Epoch 44/100
+DPR losses: stable 0.199393, complement 0.059690
+Task 8, Epoch 44/100, N_batch 79, Elapsed Time 1.2814311981201172s
+ - classification loss: 0.44031256103515626
+Epoch 45/100
+DPR losses: stable 0.222593, complement 0.058786
+Task 8, Epoch 45/100, N_batch 79, Elapsed Time 1.281332015991211s
+ - classification loss: 0.422799560546875
+Epoch 46/100
+DPR losses: stable 0.203948, complement 0.058819
+Task 8, Epoch 46/100, N_batch 79, Elapsed Time 1.3025932312011719s
+ - classification loss: 0.41246456909179685
+Epoch 47/100
+DPR losses: stable 0.204583, complement 0.058554
+Task 8, Epoch 47/100, N_batch 79, Elapsed Time 1.2922942638397217s
+ - classification loss: 0.41939837646484374
+Epoch 48/100
+DPR losses: stable 0.212427, complement 0.058510
+Task 8, Epoch 48/100, N_batch 79, Elapsed Time 1.2746293544769287s
+ - classification loss: 0.4284019470214844
+Epoch 49/100
+DPR losses: stable 0.218557, complement 0.058231
+Task 8, Epoch 49/100, N_batch 79, Elapsed Time 1.2863233089447021s
+ - classification loss: 0.4258507080078125
+Epoch 50/100
+DPR losses: stable 0.213285, complement 0.058414
+Task 8, Epoch 50/100, N_batch 79, Elapsed Time 1.2760844230651855s
+ - classification loss: 0.40753668212890626
+Epoch 51/100
+DPR losses: stable 0.216384, complement 0.058994
+Task 8, Epoch 51/100, N_batch 79, Elapsed Time 1.2886879444122314s
+ - classification loss: 0.4281209106445312
+Epoch 52/100
+DPR losses: stable 0.219587, complement 0.058255
+Task 8, Epoch 52/100, N_batch 79, Elapsed Time 1.2876980304718018s
+ - classification loss: 0.44192144775390624
+Epoch 53/100
+DPR losses: stable 0.216497, complement 0.057143
+Task 8, Epoch 53/100, N_batch 79, Elapsed Time 1.288879632949829s
+ - classification loss: 0.41394174194335936
+Epoch 54/100
+DPR losses: stable 0.220280, complement 0.057193
+Task 8, Epoch 54/100, N_batch 79, Elapsed Time 1.2790510654449463s
+ - classification loss: 0.429260009765625
+Epoch 55/100
+DPR losses: stable 0.227510, complement 0.057055
+Task 8, Epoch 55/100, N_batch 79, Elapsed Time 1.2870683670043945s
+ - classification loss: 0.4301079406738281
+Epoch 56/100
+DPR losses: stable 0.208554, complement 0.056436
+Task 8, Epoch 56/100, N_batch 79, Elapsed Time 1.2820937633514404s
+ - classification loss: 0.42161160278320314
+Epoch 57/100
+DPR losses: stable 0.204469, complement 0.055499
+Task 8, Epoch 57/100, N_batch 79, Elapsed Time 1.2811808586120605s
+ - classification loss: 0.43449176025390623
+Epoch 58/100
+DPR losses: stable 0.206889, complement 0.055373
+Task 8, Epoch 58/100, N_batch 79, Elapsed Time 1.295994758605957s
+ - classification loss: 0.42598675537109376
+Epoch 59/100
+DPR losses: stable 0.221102, complement 0.055717
+Task 8, Epoch 59/100, N_batch 79, Elapsed Time 1.286513328552246s
+ - classification loss: 0.42180221557617187
+Epoch 60/100
+DPR losses: stable 0.216940, complement 0.054928
+Task 8, Epoch 60/100, N_batch 79, Elapsed Time 1.2898368835449219s
+ - classification loss: 0.4418414306640625
+Epoch 61/100
+DPR losses: stable 0.212342, complement 0.055372
+Task 8, Epoch 61/100, N_batch 79, Elapsed Time 1.2810237407684326s
+ - classification loss: 0.4324339294433594
+Epoch 62/100
+DPR losses: stable 0.210274, complement 0.053898
+Task 8, Epoch 62/100, N_batch 79, Elapsed Time 1.2814686298370361s
+ - classification loss: 0.41148480224609374
+Epoch 63/100
+DPR losses: stable 0.217673, complement 0.054241
+Task 8, Epoch 63/100, N_batch 79, Elapsed Time 1.2848219871520996s
+ - classification loss: 0.43916510009765625
+Epoch 64/100
+DPR losses: stable 0.225825, complement 0.053840
+Task 8, Epoch 64/100, N_batch 79, Elapsed Time 1.2820615768432617s
+ - classification loss: 0.4198997802734375
+Epoch 65/100
+DPR losses: stable 0.207588, complement 0.053828
+Task 8, Epoch 65/100, N_batch 79, Elapsed Time 1.2864866256713867s
+ - classification loss: 0.4207721557617187
+Epoch 66/100
+DPR losses: stable 0.215007, complement 0.053892
+Task 8, Epoch 66/100, N_batch 79, Elapsed Time 1.2747867107391357s
+ - classification loss: 0.41456887817382815
+Epoch 67/100
+DPR losses: stable 0.220857, complement 0.053100
+Task 8, Epoch 67/100, N_batch 79, Elapsed Time 1.2882537841796875s
+ - classification loss: 0.41620654296875
+Epoch 68/100
+DPR losses: stable 0.213473, complement 0.053149
+Task 8, Epoch 68/100, N_batch 79, Elapsed Time 1.2843594551086426s
+ - classification loss: 0.4248515625
+Epoch 69/100
+DPR losses: stable 0.215064, complement 0.053449
+Task 8, Epoch 69/100, N_batch 79, Elapsed Time 1.2791857719421387s
+ - classification loss: 0.406915283203125
+Epoch 70/100
+DPR losses: stable 0.213006, complement 0.053317
+Task 8, Epoch 70/100, N_batch 79, Elapsed Time 1.2902634143829346s
+ - classification loss: 0.4098607177734375
+Epoch 71/100
+DPR losses: stable 0.215855, complement 0.051962
+Task 8, Epoch 71/100, N_batch 79, Elapsed Time 1.2828872203826904s
+ - classification loss: 0.4114778747558594
+Epoch 72/100
+DPR losses: stable 0.221620, complement 0.052568
+Task 8, Epoch 72/100, N_batch 79, Elapsed Time 1.2820165157318115s
+ - classification loss: 0.47242169189453126
+Epoch 73/100
+DPR losses: stable 0.232762, complement 0.052588
+Task 8, Epoch 73/100, N_batch 79, Elapsed Time 1.2796530723571777s
+ - classification loss: 0.4235140075683594
+Epoch 74/100
+DPR losses: stable 0.224176, complement 0.051144
+Task 8, Epoch 74/100, N_batch 79, Elapsed Time 1.2695350646972656s
+ - classification loss: 0.43462579345703123
+Epoch 75/100
+DPR losses: stable 0.229929, complement 0.052399
+Task 8, Epoch 75/100, N_batch 79, Elapsed Time 1.2859699726104736s
+ - classification loss: 0.42847991943359376
+Epoch 76/100
+DPR losses: stable 0.222511, complement 0.052204
+Task 8, Epoch 76/100, N_batch 79, Elapsed Time 1.2838995456695557s
+ - classification loss: 0.40649261474609377
+Epoch 77/100
+DPR losses: stable 0.209734, complement 0.051559
+Task 8, Epoch 77/100, N_batch 79, Elapsed Time 1.2784593105316162s
+ - classification loss: 0.4267353515625
+Epoch 78/100
+DPR losses: stable 0.209562, complement 0.051804
+Task 8, Epoch 78/100, N_batch 79, Elapsed Time 1.2839162349700928s
+ - classification loss: 0.40337255859375
+Epoch 79/100
+DPR losses: stable 0.212346, complement 0.051141
+Task 8, Epoch 79/100, N_batch 79, Elapsed Time 1.2830467224121094s
+ - classification loss: 0.40623779296875
+Epoch 80/100
+DPR losses: stable 0.218929, complement 0.050727
+Task 8, Epoch 80/100, N_batch 79, Elapsed Time 1.269601821899414s
+ - classification loss: 0.4091461181640625
+Epoch 81/100
+DPR losses: stable 0.217431, complement 0.050341
+Task 8, Epoch 81/100, N_batch 79, Elapsed Time 1.2938604354858398s
+ - classification loss: 0.4104465942382812
+Epoch 82/100
+DPR losses: stable 0.221200, complement 0.050137
+Task 8, Epoch 82/100, N_batch 79, Elapsed Time 1.292292833328247s
+ - classification loss: 0.4083897705078125
+Epoch 83/100
+DPR losses: stable 0.218660, complement 0.050024
+Task 8, Epoch 83/100, N_batch 79, Elapsed Time 1.2712109088897705s
+ - classification loss: 0.4086697387695313
+Epoch 84/100
+DPR losses: stable 0.228390, complement 0.050339
+Task 8, Epoch 84/100, N_batch 79, Elapsed Time 1.2888243198394775s
+ - classification loss: 0.425904052734375
+Epoch 85/100
+DPR losses: stable 0.217850, complement 0.050373
+Task 8, Epoch 85/100, N_batch 79, Elapsed Time 1.2871215343475342s
+ - classification loss: 0.4104072265625
+Epoch 86/100
+DPR losses: stable 0.222368, complement 0.049469
+Task 8, Epoch 86/100, N_batch 79, Elapsed Time 1.273735523223877s
+ - classification loss: 0.41228643798828124
+Epoch 87/100
+DPR losses: stable 0.217062, complement 0.049615
+Task 8, Epoch 87/100, N_batch 79, Elapsed Time 1.2757482528686523s
+ - classification loss: 0.4145574951171875
+Epoch 88/100
+DPR losses: stable 0.217524, complement 0.050082
+Task 8, Epoch 88/100, N_batch 79, Elapsed Time 1.2898430824279785s
+ - classification loss: 0.40346240234375
+Epoch 89/100
+DPR losses: stable 0.208615, complement 0.048822
+Task 8, Epoch 89/100, N_batch 79, Elapsed Time 1.2914588451385498s
+ - classification loss: 0.41696804809570315
+Epoch 90/100
+DPR losses: stable 0.217892, complement 0.049382
+Task 8, Epoch 90/100, N_batch 79, Elapsed Time 1.2867486476898193s
+ - classification loss: 0.4097858276367187
+Epoch 91/100
+DPR losses: stable 0.239537, complement 0.049193
+Task 8, Epoch 91/100, N_batch 79, Elapsed Time 1.2821998596191406s
+ - classification loss: 0.3995471801757812
+Epoch 92/100
+DPR losses: stable 0.224008, complement 0.048386
+Task 8, Epoch 92/100, N_batch 79, Elapsed Time 1.2869412899017334s
+ - classification loss: 0.40427313232421874
+Epoch 93/100
+DPR losses: stable 0.235240, complement 0.048345
+Task 8, Epoch 93/100, N_batch 79, Elapsed Time 1.2758996486663818s
+ - classification loss: 0.426586181640625
+Epoch 94/100
+DPR losses: stable 0.221725, complement 0.049052
+Task 8, Epoch 94/100, N_batch 79, Elapsed Time 1.283583641052246s
+ - classification loss: 0.40134722900390624
+Epoch 95/100
+DPR losses: stable 0.217613, complement 0.048081
+Task 8, Epoch 95/100, N_batch 79, Elapsed Time 1.2735981941223145s
+ - classification loss: 0.3989576416015625
+Epoch 96/100
+DPR losses: stable 0.209502, complement 0.047616
+Task 8, Epoch 96/100, N_batch 79, Elapsed Time 1.2921154499053955s
+ - classification loss: 0.4140521240234375
+Epoch 97/100
+DPR losses: stable 0.215622, complement 0.047529
+Task 8, Epoch 97/100, N_batch 79, Elapsed Time 1.296910047531128s
+ - classification loss: 0.3955028076171875
+Epoch 98/100
+DPR losses: stable 0.218885, complement 0.047809
+Task 8, Epoch 98/100, N_batch 79, Elapsed Time 1.3035287857055664s
+ - classification loss: 0.393360107421875
+Epoch 99/100
+DPR losses: stable 0.209357, complement 0.047394
+Task 8, Epoch 99/100, N_batch 79, Elapsed Time 1.2808144092559814s
+ - classification loss: 0.41622344970703123
+Computing affine prototype alignment
+Affine transport MSE 0.004386, elapsed time 3.197939872741699
+Classifier calibration from cached features
+Centered classifier head: 89 stable directions
+
+ >>> Test on task  0 : TAw acc= 88.2%, forg=  1.6% | TAg acc = 61.3%, forg = 28.5%  <<<
+
+ >>> Test on task  1 : TAw acc= 87.2%, forg=  0.0% | TAg acc = 54.5%, forg = 22.5%  <<<
+
+ >>> Test on task  2 : TAw acc= 83.9%, forg=  2.1% | TAg acc = 46.3%, forg = 16.9%  <<<
+
+ >>> Test on task  3 : TAw acc= 85.4%, forg=  0.8% | TAg acc = 49.3%, forg = 13.3%  <<<
+
+ >>> Test on task  4 : TAw acc= 77.4%, forg=  0.2% | TAg acc = 43.9%, forg = 11.5%  <<<
+
+ >>> Test on task  5 : TAw acc= 88.1%, forg=  0.1% | TAg acc = 60.2%, forg =  5.4%  <<<
+
+ >>> Test on task  6 : TAw acc= 89.5%, forg= -1.1% | TAg acc = 54.2%, forg =  1.8%  <<<
+
+ >>> Test on task  7 : TAw acc= 87.6%, forg=  0.7% | TAg acc = 52.8%, forg =  2.2%  <<<
+
+ >>> Test on task  8 : TAw acc= 86.3%, forg=  0.0% | TAg acc = 54.7%, forg =  0.0%  <<<
+######################################## --> TRAINING HEAD 9
+
+Freezing Batch Norm
+Using Adam Optimizer With Fixed LR: 
+                        Backbone LR: 0.0001, Head LR 0.0001, Weight Decay 0.0002
+Approach total epochs 100
+Epoch 0/100
+DPR losses: stable 0.153613, complement 0.025157
+Task 9, Epoch 0/100, N_batch 79, Elapsed Time 1.2704386711120605s
+ - classification loss: 1.3797967529296875
+Epoch 1/100
+DPR losses: stable 0.099522, complement 0.088955
+Task 9, Epoch 1/100, N_batch 79, Elapsed Time 1.279167890548706s
+ - classification loss: 0.9879707641601563
+Epoch 2/100
+DPR losses: stable 0.127334, complement 0.121069
+Task 9, Epoch 2/100, N_batch 79, Elapsed Time 1.2876720428466797s
+ - classification loss: 0.8379273071289063
+Epoch 3/100
+DPR losses: stable 0.142756, complement 0.127976
+Task 9, Epoch 3/100, N_batch 79, Elapsed Time 1.2750630378723145s
+ - classification loss: 0.7530494995117187
+Epoch 4/100
+DPR losses: stable 0.153492, complement 0.127184
+Task 9, Epoch 4/100, N_batch 79, Elapsed Time 1.2759909629821777s
+ - classification loss: 0.7033176879882812
+Epoch 5/100
+DPR losses: stable 0.152835, complement 0.122391
+Task 9, Epoch 5/100, N_batch 79, Elapsed Time 1.2748818397521973s
+ - classification loss: 0.6540328369140626
+Epoch 6/100
+DPR losses: stable 0.146956, complement 0.118439
+Task 9, Epoch 6/100, N_batch 79, Elapsed Time 1.2787861824035645s
+ - classification loss: 0.6331828002929687
+Epoch 7/100
+DPR losses: stable 0.147853, complement 0.112482
+Task 9, Epoch 7/100, N_batch 79, Elapsed Time 1.2786121368408203s
+ - classification loss: 0.5982855224609375
+Epoch 8/100
+DPR losses: stable 0.161027, complement 0.107615
+Task 9, Epoch 8/100, N_batch 79, Elapsed Time 1.2851181030273438s
+ - classification loss: 0.5678875122070313
+Epoch 9/100
+DPR losses: stable 0.166745, complement 0.102861
+Task 9, Epoch 9/100, N_batch 79, Elapsed Time 1.2884230613708496s
+ - classification loss: 0.54488427734375
+Epoch 10/100
+DPR losses: stable 0.172050, complement 0.098932
+Task 9, Epoch 10/100, N_batch 79, Elapsed Time 1.2913823127746582s
+ - classification loss: 0.5349462890625
+Epoch 11/100
+DPR losses: stable 0.168422, complement 0.094999
+Task 9, Epoch 11/100, N_batch 79, Elapsed Time 1.289243221282959s
+ - classification loss: 0.5220859375
+Epoch 12/100
+DPR losses: stable 0.164738, complement 0.092078
+Task 9, Epoch 12/100, N_batch 79, Elapsed Time 1.2846362590789795s
+ - classification loss: 0.5177802124023437
+Epoch 13/100
+DPR losses: stable 0.166545, complement 0.088651
+Task 9, Epoch 13/100, N_batch 79, Elapsed Time 1.2895429134368896s
+ - classification loss: 0.503734375
+Epoch 14/100
+DPR losses: stable 0.162959, complement 0.086460
+Task 9, Epoch 14/100, N_batch 79, Elapsed Time 1.2653405666351318s
+ - classification loss: 0.49380133056640624
+Epoch 15/100
+DPR losses: stable 0.165383, complement 0.082547
+Task 9, Epoch 15/100, N_batch 79, Elapsed Time 1.2815489768981934s
+ - classification loss: 0.48381021118164064
+Epoch 16/100
+DPR losses: stable 0.173509, complement 0.080074
+Task 9, Epoch 16/100, N_batch 79, Elapsed Time 1.2722229957580566s
+ - classification loss: 0.4787947692871094
+Epoch 17/100
+DPR losses: stable 0.178887, complement 0.078771
+Task 9, Epoch 17/100, N_batch 79, Elapsed Time 1.297287940979004s
+ - classification loss: 0.4733966979980469
+Epoch 18/100
+DPR losses: stable 0.167715, complement 0.075315
+Task 9, Epoch 18/100, N_batch 79, Elapsed Time 1.2809782028198242s
+ - classification loss: 0.46774050903320313
+Epoch 19/100
+DPR losses: stable 0.156634, complement 0.073870
+Task 9, Epoch 19/100, N_batch 79, Elapsed Time 1.2929911613464355s
+ - classification loss: 0.45132586669921876
+Epoch 20/100
+DPR losses: stable 0.180601, complement 0.072073
+Task 9, Epoch 20/100, N_batch 79, Elapsed Time 1.2785556316375732s
+ - classification loss: 0.4486641235351562
+Epoch 21/100
+DPR losses: stable 0.167525, complement 0.070864
+Task 9, Epoch 21/100, N_batch 79, Elapsed Time 1.2945942878723145s
+ - classification loss: 0.4523662719726563
+Epoch 22/100
+DPR losses: stable 0.170887, complement 0.069643
+Task 9, Epoch 22/100, N_batch 79, Elapsed Time 1.2921297550201416s
+ - classification loss: 0.4452760009765625
+Epoch 23/100
+DPR losses: stable 0.167323, complement 0.067996
+Task 9, Epoch 23/100, N_batch 79, Elapsed Time 1.2767157554626465s
+ - classification loss: 0.4312405090332031
+Epoch 24/100
+DPR losses: stable 0.168166, complement 0.066661
+Task 9, Epoch 24/100, N_batch 79, Elapsed Time 1.2860417366027832s
+ - classification loss: 0.4338795471191406
+Epoch 25/100
+DPR losses: stable 0.191286, complement 0.065547
+Task 9, Epoch 25/100, N_batch 79, Elapsed Time 1.2905757427215576s
+ - classification loss: 0.4489243469238281
+Epoch 26/100
+DPR losses: stable 0.180090, complement 0.064578
+Task 9, Epoch 26/100, N_batch 79, Elapsed Time 1.2879867553710938s
+ - classification loss: 0.4190628356933594
+Epoch 27/100
+DPR losses: stable 0.166209, complement 0.064286
+Task 9, Epoch 27/100, N_batch 79, Elapsed Time 1.2771916389465332s
+ - classification loss: 0.42394549560546874
+Epoch 28/100
+DPR losses: stable 0.176075, complement 0.062421
+Task 9, Epoch 28/100, N_batch 79, Elapsed Time 1.2875406742095947s
+ - classification loss: 0.423107177734375
+Epoch 29/100
+DPR losses: stable 0.198529, complement 0.061239
+Task 9, Epoch 29/100, N_batch 79, Elapsed Time 1.2820968627929688s
+ - classification loss: 0.4202518310546875
+Epoch 30/100
+DPR losses: stable 0.181640, complement 0.061618
+Task 9, Epoch 30/100, N_batch 79, Elapsed Time 1.282867431640625s
+ - classification loss: 0.42614501953125
+Epoch 31/100
+DPR losses: stable 0.187162, complement 0.059635
+Task 9, Epoch 31/100, N_batch 79, Elapsed Time 1.295837640762329s
+ - classification loss: 0.4206846923828125
+Epoch 32/100
+DPR losses: stable 0.178353, complement 0.059255
+Task 9, Epoch 32/100, N_batch 79, Elapsed Time 1.2744956016540527s
+ - classification loss: 0.4126121520996094
+Epoch 33/100
+DPR losses: stable 0.173696, complement 0.058669
+Task 9, Epoch 33/100, N_batch 79, Elapsed Time 1.2975358963012695s
+ - classification loss: 0.4008970336914062
+Epoch 34/100
+DPR losses: stable 0.173432, complement 0.057920
+Task 9, Epoch 34/100, N_batch 79, Elapsed Time 1.2790358066558838s
+ - classification loss: 0.4037783203125
+Epoch 35/100
+DPR losses: stable 0.186009, complement 0.056919
+Task 9, Epoch 35/100, N_batch 79, Elapsed Time 1.277212142944336s
+ - classification loss: 0.4031290283203125
+Epoch 36/100
+DPR losses: stable 0.187551, complement 0.056397
+Task 9, Epoch 36/100, N_batch 79, Elapsed Time 1.2765400409698486s
+ - classification loss: 0.4037896728515625
+Epoch 37/100
+DPR losses: stable 0.183347, complement 0.055037
+Task 9, Epoch 37/100, N_batch 79, Elapsed Time 1.2961273193359375s
+ - classification loss: 0.40441748046875
+Epoch 38/100
+DPR losses: stable 0.199544, complement 0.055663
+Task 9, Epoch 38/100, N_batch 79, Elapsed Time 1.2918727397918701s
+ - classification loss: 0.3980982666015625
+Epoch 39/100
+DPR losses: stable 0.203277, complement 0.055185
+Task 9, Epoch 39/100, N_batch 79, Elapsed Time 1.286557674407959s
+ - classification loss: 0.4063480224609375
+Epoch 40/100
+DPR losses: stable 0.198650, complement 0.054190
+Task 9, Epoch 40/100, N_batch 79, Elapsed Time 1.2840392589569092s
+ - classification loss: 0.3924867248535156
+Epoch 41/100
+DPR losses: stable 0.192005, complement 0.054623
+Task 9, Epoch 41/100, N_batch 79, Elapsed Time 1.2855823040008545s
+ - classification loss: 0.4084895935058594
+Epoch 42/100
+DPR losses: stable 0.182510, complement 0.053013
+Task 9, Epoch 42/100, N_batch 79, Elapsed Time 1.2813124656677246s
+ - classification loss: 0.3990223388671875
+Epoch 43/100
+DPR losses: stable 0.193118, complement 0.052218
+Task 9, Epoch 43/100, N_batch 79, Elapsed Time 1.276979684829712s
+ - classification loss: 0.390587158203125
+Epoch 44/100
+DPR losses: stable 0.191278, complement 0.052191
+Task 9, Epoch 44/100, N_batch 79, Elapsed Time 1.2932333946228027s
+ - classification loss: 0.3933891296386719
+Epoch 45/100
+DPR losses: stable 0.184216, complement 0.051929
+Task 9, Epoch 45/100, N_batch 79, Elapsed Time 1.2922029495239258s
+ - classification loss: 0.3964295654296875
+Epoch 46/100
+DPR losses: stable 0.189876, complement 0.051214
+Task 9, Epoch 46/100, N_batch 79, Elapsed Time 1.2955882549285889s
+ - classification loss: 0.3957548217773437
+Epoch 47/100
+DPR losses: stable 0.194088, complement 0.051454
+Task 9, Epoch 47/100, N_batch 79, Elapsed Time 1.283510446548462s
+ - classification loss: 0.4125426940917969
+Epoch 48/100
+DPR losses: stable 0.203164, complement 0.050399
+Task 9, Epoch 48/100, N_batch 79, Elapsed Time 1.2748920917510986s
+ - classification loss: 0.3911736450195312
+Epoch 49/100
+DPR losses: stable 0.197710, complement 0.049806
+Task 9, Epoch 49/100, N_batch 79, Elapsed Time 1.2717220783233643s
+ - classification loss: 0.4024882507324219
+Epoch 50/100
+DPR losses: stable 0.186424, complement 0.049669
+Task 9, Epoch 50/100, N_batch 79, Elapsed Time 1.2815110683441162s
+ - classification loss: 0.39409588623046876
+Epoch 51/100
+DPR losses: stable 0.191128, complement 0.048881
+Task 9, Epoch 51/100, N_batch 79, Elapsed Time 1.2809233665466309s
+ - classification loss: 0.3892987060546875
+Epoch 52/100
+DPR losses: stable 0.185073, complement 0.049205
+Task 9, Epoch 52/100, N_batch 79, Elapsed Time 1.2779033184051514s
+ - classification loss: 0.38812847900390623
+Epoch 53/100
+DPR losses: stable 0.190974, complement 0.048339
+Task 9, Epoch 53/100, N_batch 79, Elapsed Time 1.295569658279419s
+ - classification loss: 0.3869095153808594
+Epoch 54/100
+DPR losses: stable 0.211119, complement 0.048104
+Task 9, Epoch 54/100, N_batch 79, Elapsed Time 1.2743282318115234s
+ - classification loss: 0.38745928955078124
+Epoch 55/100
+DPR losses: stable 0.223108, complement 0.048285
+Task 9, Epoch 55/100, N_batch 79, Elapsed Time 1.2847979068756104s
+ - classification loss: 0.39896002197265623
+Epoch 56/100
+DPR losses: stable 0.191178, complement 0.048446
+Task 9, Epoch 56/100, N_batch 79, Elapsed Time 1.2833874225616455s
+ - classification loss: 0.391901611328125
+Epoch 57/100
+DPR losses: stable 0.197205, complement 0.047771
+Task 9, Epoch 57/100, N_batch 79, Elapsed Time 1.2874641418457031s
+ - classification loss: 0.37876544189453126
+Epoch 58/100
+DPR losses: stable 0.187170, complement 0.047036
+Task 9, Epoch 58/100, N_batch 79, Elapsed Time 1.2740743160247803s
+ - classification loss: 0.38706973266601563
+Epoch 59/100
+DPR losses: stable 0.192402, complement 0.047090
+Task 9, Epoch 59/100, N_batch 79, Elapsed Time 1.2842607498168945s
+ - classification loss: 0.38985391235351563
+Epoch 60/100
+DPR losses: stable 0.203663, complement 0.046588
+Task 9, Epoch 60/100, N_batch 79, Elapsed Time 1.2727952003479004s
+ - classification loss: 0.40768392944335935
+Epoch 61/100
+DPR losses: stable 0.230736, complement 0.047186
+Task 9, Epoch 61/100, N_batch 79, Elapsed Time 1.2940781116485596s
+ - classification loss: 0.38236380004882814
+Epoch 62/100
+DPR losses: stable 0.211633, complement 0.046452
+Task 9, Epoch 62/100, N_batch 79, Elapsed Time 1.2719058990478516s
+ - classification loss: 0.393618896484375
+Epoch 63/100
+DPR losses: stable 0.204953, complement 0.046580
+Task 9, Epoch 63/100, N_batch 79, Elapsed Time 1.2885310649871826s
+ - classification loss: 0.38157916259765623
+Epoch 64/100
+DPR losses: stable 0.188939, complement 0.045609
+Task 9, Epoch 64/100, N_batch 79, Elapsed Time 1.2973089218139648s
+ - classification loss: 0.38465118408203125
+Epoch 65/100
+DPR losses: stable 0.187385, complement 0.045246
+Task 9, Epoch 65/100, N_batch 79, Elapsed Time 1.2828667163848877s
+ - classification loss: 0.39481878662109376
+Epoch 66/100
+DPR losses: stable 0.185280, complement 0.045043
+Task 9, Epoch 66/100, N_batch 79, Elapsed Time 1.2749552726745605s
+ - classification loss: 0.38702099609375
+Epoch 67/100
+DPR losses: stable 0.190612, complement 0.044756
+Task 9, Epoch 67/100, N_batch 79, Elapsed Time 1.284869909286499s
+ - classification loss: 0.398583251953125
+Epoch 68/100
+DPR losses: stable 0.198496, complement 0.044580
+Task 9, Epoch 68/100, N_batch 79, Elapsed Time 1.2787761688232422s
+ - classification loss: 0.38406442260742185
+Epoch 69/100
+DPR losses: stable 0.207216, complement 0.044265
+Task 9, Epoch 69/100, N_batch 79, Elapsed Time 1.2918329238891602s
+ - classification loss: 0.37132281494140623
+Epoch 70/100
+DPR losses: stable 0.203926, complement 0.044178
+Task 9, Epoch 70/100, N_batch 79, Elapsed Time 1.3097522258758545s
+ - classification loss: 0.387511962890625
+Epoch 71/100
+DPR losses: stable 0.208696, complement 0.043124
+Task 9, Epoch 71/100, N_batch 79, Elapsed Time 1.2895610332489014s
+ - classification loss: 0.3760736999511719
+Epoch 72/100
+DPR losses: stable 0.206038, complement 0.044286
+Task 9, Epoch 72/100, N_batch 79, Elapsed Time 1.291980266571045s
+ - classification loss: 0.39845660400390626
+Epoch 73/100
+DPR losses: stable 0.209632, complement 0.044265
+Task 9, Epoch 73/100, N_batch 79, Elapsed Time 1.2711200714111328s
+ - classification loss: 0.39724069213867186
+Epoch 74/100
+DPR losses: stable 0.198788, complement 0.043552
+Task 9, Epoch 74/100, N_batch 79, Elapsed Time 1.2930371761322021s
+ - classification loss: 0.40582986450195313
+Epoch 75/100
+DPR losses: stable 0.214075, complement 0.043202
+Task 9, Epoch 75/100, N_batch 79, Elapsed Time 1.282801628112793s
+ - classification loss: 0.3736876220703125
+Epoch 76/100
+DPR losses: stable 0.204045, complement 0.043273
+Task 9, Epoch 76/100, N_batch 79, Elapsed Time 1.2918064594268799s
+ - classification loss: 0.3918958435058594
+Epoch 77/100
+DPR losses: stable 0.206696, complement 0.043197
+Task 9, Epoch 77/100, N_batch 79, Elapsed Time 1.2707462310791016s
+ - classification loss: 0.38488787841796873
+Epoch 78/100
+DPR losses: stable 0.203251, complement 0.043170
+Task 9, Epoch 78/100, N_batch 79, Elapsed Time 1.2944812774658203s
+ - classification loss: 0.3867654724121094
+Epoch 79/100
+DPR losses: stable 0.208635, complement 0.043397
+Task 9, Epoch 79/100, N_batch 79, Elapsed Time 1.2804317474365234s
+ - classification loss: 0.4176011962890625
+Epoch 80/100
+DPR losses: stable 0.212986, complement 0.042936
+Task 9, Epoch 80/100, N_batch 79, Elapsed Time 1.2842586040496826s
+ - classification loss: 0.3752945556640625
+Epoch 81/100
+DPR losses: stable 0.194791, complement 0.041944
+Task 9, Epoch 81/100, N_batch 79, Elapsed Time 1.2732148170471191s
+ - classification loss: 0.394910888671875
+Epoch 82/100
+DPR losses: stable 0.209205, complement 0.042045
+Task 9, Epoch 82/100, N_batch 79, Elapsed Time 1.283754825592041s
+ - classification loss: 0.40295724487304685
+Epoch 83/100
+DPR losses: stable 0.194245, complement 0.041504
+Task 9, Epoch 83/100, N_batch 79, Elapsed Time 1.2785983085632324s
+ - classification loss: 0.37476898193359376
+Epoch 84/100
+DPR losses: stable 0.195042, complement 0.041786
+Task 9, Epoch 84/100, N_batch 79, Elapsed Time 1.2919847965240479s
+ - classification loss: 0.390468994140625
+Epoch 85/100
+DPR losses: stable 0.203584, complement 0.041721
+Task 9, Epoch 85/100, N_batch 79, Elapsed Time 1.2736859321594238s
+ - classification loss: 0.39035638427734376
+Epoch 86/100
+DPR losses: stable 0.198179, complement 0.041756
+Task 9, Epoch 86/100, N_batch 79, Elapsed Time 1.2888152599334717s
+ - classification loss: 0.38884640502929685
+Epoch 87/100
+DPR losses: stable 0.193574, complement 0.041779
+Task 9, Epoch 87/100, N_batch 79, Elapsed Time 1.2804465293884277s
+ - classification loss: 0.385253173828125
+Epoch 88/100
+DPR losses: stable 0.211124, complement 0.041723
+Task 9, Epoch 88/100, N_batch 79, Elapsed Time 1.2806942462921143s
+ - classification loss: 0.37209735107421876
+Epoch 89/100
+DPR losses: stable 0.211293, complement 0.041667
+Task 9, Epoch 89/100, N_batch 79, Elapsed Time 1.280013084411621s
+ - classification loss: 0.38094976806640624
+Epoch 90/100
+DPR losses: stable 0.202276, complement 0.040917
+Task 9, Epoch 90/100, N_batch 79, Elapsed Time 1.289886713027954s
+ - classification loss: 0.43105853271484373
+Epoch 91/100
+DPR losses: stable 0.223583, complement 0.040999
+Task 9, Epoch 91/100, N_batch 79, Elapsed Time 1.282198190689087s
+ - classification loss: 0.39249749755859376
+Epoch 92/100
+DPR losses: stable 0.202714, complement 0.040305
+Task 9, Epoch 92/100, N_batch 79, Elapsed Time 1.280822515487671s
+ - classification loss: 0.3868409729003906
+Epoch 93/100
+DPR losses: stable 0.201607, complement 0.040679
+Task 9, Epoch 93/100, N_batch 79, Elapsed Time 1.2723898887634277s
+ - classification loss: 0.3778665466308594
+Epoch 94/100
+DPR losses: stable 0.198510, complement 0.040360
+Task 9, Epoch 94/100, N_batch 79, Elapsed Time 1.2927491664886475s
+ - classification loss: 0.4148795166015625
+Epoch 95/100
+DPR losses: stable 0.206315, complement 0.039967
+Task 9, Epoch 95/100, N_batch 79, Elapsed Time 1.282224178314209s
+ - classification loss: 0.385833740234375
+Epoch 96/100
+DPR losses: stable 0.198708, complement 0.039737
+Task 9, Epoch 96/100, N_batch 79, Elapsed Time 1.2846829891204834s
+ - classification loss: 0.3904549560546875
+Epoch 97/100
+DPR losses: stable 0.223191, complement 0.040014
+Task 9, Epoch 97/100, N_batch 79, Elapsed Time 1.2804210186004639s
+ - classification loss: 0.384934814453125
+Epoch 98/100
+DPR losses: stable 0.232797, complement 0.039627
+Task 9, Epoch 98/100, N_batch 79, Elapsed Time 1.2791285514831543s
+ - classification loss: 0.379159912109375
+Epoch 99/100
+DPR losses: stable 0.219619, complement 0.040431
+Task 9, Epoch 99/100, N_batch 79, Elapsed Time 1.2740819454193115s
+ - classification loss: 0.37706439208984377
+Computing affine prototype alignment
+Affine transport MSE 0.003441, elapsed time 3.3112547397613525
+Classifier calibration from cached features
+Centered classifier head: 99 stable directions
+
+ >>> Test on task  0 : TAw acc= 88.2%, forg=  1.6% | TAg acc = 60.0%, forg = 29.8%  <<<
+
+ >>> Test on task  1 : TAw acc= 87.3%, forg= -0.1% | TAg acc = 51.8%, forg = 25.2%  <<<
+
+ >>> Test on task  2 : TAw acc= 83.8%, forg=  2.2% | TAg acc = 43.6%, forg = 19.6%  <<<
+
+ >>> Test on task  3 : TAw acc= 85.1%, forg=  1.1% | TAg acc = 47.0%, forg = 15.6%  <<<
+
+ >>> Test on task  4 : TAw acc= 76.6%, forg=  1.0% | TAg acc = 42.3%, forg = 13.1%  <<<
+
+ >>> Test on task  5 : TAw acc= 88.0%, forg=  0.2% | TAg acc = 55.9%, forg =  9.7%  <<<
+
+ >>> Test on task  6 : TAw acc= 88.6%, forg=  0.9% | TAg acc = 53.8%, forg =  2.2%  <<<
+
+ >>> Test on task  7 : TAw acc= 87.4%, forg=  0.9% | TAg acc = 52.3%, forg =  2.7%  <<<
+
+ >>> Test on task  8 : TAw acc= 86.0%, forg=  0.3% | TAg acc = 52.4%, forg =  2.3%  <<<
+
+ >>> Test on task  9 : TAw acc= 87.7%, forg=  0.0% | TAg acc = 54.2%, forg =  0.0%  <<<
