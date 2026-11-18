@@ -1,7 +1,5 @@
 # From Joint Risk to Decision Invariance: Decision-Preserving Regularization for Exemplar-Free Class-Incremental Learning
 
-Anonymous implementation of **Decision-Preserving Regularization (DPR)** for CIFAR-100, Tiny-ImageNet, and ImageNet-Subset. DPR extracts an orthonormal decision subspace from the centered old classifier using SVD, regularizes feature drift in that subspace and its orthogonal complement, and transports old Gaussian statistics with a closed-form affine map before calibrating the global classifier. All models use ResNet-18 trained from scratch, without storing old images.
-
 ## Environment
 
 Python 3.12, PyTorch 2.7.1, and a CUDA-capable GPU are required. Install the pinned runtime dependencies with:
